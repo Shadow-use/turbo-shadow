@@ -49,8 +49,8 @@ def generate_image(image_prompt):
     if not hf_token:
         raise Exception("Не знайдено HF_TOKEN! Перевір Secrets у GitHub та файл production.yml.")
         
-    # Використовуємо стабільну модель SDXL
-    api_url = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
+    # Використовуємо 100% безкоштовну і стабільну модель
+    api_url = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"
     headers = {"Authorization": f"Bearer {hf_token}"}
     
     payload = {
@@ -64,7 +64,7 @@ def generate_image(image_prompt):
         if response.status_code == 200:
             return response.content
         elif response.status_code == 503:
-            # Модель може "прокидатися", це нормальна поведінка
+            # Модель може "прокидатися", це нормальна поведінка для безкоштовного тарифу
             estimated_time = response.json().get('estimated_time', 20)
             print(f"Модель завантажується. Чекаємо {estimated_time} секунд...")
             time.sleep(estimated_time)
