@@ -1,8 +1,8 @@
-# Responsibility: Логіка ШІ. Вибір авто (GitHub Models) та генерація фото (Pollinations.ai).
+# Responsibility: Логіка ШІ. Вибір авто (GitHub Models) та генерація фото (Hugging Face).
+
 import os
 import requests
 import json
-import urllib.parse
 import time
 
 def get_car_brainstorm(theme_data, history):
@@ -44,28 +44,32 @@ def get_car_brainstorm(theme_data, history):
     return json.loads(clean_json)
 
 def generate_image(image_prompt):
-    """Генерує зображення через Pollinations із маскуванням під браузер та повторенням при 429."""
-    full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k"
-    encoded_prompt = urllib.parse.quote(full_prompt)
-    endpoint = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1024&height=1024&nologo=true"
+    """Генерує зображення через стабільний API Hugging Face."""
+    hf_token = os.getenv("HF_TOKEN")
+    if not hf_token:
+        raise Exception("Не знайдено HF_TOKEN! Перевір Secrets у GitHub та файл production.yml.")
+        
+    # Використовуємо стабільну модель SDXL
+    api_url = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
+    headers = {"Authorization": f"Bearer {hf_token}"}
     
-    # Маскуємося під звичайний Chrome на Windows, щоб обійти фільтри ботів
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    payload = {
+        "inputs": f"{image_prompt}, high resolution car photography, professional lighting, 8k",
     }
     
-    # Робимо до 3 спроб з паузою
-    for attempt in range(3):
-        print(f"Запит до Pollinations.ai (спроба {attempt + 1})...")
-        response = requests.get(endpoint, headers=headers)
+    for attempt in range(5):
+        print(f"Запит до Hugging Face (спроба {attempt + 1})...")
+        response = requests.post(api_url, headers=headers, json=payload)
         
         if response.status_code == 200:
             return response.content
-        elif response.status_code == 429:
-            print("Сервер Pollinations перевантажений (Помилка 429). Чекаємо 10 секунд...")
-            time.sleep(10)
+        elif response.status_code == 503:
+            # Модель може "прокидатися", це нормальна поведінка
+            estimated_time = response.json().get('estimated_time', 20)
+            print(f"Модель завантажується. Чекаємо {estimated_time} секунд...")
+            time.sleep(estimated_time)
         else:
-            raise Exception(f"Помилка генерації картинки: {response.status_code} - {response.text}")
+            print(f"Помилка сервера: {response.status_code} - {response.text}")
+            time.sleep(10)
             
-    # Якщо всі 3 спроби провалилися
-    raise Exception("Не вдалося згенерувати картинку після 3 спроб. Сервер Pollinations відхиляє запити.")
+    raise Exception("Hugging Face API не зміг згенерувати картинку після 5 спроб.")
