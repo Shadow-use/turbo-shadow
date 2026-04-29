@@ -1,4 +1,4 @@
-// Responsibility: Запити до GitHub Models для генерації тексту (GPT-4o) та зображення (Flux/SDXL).
+#// Responsibility: Запити до GitHub Models для генерації тексту (GPT-4o) та зображення (Flux/SDXL).
 
 import os
 import requests

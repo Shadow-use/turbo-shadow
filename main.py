@@ -1,4 +1,4 @@
-// Responsibility: Головний керуючий скрипт. Збирає дані, запускає малювання та відправку в Telegram.
+#// Responsibility: Головний керуючий скрипт. Збирає дані, запускає малювання та відправку в Telegram.
 
 import os
 import storage
