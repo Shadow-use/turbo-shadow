@@ -5,6 +5,7 @@ import storage
 import brain
 import painter
 import requests
+import json
 
 def send_to_tg(image_bytes, car_data):
     token = os.getenv("TELEGRAM_BOT_TOKEN")
