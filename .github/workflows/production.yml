@@ -2,7 +2,7 @@ name: Turbo Shadow Production
 
 on:
   schedule:
-    - cron: '50 7 * * *' # Запуск щодня о 07:50 (UTC+2/3)
+    - cron: '50 4 * * *' # Запуск щодня о 07:50 (UTC+2/3)
   workflow_dispatch:      # Кнопка для ручного запуску
 
 jobs:

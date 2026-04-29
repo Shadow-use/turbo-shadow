@@ -23,13 +23,13 @@
 │   ├── tuesday.png
 │   └── wednesday.png
 ├── brain.py
+├── check.py
 ├── impact.ttf
 ├── main.py
 ├── painter.py
 ├── prompts
 │   ├── friday.json
 │   ├── monday.json
-│   ├── monday.txt
 │   ├── saturday.json
 │   ├── sunday.json
 │   ├── thursday.json
