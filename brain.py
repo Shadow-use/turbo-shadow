@@ -1,11 +1,10 @@
-# Responsibility: Логіка ШІ. Вибір авто (GitHub Models) та генерація фото (Pollinations.ai з обходом 429).
+#// Responsibility: Логіка ШІ. Вибір авто (GitHub Models) та генерація фото (Hercai API без реєстрації).
 
 import os
 import requests
 import json
 import urllib.parse
 import time
-import random
 
 def get_car_brainstorm(theme_data, history):
     """Вибирає нову машину за допомогою gpt-4o-mini."""
@@ -46,37 +45,28 @@ def get_car_brainstorm(theme_data, history):
     return json.loads(clean_json)
 
 def generate_image(image_prompt):
-    """Генерує зображення через Pollinations із розумним скиданням таймера."""
+    """Безкоштовна генерація через Hercai (без токенів і реєстрацій)."""
     full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k"
     encoded_prompt = urllib.parse.quote(full_prompt)
     
-    # Додаємо рандомний seed, щоб кожен запит був унікальним
-    seed = random.randint(1, 100000)
-    endpoint = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1024&height=1024&nologo=true&seed={seed}"
+    endpoint = f"https://hercai.onrender.com/v3/text2image?prompt={encoded_prompt}"
     
-    # Маскуємося під браузер, який прийшов з їхнього ж сайту
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        "Referer": "https://pollinations.ai/",
-    }
-    
-    # Хитрість №1: Чекаємо випадкові 5-15 секунд, щоб пропустити спам від чужих ботів
-    delay = random.randint(5, 15)
-    print(f"Маскування: чекаємо {delay} сек перед генерацією...")
-    time.sleep(delay)
+    print("Запит до Hercai API...")
     
     for attempt in range(3):
-        print(f"Запит до Pollinations.ai (спроба {attempt + 1})...")
-        response = requests.get(endpoint, headers=headers)
-        
-        if response.status_code == 200:
-            return response.content
-        elif response.status_code == 429:
-            # Хитрість №2: Якщо IP заблоковано, чекаємо 65 секунд (їхній ліміт обнуляється кожну хвилину)
-            print("Зловили 429 (таймер IP). Лягаємо на дно на 65 секунд...")
-            time.sleep(65)
-        else:
-            print(f"Помилка {response.status_code}. Чекаємо 10 сек...")
-            time.sleep(10)
+        try:
+            response = requests.get(endpoint)
+            if response.status_code == 200:
+                img_url = response.json().get('url')
+                if img_url:
+                    print(f"Картинка готова. Завантажуємо з {img_url}...")
+                    img_response = requests.get(img_url)
+                    if img_response.status_code == 200:
+                        return img_response.content
+            print(f"Спроба {attempt+1} невдала. Чекаємо 5 сек...")
+            time.sleep(5)
+        except Exception as e:
+            print(f"Помилка з'єднання: {e}")
+            time.sleep(5)
             
-    raise Exception("Pollinations не пустив навіть після скидання таймера.")
+    raise Exception("Не вдалося отримати картинку від Hercai після 3 спроб.")
