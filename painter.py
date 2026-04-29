@@ -1,15 +1,14 @@
-#// Responsibility: Генерація фінального макета фантика Turbo Shadow, склеювання фото з логотипом, таблицею ТТХ та номером.
+# Responsibility: Генерація фінального макета фантика Turbo Shadow, склеювання фото з логотипом, таблицею ТТХ та номером.
 
 import os
 import io
 import datetime
-import requests
 from PIL import Image, ImageDraw, ImageFont
 
 CANVAS_SIZE = (1080, 1350)
-IMPACT_FONT_PATH = "impact.ttf" # Завантаж шрифт у цю папку
-LOGO_PATH = "ts_logo.png" # Твоє image_4.png
-BACKGROUNDS_DIR = "backgrounds" # Створи папку з monday.png...
+IMPACT_FONT_PATH = "impact.ttf"
+LOGO_PATH = "ts_logo.png"
+BACKGROUNDS_DIR = "backgrounds"
 
 def generate_card(car_data, image_bytes):
     """
@@ -34,26 +33,32 @@ def generate_card(car_data, image_bytes):
     ImageDraw.Draw(canvas).rectangle([38, 148, 1042, 852], outline="white", width=4)
     canvas.paste(car_img, (40, 150))
 
-    # 3. ШАР 3: Логотип Turbo Shadow (з image_4.png)
+    # 3. ШАР 3: Логотип Turbo Shadow
     logo_img = Image.open(LOGO_PATH).convert("RGBA")
-    # Python НЕ пише текст TURBO SHADOW, лого стоїть сам по собі
-    canvas.paste(logo_img, (340, 20), logo_img) # Центруємо, logo_img як маска
+    
+    # Зменшуємо логотип (450 пікселів у ширину, висота підлаштується пропорційно)
+    target_width = 450
+    target_height = int(logo_img.height * (target_width / logo_img.width))
+    logo_img = logo_img.resize((target_width, target_height))
+    
+    # Координати: зміщуємо правіше і вище
+    canvas.paste(logo_img, (550, 10), logo_img)
 
-    # 4. ШАР 4: Текст (IMPACT)
+    # 4. ШАР 4: Текст (IMPACT) з чорною облямівкою
     font = ImageFont.truetype(IMPACT_FONT_PATH, 50)
     draw = ImageDraw.Draw(canvas)
     
     # Нумерація (Impact, Top Right)
     global_id = f"№{car_data['id']:03} | Series: {car_data['series']}"
-    draw.text((1040, 90), global_id, fill="white", font=font, anchor="rm")
+    draw.text((1040, 90), global_id, fill="white", font=font, anchor="rm", stroke_width=3, stroke_fill="black")
 
     # Таблиця ТТХ (Bottom)
     y_start = 900
     specs = car_data['specs']
-    draw.text((60, y_start), f"Engine: {specs['engine']}", fill="yellow", font=font)
-    draw.text((60, y_start + 70), f"Power: {specs['hp']} HP", fill="yellow", font=font)
-    draw.text((60, y_start + 140), f"Top Speed: {specs['top_speed']} km/h", fill="yellow", font=font)
-    draw.text((60, y_start + 210), f"Car Model: {car_data['model']}", fill="white", font=font)
+    draw.text((60, y_start), f"Engine: {specs['engine']}", fill="yellow", font=font, stroke_width=3, stroke_fill="black")
+    draw.text((60, y_start + 70), f"Power: {specs['hp']} HP", fill="yellow", font=font, stroke_width=3, stroke_fill="black")
+    draw.text((60, y_start + 140), f"Top Speed: {specs['top_speed']}", fill="yellow", font=font, stroke_width=3, stroke_fill="black")
+    draw.text((60, y_start + 210), f"Car Model: {car_data['model']}", fill="white", font=font, stroke_width=3, stroke_fill="black")
 
     # Збереження
     img_byte_arr = io.BytesIO()
