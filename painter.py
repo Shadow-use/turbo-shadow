@@ -7,7 +7,7 @@ import requests
 from PIL import Image, ImageDraw, ImageFont
 
 CANVAS_SIZE = (1080, 1350)
-IMPACT_FONT_PATH = "fonts/impact.ttf" # Завантаж шрифт у цю папку
+IMPACT_FONT_PATH = "impact.ttf" # Завантаж шрифт у цю папку
 LOGO_PATH = "ts_logo.png" # Твоє image_4.png
 BACKGROUNDS_DIR = "backgrounds" # Створи папку з monday.png...
 
