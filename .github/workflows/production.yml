@@ -1,0 +1,36 @@
+name: Turbo Shadow Production
+
+on:
+  schedule:
+    - cron: '50 7 * * *' # Запуск щодня о 07:50 (UTC+2/3)
+  workflow_dispatch:      # Кнопка для ручного запуску
+
+jobs:
+  run_bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install requests Pillow
+
+      - name: Run Orchestrator
+        env:
+          GH_MODELS_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python main.py
+
+      - name: Commit & Push History
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Shadow-Bot-Automator"
+          git add used_cars.json
+          git commit -m "Automated update: Added new fan-card to collection" || echo "No changes to commit"
+          git push

@@ -1,0 +1,22 @@
+### Logical Map (Auto-generated)
+​🗺️ Logical Map: Turbo Shadow Production Cycle
+​Етап 1: Ініціація (The Spark)
+​Trigger: GitHub Action спрацьовує за розкладом (07:50) або вручну (workflow_dispatch).
+​Environment: Піднімається віртуальний сервер Ubuntu, встановлюються залежності з requirements.txt.
+​Етап 2: Аналітика (storage.py)
+​Day Check: Скрипт визначає поточний день тижня (наприклад, Wednesday).
+​Context Loading: Зчитує prompts/wednesday.json, щоб отримати тему «Garage Finds».
+​History Check: Завантажує used_cars.json, створюючи список «заборонених» авто для ШІ.
+​Етап 3: Креатив (brain.py)
+​The Idea: Надсилає запит до GPT-4o з інструкцією дня + списком виключень. Отримує JSON з моделлю, ТТХ та промптом для картинки.
+​The Visual: Надсилає отриманий промпт до Flux/SDXL. На виході — «чисте» фото автомобіля в пам'яті сервера.
+​Етап 4: Виробництво (painter.py)
+​Canvas Setup: Бере backgrounds/wednesday.png як основу.
+​Assembly: * Накладає фото авто з рамкою.
+​Вставляє ts_logo.png (без зайвого тексту).
+​Використовує impact.ttf для нанесення серійного номера та таблиці ТТХ.
+​Rendering: Створює фінальний файл фантика у форматі PNG.
+​Етап 5: Доставка та Фіксація (main.py + Actions)
+​Telegram Blast: Відправляє готовий фантик з описом у канал через твій токен бота.
+​Log Update: Додає нову тачку в used_cars.json з новим ID.
+​Persistence: GitHub Action робить git commit та push, щоб оновлена історія збереглася в репозиторії для наступного дня.
