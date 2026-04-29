@@ -1,12 +1,14 @@
-# Responsibility: Логіка ШІ. Вибір авто (GitHub Models) та генерація фото (Hugging Face).
+# Responsibility: Логіка ШІ. Вибір авто (GitHub Models) та генерація фото (Pollinations.ai з обходом 429).
 
 import os
 import requests
 import json
+import urllib.parse
 import time
+import random
 
 def get_car_brainstorm(theme_data, history):
-    """Вибирає нову машину за допомогою gpt-4o-mini, враховуючи історію."""
+    """Вибирає нову машину за допомогою gpt-4o-mini."""
     token = os.getenv("GH_MODELS_TOKEN")
     endpoint = "https://models.inference.ai.azure.com/chat/completions"
     
@@ -44,32 +46,37 @@ def get_car_brainstorm(theme_data, history):
     return json.loads(clean_json)
 
 def generate_image(image_prompt):
-    """Генерує зображення через стабільний API Hugging Face."""
-    hf_token = os.getenv("HF_TOKEN")
-    if not hf_token:
-        raise Exception("Не знайдено HF_TOKEN! Перевір Secrets у GitHub та файл production.yml.")
-        
-    # Використовуємо 100% безкоштовну і стабільну модель
-    api_url = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"
-    headers = {"Authorization": f"Bearer {hf_token}"}
+    """Генерує зображення через Pollinations із розумним скиданням таймера."""
+    full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k"
+    encoded_prompt = urllib.parse.quote(full_prompt)
     
-    payload = {
-        "inputs": f"{image_prompt}, high resolution car photography, professional lighting, 8k",
+    # Додаємо рандомний seed, щоб кожен запит був унікальним
+    seed = random.randint(1, 100000)
+    endpoint = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1024&height=1024&nologo=true&seed={seed}"
+    
+    # Маскуємося під браузер, який прийшов з їхнього ж сайту
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "Referer": "https://pollinations.ai/",
     }
     
-    for attempt in range(5):
-        print(f"Запит до Hugging Face (спроба {attempt + 1})...")
-        response = requests.post(api_url, headers=headers, json=payload)
+    # Хитрість №1: Чекаємо випадкові 5-15 секунд, щоб пропустити спам від чужих ботів
+    delay = random.randint(5, 15)
+    print(f"Маскування: чекаємо {delay} сек перед генерацією...")
+    time.sleep(delay)
+    
+    for attempt in range(3):
+        print(f"Запит до Pollinations.ai (спроба {attempt + 1})...")
+        response = requests.get(endpoint, headers=headers)
         
         if response.status_code == 200:
             return response.content
-        elif response.status_code == 503:
-            # Модель може "прокидатися", це нормальна поведінка для безкоштовного тарифу
-            estimated_time = response.json().get('estimated_time', 20)
-            print(f"Модель завантажується. Чекаємо {estimated_time} секунд...")
-            time.sleep(estimated_time)
+        elif response.status_code == 429:
+            # Хитрість №2: Якщо IP заблоковано, чекаємо 65 секунд (їхній ліміт обнуляється кожну хвилину)
+            print("Зловили 429 (таймер IP). Лягаємо на дно на 65 секунд...")
+            time.sleep(65)
         else:
-            print(f"Помилка сервера: {response.status_code} - {response.text}")
+            print(f"Помилка {response.status_code}. Чекаємо 10 сек...")
             time.sleep(10)
             
-    raise Exception("Hugging Face API не зміг згенерувати картинку після 5 спроб.")
+    raise Exception("Pollinations не пустив навіть після скидання таймера.")
