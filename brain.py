@@ -3,13 +3,13 @@ import os
 import requests
 import json
 import urllib.parse
+import time
 
 def get_car_brainstorm(theme_data, history):
     """Вибирає нову машину за допомогою gpt-4o-mini, враховуючи історію."""
     token = os.getenv("GH_MODELS_TOKEN")
     endpoint = "https://models.inference.ai.azure.com/chat/completions"
     
-    # Створюємо список назв, які вже були, щоб уникнути повторів
     excluded = ", ".join([item['model'] for item in history[-30:]]) 
     
     system_msg = (
@@ -39,25 +39,33 @@ def get_car_brainstorm(theme_data, history):
     if response.status_code != 200:
         raise Exception(f"Помилка текстового API: {response.text}")
 
-    # Чистимо відповідь від маркдауну (якщо ШІ обгорнув JSON у ```json ... ```)
     content = response.json()['choices'][0]['message']['content']
     clean_json = content.replace('```json', '').replace('```', '').strip()
     return json.loads(clean_json)
 
 def generate_image(image_prompt):
-    """Генерує зображення через відкритий сервіс Pollinations (без токенів)."""
+    """Генерує зображення через Pollinations із маскуванням під браузер та повторенням при 429."""
     full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k"
-    
-    # Кодуємо текст так, щоб його можна було безпечно вставити в URL
     encoded_prompt = urllib.parse.quote(full_prompt)
-    
-    # Pollinations повертає відразу готовий файл зображення у відповідь на GET-запит
     endpoint = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1024&height=1024&nologo=true"
     
-    print("Запит до Pollinations.ai...")
-    response = requests.get(endpoint)
+    # Маскуємося під звичайний Chrome на Windows, щоб обійти фільтри ботів
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
     
-    if response.status_code != 200:
-        raise Exception(f"Помилка генерації картинки: {response.status_code}")
+    # Робимо до 3 спроб з паузою
+    for attempt in range(3):
+        print(f"Запит до Pollinations.ai (спроба {attempt + 1})...")
+        response = requests.get(endpoint, headers=headers)
         
-    return response.content
+        if response.status_code == 200:
+            return response.content
+        elif response.status_code == 429:
+            print("Сервер Pollinations перевантажений (Помилка 429). Чекаємо 10 секунд...")
+            time.sleep(10)
+        else:
+            raise Exception(f"Помилка генерації картинки: {response.status_code} - {response.text}")
+            
+    # Якщо всі 3 спроби провалилися
+    raise Exception("Не вдалося згенерувати картинку після 3 спроб. Сервер Pollinations відхиляє запити.")
