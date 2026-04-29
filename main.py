@@ -8,7 +8,7 @@ def send_to_tg(caption):
     chat_id = os.getenv("TELEGRAM_CHAT_ID")
 
     # Для тесту використовуємо пряме посилання на зображення (потім замінимо на генерацію)
-    photo_url = "https://raw.githubusercontent.com/Shadow/turbo-shadow/main/1777472333203.png" # Це шлях до твого завантаженого фото, якщо назва збігається
+    photo_url = "https://raw.githubusercontent.com/Shadow-use/turbo-shadow/main/1777472333203.png" # Це шлях до твого завантаженого фото, якщо назва збігається
 
     url = f"https://api.telegram.org/bot{token}/sendPhoto"
     data = {"chat_id": chat_id, "photo": photo_url, "caption": caption, "parse_mode": "Markdown"}
