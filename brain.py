@@ -10,7 +10,7 @@ def get_car_brainstorm(theme_data, history):
     token = os.getenv("GH_MODELS_TOKEN")
     endpoint = "https://models.inference.ai.azure.com/chat/completions"
     
-    # Створюємо список назв, які вже були
+    # Виключаємо останні 30 авто, щоб не було повторів
     excluded = ", ".join([item['model'] for item in history[-30:]]) 
     
     system_msg = (
@@ -34,41 +34,52 @@ def get_car_brainstorm(theme_data, history):
         "temperature": 0.8
     })
     
-    # Чистимо відповідь від маркдауну, якщо він є
+    if response.status_code != 200:
+        raise Exception(f"Текстове API помилка: {response.text}")
+
     content = response.json()['choices'][0]['message']['content']
     clean_json = content.replace('```json', '').replace('```', '').strip()
     return json.loads(clean_json)
 
 def generate_image(image_prompt):
-    """Генерує зображення та повертає байтовий рядок."""
+    """Генерує зображення через GitHub Models та повертає байтовий рядок."""
     token = os.getenv("GH_MODELS_TOKEN")
+    # Офіційний ендпоінт для генерації зображень
     endpoint = "https://models.inference.ai.azure.com/images/generations" 
     
-    headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+    headers = {
+        "Authorization": f"Bearer {token}", 
+        "Content-Type": "application/json"
+    }
     
+    # Використовуємо стабільну модель Stability AI SDXL
     payload = {
-        "prompt": f"{image_prompt}, professional car photography, high resolution, clean background, 8k",
-        "model": "black-forest-labs-flux-1-pro", # Якщо немає доступу, заміни на "stability-ai-sdxl-900"
+        "prompt": f"{image_prompt}, high resolution car photography, clean background, 8k",
+        "model": "stability-ai-sdxl-900", 
         "n": 1,
         "size": "1024x1024",
-        "response_format": "b64_json"
+        "response_format": "b64_json" # Отримуємо картинку прямо в коді
     }
     
     response = requests.post(endpoint, headers=headers, json=payload)
     res_json = response.json()
     
     if response.status_code != 200:
-        raise Exception(f"API Error: {res_json}")
+        # Якщо модель не знайдена або ліміт — виводимо реальну причину
+        raise Exception(f"Помилка генерації фото: {res_json}")
 
     try:
-        # Обробка Base64
+        # Пріоритет 1: Base64 (найчастіший формат на GitHub для SDXL)
         if 'data' in res_json and 'b64_json' in res_json['data'][0]:
             return base64.b64decode(res_json['data'][0]['b64_json'])
-        # Обробка URL
+            
+        # Пріоритет 2: URL (якщо раптом сервер переключився на посилання)
         elif 'data' in res_json and 'url' in res_json['data'][0]:
             return requests.get(res_json['data'][0]['url']).content
+            
         else:
-            raise KeyError(f"Unexpected response structure: {res_json.keys()}")
+            raise KeyError(f"Структура відповіді не містить картинку: {res_json.keys()}")
+            
     except Exception as e:
-        print(f"Failed to parse image data: {res_json}")
+        print(f"Помилка обробки даних зображення: {e}")
         raise e
