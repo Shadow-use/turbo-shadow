@@ -1,10 +1,9 @@
-#// Responsibility: Логіка ШІ. Вибір авто (GitHub Models) та генерація фото (Hercai API без реєстрації).
+# Responsibility: Логіка ШІ. Вибір авто (GitHub Models) та генерація фото (Together AI - FLUX.1).
 
 import os
 import requests
 import json
-import urllib.parse
-import time
+import base64
 
 def get_car_brainstorm(theme_data, history):
     """Вибирає нову машину за допомогою gpt-4o-mini."""
@@ -45,28 +44,33 @@ def get_car_brainstorm(theme_data, history):
     return json.loads(clean_json)
 
 def generate_image(image_prompt):
-    """Безкоштовна генерація через Hercai (без токенів і реєстрацій)."""
-    full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k"
-    encoded_prompt = urllib.parse.quote(full_prompt)
+    """Генерує зображення через Together AI (модель FLUX.1-schnell)."""
+    api_key = os.getenv("TOGETHER_API_KEY")
+    if not api_key:
+        raise Exception("Не знайдено TOGETHER_API_KEY! Перевір Secrets.")
+
+    endpoint = "https://api.together.xyz/v1/images/generations"
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json"
+    }
     
-    endpoint = f"https://hercai.onrender.com/v3/text2image?prompt={encoded_prompt}"
-    
-    print("Запит до Hercai API...")
-    
-    for attempt in range(3):
-        try:
-            response = requests.get(endpoint)
-            if response.status_code == 200:
-                img_url = response.json().get('url')
-                if img_url:
-                    print(f"Картинка готова. Завантажуємо з {img_url}...")
-                    img_response = requests.get(img_url)
-                    if img_response.status_code == 200:
-                        return img_response.content
-            print(f"Спроба {attempt+1} невдала. Чекаємо 5 сек...")
-            time.sleep(5)
-        except Exception as e:
-            print(f"Помилка з'єднання: {e}")
-            time.sleep(5)
-            
-    raise Exception("Не вдалося отримати картинку від Hercai після 3 спроб.")
+    payload = {
+        "model": "black-forest-labs/FLUX.1-schnell-Free",
+        "prompt": f"{image_prompt}, high resolution car photography, professional lighting, 8k",
+        "width": 1024,
+        "height": 1024,
+        "steps": 4,
+        "n": 1,
+        "response_format": "b64_json"
+    }
+
+    print("Запит до Together AI (FLUX.1-schnell)...")
+    response = requests.post(endpoint, headers=headers, json=payload)
+
+    if response.status_code != 200:
+        raise Exception(f"Помилка Together AI: {response.status_code} - {response.text}")
+
+    # Together повертає картинку закодовану в base64, декодуємо її в байти
+    img_b64 = response.json()["data"][0]["b64_json"]
+    return base64.b64decode(img_b64)
