@@ -1,16 +1,15 @@
-# Responsibility: Логіка запитів до ШІ-моделей. Вибір авто та генерація зображень.
-
+# Responsibility: Логіка ШІ. Вибір авто (GitHub Models) та генерація фото (Pollinations.ai).
 import os
 import requests
 import json
-import base64
+import urllib.parse
 
 def get_car_brainstorm(theme_data, history):
-    """Вибирає нову машину, враховуючи список виключень."""
+    """Вибирає нову машину за допомогою gpt-4o-mini, враховуючи історію."""
     token = os.getenv("GH_MODELS_TOKEN")
     endpoint = "https://models.inference.ai.azure.com/chat/completions"
     
-    # Виключаємо останні 30 авто, щоб не було повторів
+    # Створюємо список назв, які вже були, щоб уникнути повторів
     excluded = ", ".join([item['model'] for item in history[-30:]]) 
     
     system_msg = (
@@ -23,7 +22,10 @@ def get_car_brainstorm(theme_data, history):
         f"НЕ ОБИРАЙ: [{excluded}]. Вигадай щось нове та круте."
     )
 
-    headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+    headers = {
+        "Authorization": f"Bearer {token}", 
+        "Content-Type": "application/json"
+    }
     
     response = requests.post(endpoint, headers=headers, json={
         "messages": [
@@ -35,51 +37,27 @@ def get_car_brainstorm(theme_data, history):
     })
     
     if response.status_code != 200:
-        raise Exception(f"Текстове API помилка: {response.text}")
+        raise Exception(f"Помилка текстового API: {response.text}")
 
+    # Чистимо відповідь від маркдауну (якщо ШІ обгорнув JSON у ```json ... ```)
     content = response.json()['choices'][0]['message']['content']
     clean_json = content.replace('```json', '').replace('```', '').strip()
     return json.loads(clean_json)
 
 def generate_image(image_prompt):
-    """Генерує зображення через GitHub Models та повертає байтовий рядок."""
-    token = os.getenv("GH_MODELS_TOKEN")
-    # Офіційний ендпоінт для генерації зображень
-    endpoint = "https://models.inference.ai.azure.com/images/generations" 
+    """Генерує зображення через відкритий сервіс Pollinations (без токенів)."""
+    full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k"
     
-    headers = {
-        "Authorization": f"Bearer {token}", 
-        "Content-Type": "application/json"
-    }
+    # Кодуємо текст так, щоб його можна було безпечно вставити в URL
+    encoded_prompt = urllib.parse.quote(full_prompt)
     
-    # Використовуємо стабільну модель Stability AI SDXL
-    payload = {
-        "prompt": f"{image_prompt}, high resolution car photography, clean background, 8k",
-        "model": "stability-ai-sdxl-900", 
-        "n": 1,
-        "size": "1024x1024",
-        "response_format": "b64_json" # Отримуємо картинку прямо в коді
-    }
+    # Pollinations повертає відразу готовий файл зображення у відповідь на GET-запит
+    endpoint = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1024&height=1024&nologo=true"
     
-    response = requests.post(endpoint, headers=headers, json=payload)
-    res_json = response.json()
+    print("Запит до Pollinations.ai...")
+    response = requests.get(endpoint)
     
     if response.status_code != 200:
-        # Якщо модель не знайдена або ліміт — виводимо реальну причину
-        raise Exception(f"Помилка генерації фото: {res_json}")
-
-    try:
-        # Пріоритет 1: Base64 (найчастіший формат на GitHub для SDXL)
-        if 'data' in res_json and 'b64_json' in res_json['data'][0]:
-            return base64.b64decode(res_json['data'][0]['b64_json'])
-            
-        # Пріоритет 2: URL (якщо раптом сервер переключився на посилання)
-        elif 'data' in res_json and 'url' in res_json['data'][0]:
-            return requests.get(res_json['data'][0]['url']).content
-            
-        else:
-            raise KeyError(f"Структура відповіді не містить картинку: {res_json.keys()}")
-            
-    except Exception as e:
-        print(f"Помилка обробки даних зображення: {e}")
-        raise e
+        raise Exception(f"Помилка генерації картинки: {response.status_code}")
+        
+    return response.content
