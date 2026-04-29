@@ -1,47 +1,48 @@
-#// Responsibility: Запити до GitHub Models для генерації тексту (GPT-4o) та зображення (Flux/SDXL).
+# Responsibility: Логіка запитів до ШІ-моделей. Підтримка форматів URL та Base64.
 
 import os
 import requests
 import json
-import time
-
-def get_car_brainstorm(theme_data, history):
-    token = os.getenv("GH_MODELS_TOKEN")
-    endpoint = "https://models.inference.ai.azure.com/chat/completions"
-    
-    excluded = ", ".join([item['model'] for item in history[-20:]]) # Останні 20, щоб не перевантажувати промпт
-    
-    system_msg = "Ти — авто-експерт Turbo Shadow. Відповідь ТІЛЬКИ в JSON: {'model': '...', 'specs': {'engine': '...', 'hp': '...', 'top_speed': '...'}, 'image_prompt': '...'}"
-    user_msg = f"Тема: {theme_data['series']}. {theme_data['ai_instruction']}. НЕ ОБИРАЙ: {excluded}. Модель до 30 симв."
-
-    headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
-    
-    # 1. Текст
-    response = requests.post(endpoint, headers=headers, json={
-        "messages": [{"role": "system", "content": system_msg}, {"role": "user", "content": user_msg}],
-        "model": "gpt-4o-mini",
-        "temperature": 0.9
-    })
-    
-    # Очистка відповіді від можливих markdown-тегів
-    raw_res = response.json()['choices'][0]['message']['content'].replace('```json', '').replace('```', '').strip()
-    return json.loads(raw_res)
+import base64
 
 def generate_image(image_prompt):
     token = os.getenv("GH_MODELS_TOKEN")
-    # Використовуємо FLUX або SDXL для чистого фото без міток
     endpoint = "https://models.inference.ai.azure.com/images/generations" 
     
-    headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
-    
-    payload = {
-        "prompt": f"{image_prompt}, professional car photography, high resolution, no text, no watermarks, realistic lighting",
-        "model": "flux-pro", # Або інша доступна модель у GitHub Models
-        "n": 1,
-        "size": "1024x1024"
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json"
     }
     
-    # УВАГА: Тут може знадобитися адаптація під конкретний API GitHub Models (вони іноді міняють endpoint)
+    # Використовуємо FLUX-pro або SDXL. Вони стабільні.
+    payload = {
+        "prompt": f"{image_prompt}, high resolution car photography, professional lighting, 8k",
+        "model": "black-forest-labs-flux-1-pro", # Переконайся, що ця модель доступна в Marketplace
+        "n": 1,
+        "size": "1024x1024",
+        "response_format": "b64_json" # Явно просимо Base64, це надійніше для GitHub
+    }
+    
     response = requests.post(endpoint, headers=headers, json=payload)
-    img_url = response.json()['data'][0]['url']
-    return requests.get(img_url).content
+    res_json = response.json()
+    
+    if response.status_code != 200:
+        raise Exception(f"Помилка API: {res_json}")
+
+    try:
+        # Перевіряємо, чи прийшов Base64 (стандарт для FLUX/SDXL на GitHub)
+        if 'data' in res_json and 'b64_json' in res_json['data'][0]:
+            img_b64 = res_json['data'][0]['b64_json']
+            return base64.b64decode(img_b64)
+            
+        # Якщо все ж таки прийшов URL (як у DALL-E)
+        elif 'data' in res_json and 'url' in res_json['data'][0]:
+            img_url = res_json['data'][0]['url']
+            return requests.get(img_url).content
+            
+        else:
+            raise KeyError(f"Невідомий формат відповіді: {list(res_json.keys())}")
+            
+    except Exception as e:
+        print(f"Критична помилка обробки зображення: {res_json}")
+        raise e
