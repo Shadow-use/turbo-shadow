@@ -34,5 +34,17 @@
     "series": "Hyper Speed",
     "id": 3,
     "date": "2026-04-30"
+  },
+  {
+    "model": "Triton Hypernova",
+    "specs": {
+      "engine": "V8 Twin-Turbo",
+      "hp": 1200,
+      "top_speed": 420
+    },
+    "image_prompt": "A Triton Hypernova hypercar parked on a salt flat, showcasing its sleek and glossy body with carbon fiber accents. The car is captured in motion with a dynamic blur effect, suggesting extreme high speed. The background features a modern autobahn, under a bright blue sky, with the sun reflecting off the car's polished surface. The scene is rendered in stunning 8k quality.",
+    "series": "Hyper Speed",
+    "id": 4,
+    "date": "2026-04-30"
   }
 ]
