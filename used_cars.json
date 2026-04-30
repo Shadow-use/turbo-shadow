@@ -70,5 +70,17 @@
     "series": "Hyper Speed",
     "id": 6,
     "date": "2026-04-30"
+  },
+  {
+    "model": "Bugatti Chiron Super Sport",
+    "specs": {
+      "engine": "8.0L Quad-Turbo W16",
+      "hp": 1600,
+      "top_speed": 490
+    },
+    "image_prompt": "A Bugatti Chiron Super Sport racing through a volcanic landscape at dusk. The car is captured from a low angle, showcasing its aggressive stance and carbon fiber texture. The lighting is harsh and cinematic, emphasizing the car's curves and contours, while radial motion blur dynamically conveys its immense speed. Glowing brake discs add to the intensity of the scene, with molten rock and smoke in the background hinting at the power of nature being outpaced by engineering excellence.",
+    "series": "Hyper Speed",
+    "id": 7,
+    "date": "2026-04-30"
   }
 ]
