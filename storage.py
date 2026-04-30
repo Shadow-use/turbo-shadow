@@ -1,5 +1,4 @@
 #// Responsibility: Керування базою даних використаних авто та зчитування налаштувань дня.
-
 import json
 import os
 import datetime
@@ -22,20 +21,16 @@ def load_history():
         return json.load(f)
 
 def save_to_history(car_data):
-    """Додає нове авто в історію та присвоює йому порядковий номер."""
+    """Додає нове авто в історію (ID вже згенеровано в main.py)."""
     history = load_history()
     
-    # Визначаємо новий ID (номер фантика)
-    new_id = len(history) + 1
-    car_data['id'] = new_id
     car_data['date'] = datetime.datetime.now().strftime('%Y-%m-%d')
-    
     history.append(car_data)
     
     with open(HISTORY_FILE, 'w', encoding='utf-8') as f:
         json.dump(history, f, ensure_ascii=False, indent=2)
     
-    return new_id
+    return car_data['id']
 
 def is_duplicate(model_name):
     """Перевіряє, чи була така машина раніше."""

@@ -1,5 +1,4 @@
-# Responsibility: Генерація фінального макета фантика Turbo Shadow, склеювання фото з логотипом, таблицею ТТХ та номером.
-
+#// Responsibility: Генерація фінального макета фантика Turbo Shadow, склеювання фото з логотипом, таблицею ТТХ та номером.
 import os
 import io
 import datetime
@@ -24,7 +23,7 @@ def generate_card(car_data, image_bytes):
         canvas.paste(bg_img, (0, 0))
     else:
         # Fallback на темний фон, якщо файлу немає
-        canvas.paste((30, 30, 30, 255), (0, 0, 1080, 1350))
+        canvas.paste((30, 30, 30, 255), (0, 0, 1080, 1230))
 
     # 2. ШАР 2: Фото авто від ШІ
     car_img = Image.open(io.BytesIO(image_bytes)).convert("RGBA")

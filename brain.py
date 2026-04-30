@@ -1,10 +1,10 @@
-# Responsibility: Логіка ШІ. Вибір авто (GitHub Models) та генерація фото (Pollinations.ai через офіційний API).
-
+#// Responsibility: Логіка ШІ. Вибір авто (GitHub Models) та генерація фото (Pollinations.ai через офіційний API).
 import os
 import requests
 import json
 import urllib.parse
 import time
+import random
 
 def get_car_brainstorm(theme_data, history):
     """Вибирає нову машину за допомогою gpt-4o-mini."""
@@ -50,16 +50,18 @@ def generate_image(image_prompt):
     if not api_key:
         raise Exception("Не знайдено POLLINATIONS_API_KEY! Додай його в Secrets.")
 
+    seed = random.randint(1, 100000)
     full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k"
     encoded_prompt = urllib.parse.quote(full_prompt)
-    endpoint = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1024&height=1024&nologo=true"
     
-    # Головна магія: передаємо твій ключ, щоб сервер знав, що ти не анонімний спамер
+    # Виправлено: розмір 1000x700, щоб авто не сплющувалось, і додано seed проти кешу
+    endpoint = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1000&height=700&nologo=true&seed={seed}"
+    
     headers = {
         "Authorization": f"Bearer {api_key}"
     }
 
-    print("Запит до Pollinations.ai (через API-ключ)...")
+    print(f"Запит до Pollinations.ai (API + Seed: {seed})...")
     
     for attempt in range(3):
         response = requests.get(endpoint, headers=headers)
