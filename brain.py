@@ -1,9 +1,10 @@
-# Responsibility: Логіка ШІ. Вибір авто (GitHub Models) та генерація фото (Together AI - FLUX.1).
+# Responsibility: Логіка ШІ. Вибір авто (GitHub Models) та генерація фото (Pollinations.ai через офіційний API).
 
 import os
 import requests
 import json
-import base64
+import urllib.parse
+import time
 
 def get_car_brainstorm(theme_data, history):
     """Вибирає нову машину за допомогою gpt-4o-mini."""
@@ -44,33 +45,29 @@ def get_car_brainstorm(theme_data, history):
     return json.loads(clean_json)
 
 def generate_image(image_prompt):
-    """Генерує зображення через Together AI (модель FLUX.1-schnell)."""
-    api_key = os.getenv("TOGETHER_API_KEY")
+    """Генерує зображення через Pollinations.ai з використанням офіційного ключа."""
+    api_key = os.getenv("POLLINATIONS_API_KEY")
     if not api_key:
-        raise Exception("Не знайдено TOGETHER_API_KEY! Перевір Secrets.")
+        raise Exception("Не знайдено POLLINATIONS_API_KEY! Додай його в Secrets.")
 
-    endpoint = "https://api.together.xyz/v1/images/generations"
-    headers = {
-        "Authorization": f"Bearer {api_key}",
-        "Content-Type": "application/json"
-    }
+    full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k"
+    encoded_prompt = urllib.parse.quote(full_prompt)
+    endpoint = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1024&height=1024&nologo=true"
     
-    payload = {
-        "model": "black-forest-labs/FLUX.1-schnell-Free",
-        "prompt": f"{image_prompt}, high resolution car photography, professional lighting, 8k",
-        "width": 1024,
-        "height": 1024,
-        "steps": 4,
-        "n": 1,
-        "response_format": "b64_json"
+    # Головна магія: передаємо твій ключ, щоб сервер знав, що ти не анонімний спамер
+    headers = {
+        "Authorization": f"Bearer {api_key}"
     }
 
-    print("Запит до Together AI (FLUX.1-schnell)...")
-    response = requests.post(endpoint, headers=headers, json=payload)
-
-    if response.status_code != 200:
-        raise Exception(f"Помилка Together AI: {response.status_code} - {response.text}")
-
-    # Together повертає картинку закодовану в base64, декодуємо її в байти
-    img_b64 = response.json()["data"][0]["b64_json"]
-    return base64.b64decode(img_b64)
+    print("Запит до Pollinations.ai (через API-ключ)...")
+    
+    for attempt in range(3):
+        response = requests.get(endpoint, headers=headers)
+        
+        if response.status_code == 200:
+            return response.content
+        else:
+            print(f"Сервер зайнятий або помилка {response.status_code}. Чекаємо 5 секунд...")
+            time.sleep(5)
+            
+    raise Exception("Не вдалося отримати картинку. Можливо, закінчився денний ліміт (Pollen).")
