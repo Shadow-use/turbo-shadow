@@ -5,7 +5,7 @@ import io
 import datetime
 from PIL import Image, ImageDraw, ImageFont
 
-CANVAS_SIZE = (1080, 1150)
+CANVAS_SIZE = (1080, 1250)
 IMPACT_FONT_PATH = "impact.ttf"
 LOGO_PATH = "ts_logo.png"
 BACKGROUNDS_DIR = "backgrounds"
@@ -36,13 +36,13 @@ def generate_card(car_data, image_bytes):
     # 3. ШАР 3: Логотип Turbo Shadow
     logo_img = Image.open(LOGO_PATH).convert("RGBA")
     
-    # Зменшуємо логотип (900 пікселів у ширину, висота підлаштується пропорційно)
-    target_width = 90
+    # Зменшуємо логотип (90 пікселів у ширину, висота підлаштується пропорційно)
+    target_width = 200
     target_height = int(logo_img.height * (target_width / logo_img.width))
     logo_img = logo_img.resize((target_width, target_height))
     
     # Координати: зміщуємо правіше і вище
-    canvas.paste(logo_img, (10, 10), logo_img)
+    canvas.paste(logo_img, (20, 20), logo_img)
 
     # 4. ШАР 4: Текст (IMPACT) з чорною облямівкою
     font = ImageFont.truetype(IMPACT_FONT_PATH, 50)
