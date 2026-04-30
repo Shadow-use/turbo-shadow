@@ -58,5 +58,17 @@
     "series": "Hyper Speed",
     "id": 5,
     "date": "2026-04-30"
+  },
+  {
+    "model": "Hennessey Venom F5",
+    "specs": {
+      "engine": "6.6L Twin-Turbo V8",
+      "hp": 1817,
+      "top_speed": "484 km/h"
+    },
+    "image_prompt": "A Hennessey Venom F5 speeding down a desolate abandoned airfield at dusk, captured from a low angle, showcasing a dynamic 3/4 view. The scene is illuminated with harsh cinematic lighting, emphasizing the car's aggressive lines and carbon fiber texture. Radial motion blur effects on the wheels convey a sense of insane speed, while the background is a blur of fading runway markings and ghostly hangars. Reflections gleam on the sleek bodywork, and the brakes glow red-hot, adding to the intense atmosphere of this top-tier automotive shoot.",
+    "series": "Hyper Speed",
+    "id": 6,
+    "date": "2026-04-30"
   }
 ]
