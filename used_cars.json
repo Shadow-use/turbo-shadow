@@ -22,5 +22,17 @@
     "series": "Garage Finds",
     "id": 2,
     "date": "2026-04-29"
+  },
+  {
+    "model": "Apex Hyperion",
+    "specs": {
+      "engine": "4.0L V8 Twin-Turbo",
+      "hp": 1200,
+      "top_speed": "420 km/h"
+    },
+    "image_prompt": "Apex Hyperion hypercar on a salt flat, showcasing its sleek, glossy body with carbon fiber details. The car is captured in motion with a strong motion blur effect, emphasizing high speed. The landscape is expansive, with a clear blue sky and the reflection of the car on the shiny salt surface, all in stunning 8k quality.",
+    "series": "Hyper Speed",
+    "id": 3,
+    "date": "2026-04-30"
   }
 ]
