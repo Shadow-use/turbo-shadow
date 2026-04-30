@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "model": "Bugatti Chiron Super Sport",
+    "specs": {
+      "engine": "8.0L quad-turbocharged W16",
+      "hp": 1578,
+      "top_speed": 490
+    },
+    "image_prompt": "A high-speed tracking shot of a Bugatti Chiron Super Sport racing across a futuristic, elevated highway that spirals into the clouds, surrounded by a dazzling city skyline of neon-lit skyscrapers and flying vehicles. The car is depicted in an aggressive angle, showcasing its sleek lines and aerodynamic design, complete with a glossy finish reflecting the vibrant lights of the city. The motion blur effect emphasizes the intense speed, with spinning wheels and glowing brake discs visible. The background is a blur of dynamic colors, while the road below is a mix of shimmering asphalt and illuminated pathways, highlighting the car's incredible performance in this high-tech atmosphere. 8k resolution, photorealistic.",
+    "series": "Hyper Speed",
+    "id": 1,
+    "date": "2026-04-30"
+  }
+]
