@@ -46,5 +46,17 @@
     "series": "Hyper Speed",
     "id": 4,
     "date": "2026-04-30"
+  },
+  {
+    "model": "Koenigsegg Jesko Absolut",
+    "specs": {
+      "engine": "5.0L V8 twin-turbo",
+      "hp": 1600,
+      "top_speed": "482 km/h"
+    },
+    "image_prompt": "A Koenigsegg Jesko Absolut speeding down a deserted military airstrip at dusk, captured from a low angle to emphasize its aggressive stance. The cinematic lighting casts dramatic shadows, while radial motion blur shows the wheels spinning at breakneck speed and the background is a blur of concrete and distant hangars. The carbon fiber texture glistens in the fading light, with reflections dancing on the sleek body, and the brake discs glowing red from intense heat. The scene feels like a high-octane moment from a top-tier racing simulation.",
+    "series": "Hyper Speed",
+    "id": 5,
+    "date": "2026-04-30"
   }
 ]
