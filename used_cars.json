@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   {
     "model": "Plymouth Barracuda 1970",
@@ -84,3 +85,6 @@
     "date": "2026-04-30"
   }
 ]
+=======
+[]
+>>>>>>> 123cc8d (Switch to official Pollinations API Key)
