@@ -10,5 +10,17 @@
     "series": "Hyper Speed",
     "id": 1,
     "date": "2026-04-30"
+  },
+  {
+    "model": "Ford Bronco Raptor",
+    "specs": {
+      "engine": "3.0L EcoBoost V6",
+      "hp": 418,
+      "top_speed": "120 mph"
+    },
+    "image_prompt": "A Ford Bronco Raptor conquering a treacherous landscape in a stormy setting. Picture a deep, muddy river crossing, with dark storm clouds swirling overhead, heavy rain pouring down. The Bronco Raptor splashes through the rushing water, sending mud and water flying in all directions, with chunks of earth being tossed up from beneath its massive tires. The scene is filled with dynamic elements of chaos: droplets flying through the air, muddy splatters on the vehicle's body, and swirling dust clouds mixing with rain. The photograph is styled in action off-road photography, captured in a wide-angle perspective (16-24mm) to emphasize the sheer power of the vehicle against the dramatic backdrop. The lighting is hyper-detailed and dramatic, illuminating the Bronco Raptor in a fierce display of strength and agility amidst nature's fury.",
+    "series": "Off-Road Beasts",
+    "id": 2,
+    "date": "2026-05-01"
   }
 ]
