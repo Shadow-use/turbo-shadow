@@ -22,5 +22,17 @@
     "series": "Off-Road Beasts",
     "id": 2,
     "date": "2026-05-01"
+  },
+  {
+    "model": "Shadow Vortex 777",
+    "specs": {
+      "engine": "Quantum Plasma Engine",
+      "hp": 1200,
+      "top_speed": "600 km/h"
+    },
+    "image_prompt": "A futuristic concept car, the Shadow Vortex 777, set in a neon-lit cyberpunk megacity featuring towering skyscrapers and floating digital billboards. The car is constructed from a liquid metal alloy with transparent panels showing the intricate inner workings. It has no traditional wheels, instead using a state-of-the-art anti-gravity drive system, allowing it to hover effortlessly above the ground. Glowing LED lines accentuate its sleek design, creating a mesmerizing light show. The environment is drenched in cinematic lighting, highlighting the car's sharp angles and aerodynamic curves. Rendered in Unreal Engine 5, 8k resolution, this masterpiece captures the essence of a sci-fi vehicle in a vibrant, futuristic cityscape.",
+    "series": "Shadow Concepts",
+    "id": 3,
+    "date": "2026-05-02"
   }
 ]
