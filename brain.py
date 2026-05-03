@@ -1,4 +1,4 @@
-// Responsibility: Логіка ШІ. Вибір авто (Gemini 3.1 Flash) та генерація фото (Imagen 4.0 Ultra).
+# // Responsibility: Логіка ШІ. Вибір авто (Gemini 3.1 Flash) та генерація фото (Imagen 4.0 Ultra).
 import os
 import json
 import random
