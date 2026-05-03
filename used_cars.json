@@ -34,5 +34,17 @@
     "series": "Shadow Concepts",
     "id": 3,
     "date": "2026-05-02"
+  },
+  {
+    "model": "Ukrainian Spirit X",
+    "specs": {
+      "engine": "5.0L V8 Twin-Turbo",
+      "hp": 800,
+      "top_speed": "350 km/h"
+    },
+    "image_prompt": "A cinematic automotive photography masterpiece showcasing the Ukrainian Spirit X, a custom supercar with aggressive lines and a forged carbon body. The car features subtle Ukrainian motifs like refined blue and yellow neon underglow and aerodynamic elements that hint at the shape of the trident. The setting is a futuristic Kyiv bathed in warm golden hour sunlight, with sunlight rays illuminating the car's curves. The background features modern skyscrapers and historical architecture, encapsulating the spirit of freedom and strength. The overall mood conveys power, elegance, and a sense of home, captured in 8k photorealistic detail.",
+    "series": "UA Custom Concepts",
+    "id": 4,
+    "date": "2026-05-03"
   }
 ]
