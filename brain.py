@@ -1,25 +1,22 @@
-# // Responsibility: Логіка ШІ. Вибір авто (Gemini 3.1 Flash) та генерація фото (Imagen 4.0 Ultra).
+# Responsibility: Логіка ШІ. Вибір авто (Gemini 3 Flash) та генерація фото (Imagen 3).
 import os
 import json
-import random
 import datetime
-import time
-import google.generativeai as genai
-from PIL import Image
-import io
+from google import genai
+from google.genai import types
 
-# Налаштування нового API
-API_KEY = os.getenv("GOOGLE_AI_KEY")
-genai.configure(api_key=API_KEY)
+# Ініціалізація клієнта нового покоління Google GenAI
+client = genai.Client(api_key=os.getenv("GOOGLE_AI_KEY"))
 
 def get_holiday_addon():
-    """Безпечно зчитує святковий промпт з файлу."""
+    """Безпечно зчитує святковий промпт з файлу holidays.json."""
     holiday_file = "holidays.json"
     if not os.path.exists(holiday_file):
         return ""
     try:
         with open(holiday_file, "r", encoding="utf-8") as f:
             holidays = json.load(f)
+        # Отримуємо сьогоднішню дату у форматі ММ-ДД
         today_str = datetime.datetime.now().strftime("%m-%d")
         return holidays.get(today_str, "")
     except Exception as e:
@@ -27,56 +24,55 @@ def get_holiday_addon():
         return ""
 
 def get_car_brainstorm(theme_data, history):
-    """Вибирає нову машину за допомогою Gemini 3.1 Flash."""
-    # Використовуємо одну з топових моделей твого списку
-    model = genai.GenerativeModel('models/gemini-3.1-flash-preview')
-    
+    """Вибирає нову машину за допомогою Gemini 3 Flash."""
+    # Отримуємо список останніх 30 моделей, щоб не повторюватись
     excluded = ", ".join([item['model'] for item in history[-30:]]) 
+    
+    # Перевірка на свята
     holiday_addon = get_holiday_addon()
     holiday_text = f" ОБОВ'ЯЗКОВО додай елементи стилю: {holiday_addon}." if holiday_addon else ""
-
-    system_msg = (
-        "Ти — авто-експерт Turbo Shadow. Твоя відповідь має бути строго в форматі JSON. "
-        "Поля: model (до 30 симв), specs (engine, hp, top_speed), image_prompt (детальний опис для фото)."
-    )
     
-    user_msg = (
+    prompt = (
+        f"Ти — авто-експерт Turbo Shadow. Твоя відповідь має бути строго в форматі JSON.\n"
+        f"Поля: model (до 30 симв), specs (engine, hp, top_speed), image_prompt (детальний опис для фото).\n"
         f"Тема серії: {theme_data['series']}. {theme_data['ai_instruction']}\n"
         f"НЕ ОБИРАЙ: [{excluded}]. Вигадай щось нове та круте.{holiday_text}"
     )
 
-    # Виклик Gemini замість requests
-    response = model.generate_content(f"{system_msg}\n\n{user_msg}")
+    # Використовуємо актуальну стабільну модель Gemini 3 Flash з вимогою JSON-відповіді
+    response = client.models.generate_content(
+        model='gemini-3-flash', 
+        config=types.GenerateContentConfig(response_mime_type='application/json'),
+        contents=prompt
+    )
     
-    # Очищення відповіді від маркдауну ```json ... ```
-    content = response.text
-    clean_json = content.replace('```json', '').replace('```', '').strip()
-    return json.loads(clean_json)
+    # Парсимо отриманий JSON
+    try:
+        return json.loads(response.text)
+    except Exception as e:
+        print(f"Помилка парсингу відповіді ШІ: {e}")
+        raise
 
 def generate_image(image_prompt):
-    """Генерує зображення через Imagen 4.0 Ultra."""
-    # Використовуємо найпотужнішу модель для графіки
-    image_model = genai.ImageGenerationModel("models/imagen-4.0-ultra-generate-001")
+    """Генерує зображення через Imagen 3 (1500x1050)."""
+    # Додаємо технічні параметри для кращої якості
+    full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k, photorealistic"
     
-    full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k, highly detailed"
+    print(f"Запит до Imagen (Google GenAI)...")
     
-    print(f"Запит до Imagen 4.0 Ultra...")
+    # Imagen викликається через той самий клієнт зі специфічним конфігом
+    response = client.models.generate_content(
+        model='imagen-3',
+        contents=full_prompt,
+        config=types.GenerateContentConfig(
+            # Вказуємо формат повернення - байти картинки
+            response_mime_type='image/png'
+        )
+    )
     
-    # Imagen повертає об'єкт зображення, який ми конвертуємо в байти для сумісності з твоїм main.py
-    for attempt in range(3):
-        try:
-            result = image_model.generate_images(
-                prompt=full_prompt,
-                number_of_images=1,
-                aspect_ratio="16:9", # Це дасть приблизно 1500+ по ширині
-                safety_filter_level="block_few"
-            )
-            # Конвертуємо зображення в байти (щоб main.py не помітив підміни)
-            img_byte_arr = io.BytesIO()
-            result[0]._image_bytes # Google SDK зберігає байти тут
-            return result[0]._image_bytes
-        except Exception as e:
-            print(f"Спроба {attempt+1} не вдалася: {e}. Чекаємо...")
-            time.sleep(5)
-            
-    raise Exception("Не вдалося отримати картинку від Imagen 4.0 Ultra.")
+    # Повертаємо байти зображення безпосередньо для подальшої обробки в painter.py
+    try:
+        return response.candidates[0].content.parts[0].inline_data.data
+    except Exception as e:
+        print(f"Критична помилка Imagen: {e}")
+        raise Exception("Не вдалося отримати дані зображення від Google API.")
