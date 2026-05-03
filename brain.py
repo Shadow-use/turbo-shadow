@@ -43,37 +43,35 @@ def get_car_brainstorm(theme_data, history):
     return json.loads(response.text)
 
 def generate_image(image_prompt):
-    """Етап 2: Генерація зображення через Imagen 4.0 з правильними налаштуваннями безпеки."""
+    """Етап 2: Генерація зображення через Imagen 4.0 з дозволеним aspect_ratio."""
     full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k, photorealistic"
     
     print(f"Запит до Imagen 4.0 (Model: imagen-4.0-generate-001)...")
     
-    # Використовуємо налаштування, які вимагає API 2026 року
+    # ВИПРАВЛЕНО: Використовуємо один із дозволених форматів: 4:3
     response_img = client.models.generate_images(
         model="imagen-4.0-generate-001",
         prompt=full_prompt,
         config=types.GenerateImagesConfig(
             number_of_images=1,
-            aspect_ratio="3:2",
+            aspect_ratio="4:3", 
             output_mime_type="image/png",
-            # ВИПРАВЛЕНО: Тільки цей рівень дозволений API для Imagen
             safety_filter_level="BLOCK_LOW_AND_ABOVE" 
         )
     )
     
     try:
-        # Витягуємо байти прямо з об'єкта, як у твоїй документації
         return response_img.generated_images[0].image_bytes
     except Exception as e:
         print(f"Критична помилка Imagen: {e}")
-        # Якщо 4.0 заблокує промпт, спробуємо 3.0 як останній шанс
+        # Fallback на Imagen 3.0 з тим самим форматом
         print("Fallback: Спроба через Imagen 3.0...")
         resp_fallback = client.models.generate_images(
             model="imagen-3.0-generate-001",
             prompt=full_prompt,
             config=types.GenerateImagesConfig(
                 number_of_images=1, 
-                aspect_ratio="3:2",
+                aspect_ratio="4:3",
                 safety_filter_level="BLOCK_LOW_AND_ABOVE"
             )
         )
