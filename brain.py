@@ -1,4 +1,4 @@
-# Responsibility: Логіка ШІ. Вибір авто (Gemini 2.5 Flash) та генерація фото (Imagen 4.0 Ultra).
+# Responsibility: Логіка ШІ. Вибір авто (Gemini 2.5 Flash) та генерація фото (Imagen 4.0).
 import os
 import json
 import datetime
@@ -19,7 +19,7 @@ def get_holiday_addon():
     except: return ""
 
 def get_car_brainstorm(theme_data, history):
-    """Вибирає нову машину за допомогою Gemini 2.5 Flash (найстабільніша у списку)."""
+    """Вибирає нову машину за допомогою Gemini 2.5 Flash."""
     excluded = ", ".join([item['model'] for item in history[-30:]]) 
     holiday_addon = get_holiday_addon()
     holiday_text = f" ОБОВ'ЯЗКОВО додай елементи стилю: {holiday_addon}." if holiday_addon else ""
@@ -31,7 +31,7 @@ def get_car_brainstorm(theme_data, history):
         f"НЕ ОБИРАЙ: [{excluded}]. Вигадай щось нове та круте.{holiday_text}"
     )
 
-    # Використовуємо точну назву з твого списку
+    # Для тексту використовуємо generate_content
     response = client.models.generate_content(
         model='gemini-2.5-flash', 
         config=types.GenerateContentConfig(response_mime_type='application/json'),
@@ -41,25 +41,35 @@ def get_car_brainstorm(theme_data, history):
     return json.loads(response.text)
 
 def generate_image(image_prompt):
-    """Генерує зображення через Imagen 4.0 (найпотужніша у списку)."""
+    """Генерує зображення через спеціалізований метод Imagen 4.0."""
     full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k, photorealistic"
     
-    print(f"Запит до Imagen 4.0 (Google GenAI)...")
+    print(f"Запит до Imagen 4.0 (Метод: generate_image)...")
     
-    # Використовуємо точну назву моделі з твого curl-запиту
-    response = client.models.generate_content(
+    # ПРАВИЛЬНИЙ МЕТОД ДЛЯ КАРТИНОК:
+    response = client.models.generate_image(
         model='imagen-4.0-generate-001',
-        contents=full_prompt,
-        config=types.GenerateContentConfig(response_mime_type='image/png')
+        prompt=full_prompt,
+        config=types.GenerateImageConfig(
+            number_of_images=1,
+            include_rai_reason=True,
+            output_mime_type='image/png'
+        )
     )
     
+    # Витягуємо байти згенерованого зображення
     try:
-        return response.candidates[0].content.parts[0].inline_data.data
+        # У новому SDK картинка лежить у response.generated_images[0].image.image_bytes
+        # або безпосередньо в inline_data залежно від версії
+        image_data = response.generated_images[0].image.image_bytes
+        return image_data
     except Exception as e:
         print(f"Помилка Imagen 4.0: {e}")
-        # Спроба використати Imagen 3 як запасний варіант, якщо 4.0 має обмеження квоти
-        return client.models.generate_content(
-            model='imagen-3.0-generate-001', # Якщо вона є у списку (зазвичай є)
-            contents=full_prompt,
-            config=types.GenerateContentConfig(response_mime_type='image/png')
-        ).candidates[0].content.parts[0].inline_data.data
+        # Запасний варіант для Imagen 3.0, якщо 4.0 відмовить
+        print("Спроба відкату до Imagen 3.0...")
+        resp_fallback = client.models.generate_image(
+            model='imagen-3.0-generate-001',
+            prompt=full_prompt,
+            config=types.GenerateImageConfig(number_of_images=1)
+        )
+        return resp_fallback.generated_images[0].image.image_bytes
