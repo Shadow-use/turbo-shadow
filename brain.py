@@ -31,7 +31,6 @@ def get_car_brainstorm(theme_data, history):
         f"НЕ ОБИРАЙ: [{excluded}]. Вигадай щось нове та круте.{holiday_text}"
     )
 
-    # Використовуємо JSON-режим, як у твоєму прикладі
     response = client.models.generate_content(
         model='gemini-2.5-flash', 
         config=types.GenerateContentConfig(
@@ -41,43 +40,41 @@ def get_car_brainstorm(theme_data, history):
         contents=prompt
     )
     
-    # Витягуємо чистий об'єкт через .text або .parsed
-    try:
-        return json.loads(response.text)
-    except:
-        # Fallback якщо модель повернула текст з markdown-обгорткою
-        clean_json = response.text.replace('```json', '').replace('```', '').strip()
-        return json.loads(clean_json)
+    return json.loads(response.text)
 
 def generate_image(image_prompt):
-    """Етап 2: Генерація зображення через Imagen 4.0."""
+    """Етап 2: Генерація зображення через Imagen 4.0 з правильними налаштуваннями безпеки."""
     full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k, photorealistic"
     
     print(f"Запит до Imagen 4.0 (Model: imagen-4.0-generate-001)...")
     
-    # Використовуємо спеціалізований метод generate_images
+    # Використовуємо налаштування, які вимагає API 2026 року
     response_img = client.models.generate_images(
         model="imagen-4.0-generate-001",
         prompt=full_prompt,
         config=types.GenerateImagesConfig(
             number_of_images=1,
-            aspect_ratio="3:2", # Це дасть нам ідеальний формат під фантик
+            aspect_ratio="3:2",
             output_mime_type="image/png",
-            # Додаємо безпеку, щоб не блокувало "кіберпанк"
-            safety_filter_level="BLOCK_ONLY_HIGH" 
+            # ВИПРАВЛЕНО: Тільки цей рівень дозволений API для Imagen
+            safety_filter_level="BLOCK_LOW_AND_ABOVE" 
         )
     )
     
-    # Отримуємо сирі байти для Pillow
     try:
+        # Витягуємо байти прямо з об'єкта, як у твоїй документації
         return response_img.generated_images[0].image_bytes
     except Exception as e:
         print(f"Критична помилка Imagen: {e}")
-        # Якщо 4.0 недоступна, пробуємо Imagen 3.0 (авто-відкат)
+        # Якщо 4.0 заблокує промпт, спробуємо 3.0 як останній шанс
         print("Fallback: Спроба через Imagen 3.0...")
         resp_fallback = client.models.generate_images(
             model="imagen-3.0-generate-001",
             prompt=full_prompt,
-            config=types.GenerateImagesConfig(number_of_images=1, aspect_ratio="3:2")
+            config=types.GenerateImagesConfig(
+                number_of_images=1, 
+                aspect_ratio="3:2",
+                safety_filter_level="BLOCK_LOW_AND_ABOVE"
+            )
         )
         return resp_fallback.generated_images[0].image_bytes
