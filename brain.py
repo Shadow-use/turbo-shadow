@@ -35,10 +35,12 @@ def get_car_brainstorm(theme_data, history):
     
     holiday_addon = get_holiday_addon()
     
+    # Виносимо логіку в окрему змінну, щоб уникнути помилки синтаксису f-string у Python 3.9
+    holiday_text = f" ОБОВ'ЯЗКОВО додай елементи стилю: {holiday_addon}." if holiday_addon else ""
+    
     user_msg = (
         f"Тема серії: {theme_data['series']}. {theme_data['ai_instruction']}\n"
-        f"НЕ ОБИРАЙ: [{excluded}]. Вигадай щось нове та круте. "
-        f"{'ОБОВ\\'ЯЗКОВО додай елементи стилю: ' + holiday_addon if holiday_addon else ''}"
+        f"НЕ ОБИРАЙ: [{excluded}]. Вигадай щось нове та круте.{holiday_text}"
     )
 
     headers = {
