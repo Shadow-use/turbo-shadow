@@ -2,8 +2,8 @@ name: Turbo Shadow Production
 
 on:
   schedule:
-    - cron: '50 4 * * *' # Запуск щодня о 07:50 (UTC+2/3)
-  workflow_dispatch:      # Кнопка для ручного запуску
+    - cron: '50 4 * * *' # Автозапуск щодня о 07:50 (UTC+2/3)
+  workflow_dispatch:      # Кнопка для ручного запуску з вибором режиму
     inputs:
       mode:
         description: 'Режим (test: без запису в базу, prod: основа)'
@@ -27,16 +27,20 @@ jobs:
           python-version: '3.9'
 
       - name: Install dependencies
-        run: pip install requests Pillow
+        run: pip install requests Pillow google-generativeai
 
       - name: Run Orchestrator
         env:
-          GH_MODELS_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
-          POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
+          # Головний ключ для нового "двигуна" (Gemini + Imagen)
+          GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
+          
+          # Налаштування Telegram
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_CHAT_ID_TEST: ${{ secrets.TELEGRAM_CHAT_ID_TEST }}
-          APP_MODE: ${{ inputs.mode || 'prod' }} # Якщо по крону — буде prod
+          
+          # Визначаємо режим: якщо запуск ручний — беремо з input, якщо по крону — ставимо 'prod'
+          APP_MODE: ${{ inputs.mode || 'prod' }}
         run: python main.py
 
       - name: Commit & Push History
@@ -44,5 +48,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "Shadow-Bot-Automator"
           git add used_cars.json
-          git commit -m "Automated update: Added new fan-card to collection" || echo "No changes to commit"
+          git commit -m "Automated update: Added new fan-card to collection (AI Upgrade)" || echo "No changes to commit"
           git push

@@ -1,14 +1,19 @@
-#// Responsibility: Логіка ШІ. Вибір авто (GitHub Models) та генерація фото (Pollinations.ai через офіційний API).
+// Responsibility: Логіка ШІ. Вибір авто (Gemini 3.1 Flash) та генерація фото (Imagen 4.0 Ultra).
 import os
-import requests
 import json
-import urllib.parse
-import time
 import random
 import datetime
+import time
+import google.generativeai as genai
+from PIL import Image
+import io
+
+# Налаштування нового API
+API_KEY = os.getenv("GOOGLE_AI_KEY")
+genai.configure(api_key=API_KEY)
 
 def get_holiday_addon():
-    """Безпечно зчитує святковий промпт з файлу, якщо він існує та підходить по даті."""
+    """Безпечно зчитує святковий промпт з файлу."""
     holiday_file = "holidays.json"
     if not os.path.exists(holiday_file):
         return ""
@@ -22,74 +27,56 @@ def get_holiday_addon():
         return ""
 
 def get_car_brainstorm(theme_data, history):
-    """Вибирає нову машину за допомогою gpt-4o-mini."""
-    token = os.getenv("GH_MODELS_TOKEN")
-    endpoint = "https://models.inference.ai.azure.com/chat/completions"
+    """Вибирає нову машину за допомогою Gemini 3.1 Flash."""
+    # Використовуємо одну з топових моделей твого списку
+    model = genai.GenerativeModel('models/gemini-3.1-flash-preview')
     
     excluded = ", ".join([item['model'] for item in history[-30:]]) 
-    
+    holiday_addon = get_holiday_addon()
+    holiday_text = f" ОБОВ'ЯЗКОВО додай елементи стилю: {holiday_addon}." if holiday_addon else ""
+
     system_msg = (
         "Ти — авто-експерт Turbo Shadow. Твоя відповідь має бути строго в форматі JSON. "
         "Поля: model (до 30 симв), specs (engine, hp, top_speed), image_prompt (детальний опис для фото)."
     )
-    
-    holiday_addon = get_holiday_addon()
-    
-    # Виносимо логіку в окрему змінну, щоб уникнути помилки синтаксису f-string у Python 3.9
-    holiday_text = f" ОБОВ'ЯЗКОВО додай елементи стилю: {holiday_addon}." if holiday_addon else ""
     
     user_msg = (
         f"Тема серії: {theme_data['series']}. {theme_data['ai_instruction']}\n"
         f"НЕ ОБИРАЙ: [{excluded}]. Вигадай щось нове та круте.{holiday_text}"
     )
 
-    headers = {
-        "Authorization": f"Bearer {token}", 
-        "Content-Type": "application/json"
-    }
+    # Виклик Gemini замість requests
+    response = model.generate_content(f"{system_msg}\n\n{user_msg}")
     
-    response = requests.post(endpoint, headers=headers, json={
-        "messages": [
-            {"role": "system", "content": system_msg},
-            {"role": "user", "content": user_msg}
-        ],
-        "model": "gpt-4o-mini",
-        "temperature": 0.8
-    })
-    
-    if response.status_code != 200:
-        raise Exception(f"Помилка текстового API: {response.text}")
-
-    content = response.json()['choices'][0]['message']['content']
+    # Очищення відповіді від маркдауну ```json ... ```
+    content = response.text
     clean_json = content.replace('```json', '').replace('```', '').strip()
     return json.loads(clean_json)
 
 def generate_image(image_prompt):
-    """Генерує зображення через Pollinations.ai з використанням офіційного ключа."""
-    api_key = os.getenv("POLLINATIONS_API_KEY")
-    if not api_key:
-        raise Exception("Не знайдено POLLINATIONS_API_KEY! Додай його в Secrets.")
-
-    seed = random.randint(1, 100000)
-    full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k"
-    encoded_prompt = urllib.parse.quote(full_prompt)
+    """Генерує зображення через Imagen 4.0 Ultra."""
+    # Використовуємо найпотужнішу модель для графіки
+    image_model = genai.ImageGenerationModel("models/imagen-4.0-ultra-generate-001")
     
-    # ЗБІЛЬШЕНО ДО 1500x1050
-    endpoint = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1500&height=1050&nologo=true&seed={seed}"
+    full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k, highly detailed"
     
-    headers = {
-        "Authorization": f"Bearer {api_key}"
-    }
-
-    print(f"Запит до Pollinations.ai (API + Seed: {seed})...")
+    print(f"Запит до Imagen 4.0 Ultra...")
     
+    # Imagen повертає об'єкт зображення, який ми конвертуємо в байти для сумісності з твоїм main.py
     for attempt in range(3):
-        response = requests.get(endpoint, headers=headers)
-        
-        if response.status_code == 200:
-            return response.content
-        else:
-            print(f"Сервер зайнятий або помилка {response.status_code}. Чекаємо 5 секунд...")
+        try:
+            result = image_model.generate_images(
+                prompt=full_prompt,
+                number_of_images=1,
+                aspect_ratio="16:9", # Це дасть приблизно 1500+ по ширині
+                safety_filter_level="block_few"
+            )
+            # Конвертуємо зображення в байти (щоб main.py не помітив підміни)
+            img_byte_arr = io.BytesIO()
+            result[0]._image_bytes # Google SDK зберігає байти тут
+            return result[0]._image_bytes
+        except Exception as e:
+            print(f"Спроба {attempt+1} не вдалася: {e}. Чекаємо...")
             time.sleep(5)
             
-    raise Exception("Не вдалося отримати картинку. Можливо, закінчився денний ліміт (Pollen).")
+    raise Exception("Не вдалося отримати картинку від Imagen 4.0 Ultra.")
