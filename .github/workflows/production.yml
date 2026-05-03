@@ -4,6 +4,15 @@ on:
   schedule:
     - cron: '50 4 * * *' # Запуск щодня о 07:50 (UTC+2/3)
   workflow_dispatch:      # Кнопка для ручного запуску
+    inputs:
+      mode:
+        description: 'Режим (test: без запису в базу, prod: основа)'
+        required: true
+        default: 'test'
+        type: choice
+        options:
+          - test
+          - prod
 
 jobs:
   run_bot:
@@ -26,6 +35,8 @@ jobs:
           POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_CHAT_ID_TEST: ${{ secrets.TELEGRAM_CHAT_ID_TEST }}
+          APP_MODE: ${{ inputs.mode || 'prod' }} # Якщо по крону — буде prod
         run: python main.py
 
       - name: Commit & Push History

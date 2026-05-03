@@ -12,7 +12,6 @@
 
 ```
 .
-├── 1777472333203.png
 ├── README.md
 ├── backgrounds
 │   ├── friday.png
@@ -23,8 +22,8 @@
 │   ├── tuesday.png
 │   └── wednesday.png
 ├── brain.py
-├── check.py
 ├── impact.ttf
+├── list.md
 ├── main.py
 ├── painter.py
 ├── prompts
@@ -40,7 +39,7 @@
 ├── ts_logo.png
 └── used_cars.json
 
-3 directories, 25 files
+3 directories, 24 files
 ```
 
 ## 3. LOGIC

@@ -5,6 +5,21 @@ import json
 import urllib.parse
 import time
 import random
+import datetime
+
+def get_holiday_addon():
+    """Безпечно зчитує святковий промпт з файлу, якщо він існує та підходить по даті."""
+    holiday_file = "holidays.json"
+    if not os.path.exists(holiday_file):
+        return ""
+    try:
+        with open(holiday_file, "r", encoding="utf-8") as f:
+            holidays = json.load(f)
+        today_str = datetime.datetime.now().strftime("%m-%d")
+        return holidays.get(today_str, "")
+    except Exception as e:
+        print(f"Помилка зчитування {holiday_file}: {e}")
+        return ""
 
 def get_car_brainstorm(theme_data, history):
     """Вибирає нову машину за допомогою gpt-4o-mini."""
@@ -18,9 +33,12 @@ def get_car_brainstorm(theme_data, history):
         "Поля: model (до 30 симв), specs (engine, hp, top_speed), image_prompt (детальний опис для фото)."
     )
     
+    holiday_addon = get_holiday_addon()
+    
     user_msg = (
         f"Тема серії: {theme_data['series']}. {theme_data['ai_instruction']}\n"
-        f"НЕ ОБИРАЙ: [{excluded}]. Вигадай щось нове та круте."
+        f"НЕ ОБИРАЙ: [{excluded}]. Вигадай щось нове та круте. "
+        f"{'ОБОВ\\'ЯЗКОВО додай елементи стилю: ' + holiday_addon if holiday_addon else ''}"
     )
 
     headers = {
@@ -54,8 +72,8 @@ def generate_image(image_prompt):
     full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k"
     encoded_prompt = urllib.parse.quote(full_prompt)
     
-    # Виправлено: розмір 1000x700, щоб авто не сплющувалось, і додано seed проти кешу
-    endpoint = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1000&height=700&nologo=true&seed={seed}"
+    # ЗБІЛЬШЕНО ДО 1500x1050
+    endpoint = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1500&height=1050&nologo=true&seed={seed}"
     
     headers = {
         "Authorization": f"Bearer {api_key}"
