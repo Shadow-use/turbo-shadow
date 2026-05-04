@@ -67,7 +67,7 @@ def generate_image(image_prompt):
     response_img = client.models.generate_images(
         model="imagen-3.0-generate-001",
         prompt=full_prompt,
-        config=types.GenerateImageConfig(
+        config=types.GenerateImagesConfig(
             number_of_images=1,
             aspect_ratio="4:3",  # Один із 5 дозволених форматів
             output_mime_type="image/png",
