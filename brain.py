@@ -6,8 +6,11 @@ from google import genai
 from google.genai import types
 
 # Ініціалізація клієнта нового покоління Google GenAI
-# Ключ береться з секретів GitHub Actions
-client = genai.Client(api_key=os.getenv("GOOGLE_AI_KEY"))
+# Вказуємо v1alpha для доступу до моделей Imagen 3
+client = genai.Client(
+    api_key=os.getenv("GOOGLE_AI_KEY"),
+    http_options={'api_version': 'v1alpha'}
+)
 
 def get_holiday_addon():
     """Зчитує святкові промпти, якщо сьогодні особливий день."""
