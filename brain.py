@@ -38,7 +38,7 @@ def get_car_brainstorm(theme_data, history):
     
     prompt = (
         f"Ти — авто-експерт Turbo Shadow. Відповідь строго в JSON.\n"
-        f"Поля: model, specs, image_prompt.\n"
+        f"Поля: 'model', 'specs' (словник, ОБОВ'ЯЗКОВО з ключами: 'hp', 'engine', '0_100', 'top_speed'), 'image_prompt'.\n"
         f"Тема: {theme_data['series']}. {theme_data['ai_instruction']}\n"
         f"НЕ ОБИРАЙ: [{excluded}].{holiday_text}"
     )
