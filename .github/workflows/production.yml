@@ -2,45 +2,41 @@ name: Turbo Shadow Production
 
 on:
   schedule:
-    - cron: '50 4 * * *'
-  workflow_dispatch:
+    - cron: '50 4 * * *' # Запуск щодня о 07:50 (UTC+2/3)
+  workflow_dispatch:      # Кнопка для ручного запуску
     inputs:
       mode:
-        description: 'Режим (test або prod)'
+        description: 'Режим (test: без запису в базу, prod: основа)'
         required: true
         default: 'test'
         type: choice
-        options: [test, prod]
+        options:
+          - test
+          - prod
 
 jobs:
   run_bot:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-<<<<<<< HEAD
-        uses: actions/checkout@v4 # Оновлено до v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5 # Оновлено до v5
-=======
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
->>>>>>> main
         with:
-          python-version: '3.12' # Оновлено до Python 3.12
+          python-version: '3.9'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install requests Pillow
 
       - name: Run Orchestrator
         env:
-          GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
+          GH_MODELS_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
+          POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_CHAT_ID_TEST: ${{ secrets.TELEGRAM_CHAT_ID_TEST }}
-          APP_MODE: ${{ github.event.inputs.mode || 'prod' }}
+          APP_MODE: ${{ inputs.mode || 'prod' }} # Якщо по крону — буде prod
         run: python main.py
 
       - name: Commit & Push History
@@ -48,5 +44,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "Shadow-Bot-Automator"
           git add used_cars.json
-          git commit -m "Automated update" || echo "No changes"
+          git commit -m "Automated update: Added new fan-card to collection" || echo "No changes to commit"
           git push
