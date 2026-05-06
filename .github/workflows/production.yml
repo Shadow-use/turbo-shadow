@@ -37,7 +37,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_CHAT_ID_TEST: ${{ secrets.TELEGRAM_CHAT_ID_TEST }}
           APP_MODE: ${{ inputs.mode || 'prod' }} # Якщо по крону — буде prod
-        run: python main.py
+        run: pip install google-genai && python main.py
 
       - name: Commit & Push History
         run: |
