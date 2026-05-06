@@ -46,5 +46,17 @@
     "series": "UA Custom Concepts",
     "id": 4,
     "date": "2026-05-03"
+  },
+  {
+    "model": "Nissan Skyline GT-R R32",
+    "specs": {
+      "engine": "2.6L RB26DETT Inline-6",
+      "hp": 280,
+      "top_speed": 156
+    },
+    "image_prompt": "35mm film photography aesthetic, capturing a Nissan Skyline GT-R R32 parked in front of a retro diner, bathed in the neon glow of the 90s. The scene is set at twilight, with a vibrant pink and orange sky merging into a deep blue. Raindrops gently fall, creating reflections on the pavement. The diner has classic neon signage flickering, while palm trees sway softly in the background. A vintage jukebox is visible through the diner window, casting a warm light. The perspective is low from the ground, emphasizing the car's aggressive stance against the nostalgic backdrop of a bygone era.",
+    "series": "Легенди 90-х",
+    "id": 5,
+    "date": "2026-05-04"
   }
 ]
