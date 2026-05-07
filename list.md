@@ -1,8 +1,89 @@
 
+### 📂 FILE: ./brain.py
+```
+# Responsibility: Логіка ШІ (PAID PLAN). Діагностика та генерація.
+import os
+import json
+import datetime
+from google import genai
+from google.genai import types
+
+# Підстраховка: шукаємо ключ під різними можливими назвами у GitHub Secrets
+api_key = os.getenv("GOOGLE_AI_KEY") or os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+
+# Ініціалізація клієнта. Використовуємо v1alpha, де зазвичай знаходяться нові моделі Imagen.
+client = genai.Client(
+    api_key=api_key,
+    http_options={'api_version': 'v1alpha'}
+)
+
+def get_holiday_addon():
+    """Зчитує святкові промпти, якщо сьогодні особливий день."""
+    holiday_file = "holidays.json"
+    if not os.path.exists(holiday_file):
+        return ""
+    try:
+        with open(holiday_file, "r", encoding="utf-8") as f:
+            holidays = json.load(f)
+        today_str = datetime.datetime.now().strftime("%m-%d")
+        return holidays.get(today_str, "")
+    except Exception as e:
+        print(f"Помилка зчитування свят: {e}")
+        return ""
+
+def get_car_brainstorm(theme_data, history):
+    """
+    Етап 1: Вибір автомобіля через Gemini 2.5 Flash.
+    """
+    excluded = ", ".join([item['model'] for item in history[-30:]]) 
+    holiday_addon = get_holiday_addon()
+    holiday_text = f" ОБОВ'ЯЗКОВО додай елементи стилю: {holiday_addon}." if holiday_addon else ""
+    
+    prompt = (
+        f"Ти — авто-експерт Turbo Shadow. Відповідь строго в JSON.\n"
+        f"Поля: 'model', 'specs' (словник, ОБОВ'ЯЗКОВО з ключами: 'hp', 'engine', '0_100', 'top_speed'), 'image_prompt'.\n"
+        f"Тема: {theme_data['series']}. {theme_data['ai_instruction']}\n"
+        f"НЕ ОБИРАЙ: [{excluded}].{holiday_text}"
+    )
+
+    response = client.models.generate_content(
+        model='gemini-2.5-flash', 
+        config=types.GenerateContentConfig(
+            response_mime_type='application/json',
+            temperature=0.8
+        ),
+        contents=prompt
+    )
+    return json.loads(response.text)
+
+def generate_image(image_prompt):
+    """
+    Етап 2: Генерація картинки за допомогою правильного методу для моделі image.
+    """
+    full_prompt = f"{image_prompt}, photorealistic, 8k, cinematic lighting"
+    print("🚀 Генерація картинки через gemini-2.5-flash-image...")
+    
+    # ПРАВИЛЬНИЙ виклик з документації Google (через generate_content)
+    response = client.models.generate_content(
+        model='gemini-2.5-flash-image',
+        contents=full_prompt,
+        config=types.GenerateContentConfig(
+            response_modalities=["IMAGE"],
+            image_config=types.ImageConfig(aspect_ratio="4:3")
+        )
+    )
+    
+    # Витягуємо байти зображення з відповіді
+    for part in response.candidates[0].content.parts:
+        if part.inline_data:
+             return part.inline_data.data
+             
+    raise Exception("Google API не повернув зображення у відповіді.")
+```
+
 ### 📂 FILE: ./main.py
 ```
 #// Responsibility: Головний керуючий скрипт. Збирає дані, запускає малювання та відправку в Telegram.
-
 import os
 import storage
 import brain
@@ -10,21 +91,50 @@ import painter
 import requests
 import json
 
-def send_to_tg(image_bytes, car_data):
+def send_to_tg(image_bytes, car_data, chat_id):
     token = os.getenv("TELEGRAM_BOT_TOKEN")
-    chat_id = os.getenv("TELEGRAM_CHAT_ID")
     
-    caption = f"🔥 *TURBO SHADOW #{car_data['id']:03}*\n\n" \
-              f"🚗 *Модель:* {car_data['model']}\n" \
-              f"📦 *Серія:* {car_data['series']}"
+    # Використовуємо HTML для захисту від помилок із дефісами та дужками
+    caption = f"🔥 <b>TURBO SHADOW #{car_data['id']:03}</b>\n\n" \
+              f"🚗 <b>Модель:</b> {car_data['model']}\n" \
+              f"📦 <b>Серія:</b> {car_data['series']}"
               
     url = f"https://api.telegram.org/bot{token}/sendPhoto"
     files = {"photo": ("card.png", image_bytes, "image/png")}
-    data = {"chat_id": chat_id, "caption": caption, "parse_mode": "Markdown"}
+    data = {"chat_id": chat_id, "caption": caption, "parse_mode": "HTML"}
     
-    requests.post(url, files=files, data=data)
+    response = requests.post(url, files=files, data=data)
+    # Якщо Телеграм повертає помилку, скрипт зупиниться і не запише авто в базу
+    response.raise_for_status() 
+
+def send_document_to_tg(image_bytes, model_name, chat_id):
+    """Відправка чистого фото файлом без втрати якості."""
+    token = os.getenv("TELEGRAM_BOT_TOKEN")
+    url = f"https://api.telegram.org/bot{token}/sendDocument"
+    # Очищуємо ім'я файлу від можливих спецсимволів
+    safe_name = "".join([c for c in model_name if c.isalpha() or c.isdigit() or c==' ']).rstrip()
+    files = {"document": (f"{safe_name}.png", image_bytes, "image/png")}
+    
+    try:
+        response = requests.post(url, data={"chat_id": chat_id}, files=files)
+        response.raise_for_status()
+        print(f"Оригінал {safe_name}.png відправлено документом.")
+    except Exception as e:
+        print(f"Помилка відправки документа (не критично): {e}")
 
 def main():
+    # Визначаємо режим роботи (Test або Prod)
+    is_test = os.getenv("APP_MODE") == "test"
+    
+    if is_test:
+        chat_id = os.getenv("TELEGRAM_CHAT_ID_TEST")
+        print("🚀 ЗАПУСК У ТЕСТОВОМУ РЕЖИМІ")
+    else:
+        chat_id = os.getenv("TELEGRAM_CHAT_ID")
+        
+    if not chat_id:
+        raise Exception("Не знайдено chat_id! Перевір змінні TELEGRAM_CHAT_ID або TELEGRAM_CHAT_ID_TEST.")
+
     # 1. Завантажуємо налаштування та історію
     history = storage.load_history()
     theme_file = storage.get_today_file()
@@ -36,103 +146,74 @@ def main():
     car_data = brain.get_car_brainstorm(theme_data, history)
     car_data['series'] = theme_data['series']
     
-    # 3. Зберігаємо в історію (отримуємо ID)
-    new_id = storage.save_to_history(car_data)
+    # 3. Визначаємо ID (В тестовому режимі ставимо 999)
+    new_id = 999 if is_test else len(history) + 1
     car_data['id'] = new_id
     
     # 4. Генеруємо фото та малюємо фантик
     img_bytes = brain.generate_image(car_data['image_prompt'])
     final_card = painter.generate_card(car_data, img_bytes)
     
-    # 5. Публікація
-    send_to_tg(final_card, car_data)
-    print(f"Успішно опубліковано фантик №{new_id}")
+    # 5. Публікація в Телеграм (спочатку фантик, потім оригінал)
+    send_to_tg(final_card, car_data, chat_id)
+    send_document_to_tg(img_bytes, car_data['model'], chat_id)
+    
+    # 6. Збереження в історію ТІЛЬКИ після успішного поста та ЯКЩО ЦЕ НЕ ТЕСТ
+    if not is_test:
+        storage.save_to_history(car_data)
+        print(f"Успішно опубліковано фантик №{new_id}")
+    else:
+        print(f"Тестовий запуск завершено. Фантик №{new_id} відправлено в тест-канал. Історія не змінена.")
 
 if __name__ == "__main__":
     main()
 ```
 
-### 📂 FILE: ./brain.py
+### 📂 FILE: ./storage.py
 ```
-# Responsibility: Логіка ШІ. Вибір авто (GitHub Models) та генерація фото (Pollinations.ai через офіційний API).
-
-import os
-import requests
+#// Responsibility: Керування базою даних використаних авто та зчитування налаштувань дня.
 import json
-import urllib.parse
-import time
+import os
+import datetime
 
-def get_car_brainstorm(theme_data, history):
-    """Вибирає нову машину за допомогою gpt-4o-mini."""
-    token = os.getenv("GH_MODELS_TOKEN")
-    endpoint = "https://models.inference.ai.azure.com/chat/completions"
-    
-    excluded = ", ".join([item['model'] for item in history[-30:]]) 
-    
-    system_msg = (
-        "Ти — авто-експерт Turbo Shadow. Твоя відповідь має бути строго в форматі JSON. "
-        "Поля: model (до 30 симв), specs (engine, hp, top_speed), image_prompt (детальний опис для фото)."
-    )
-    
-    user_msg = (
-        f"Тема серії: {theme_data['series']}. {theme_data['ai_instruction']}\n"
-        f"НЕ ОБИРАЙ: [{excluded}]. Вигадай щось нове та круте."
-    )
+HISTORY_FILE = "used_cars.json"
 
-    headers = {
-        "Authorization": f"Bearer {token}", 
-        "Content-Type": "application/json"
-    }
-    
-    response = requests.post(endpoint, headers=headers, json={
-        "messages": [
-            {"role": "system", "content": system_msg},
-            {"role": "user", "content": user_msg}
-        ],
-        "model": "gpt-4o-mini",
-        "temperature": 0.8
-    })
-    
-    if response.status_code != 200:
-        raise Exception(f"Помилка текстового API: {response.text}")
+def get_today_file():
+    """Визначає, який файл промпту зчитувати сьогодні."""
+    days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+    day_name = datetime.datetime.now().strftime('%A').lower()
+    return f"prompts/{day_name}.json"
 
-    content = response.json()['choices'][0]['message']['content']
-    clean_json = content.replace('```json', '').replace('```', '').strip()
-    return json.loads(clean_json)
+def load_history():
+    """Завантажує історію з файлу."""
+    if not os.path.exists(HISTORY_FILE):
+        with open(HISTORY_FILE, 'w') as f:
+            json.dump([], f)
+        return []
+    with open(HISTORY_FILE, 'r', encoding='utf-8') as f:
+        return json.load(f)
 
-def generate_image(image_prompt):
-    """Генерує зображення через Pollinations.ai з використанням офіційного ключа."""
-    api_key = os.getenv("POLLINATIONS_API_KEY")
-    if not api_key:
-        raise Exception("Не знайдено POLLINATIONS_API_KEY! Додай його в Secrets.")
-
-    full_prompt = f"{image_prompt}, high resolution car photography, professional lighting, 8k"
-    encoded_prompt = urllib.parse.quote(full_prompt)
-    endpoint = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1024&height=1024&nologo=true"
+def save_to_history(car_data):
+    """Додає нове авто в історію (ID вже згенеровано в main.py)."""
+    history = load_history()
     
-    # Головна магія: передаємо твій ключ, щоб сервер знав, що ти не анонімний спамер
-    headers = {
-        "Authorization": f"Bearer {api_key}"
-    }
-
-    print("Запит до Pollinations.ai (через API-ключ)...")
+    car_data['date'] = datetime.datetime.now().strftime('%Y-%m-%d')
+    history.append(car_data)
     
-    for attempt in range(3):
-        response = requests.get(endpoint, headers=headers)
-        
-        if response.status_code == 200:
-            return response.content
-        else:
-            print(f"Сервер зайнятий або помилка {response.status_code}. Чекаємо 5 секунд...")
-            time.sleep(5)
-            
-    raise Exception("Не вдалося отримати картинку. Можливо, закінчився денний ліміт (Pollen).")
+    with open(HISTORY_FILE, 'w', encoding='utf-8') as f:
+        json.dump(history, f, ensure_ascii=False, indent=2)
+    
+    return car_data['id']
+
+def is_duplicate(model_name):
+    """Перевіряє, чи була така машина раніше."""
+    history = load_history()
+    return any(item['model'].lower() == model_name.lower() for item in history)
 ```
 
 ### 📂 FILE: ./painter.py
 ```
-# Responsibility: Генерація фінального макета фантика Turbo Shadow, склеювання фото з логотипом, таблицею ТТХ та номером.
-
+#// Responsibility: Генерація фінального макета фантика Turbo Shadow, склеювання фото з логотипом, таблицею ТТХ та номером.
 import os
 import io
 import datetime
@@ -157,7 +238,7 @@ def generate_card(car_data, image_bytes):
         canvas.paste(bg_img, (0, 0))
     else:
         # Fallback на темний фон, якщо файлу немає
-        canvas.paste((30, 30, 30, 255), (0, 0, 1080, 1350))
+        canvas.paste((30, 30, 30, 255), (0, 0, 1080, 1230))
 
     # 2. ШАР 2: Фото авто від ШІ
     car_img = Image.open(io.BytesIO(image_bytes)).convert("RGBA")
@@ -197,51 +278,4 @@ def generate_card(car_data, image_bytes):
     img_byte_arr = io.BytesIO()
     canvas.save(img_byte_arr, format='PNG')
     return img_byte_arr.getvalue()
-```
-
-### 📂 FILE: ./storage.py
-```
-#// Responsibility: Керування базою даних використаних авто та зчитування налаштувань дня.
-
-import json
-import os
-import datetime
-
-HISTORY_FILE = "used_cars.json"
-
-def get_today_file():
-    """Визначає, який файл промпту зчитувати сьогодні."""
-    days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
-    day_name = datetime.datetime.now().strftime('%A').lower()
-    return f"prompts/{day_name}.json"
-
-def load_history():
-    """Завантажує історію з файлу."""
-    if not os.path.exists(HISTORY_FILE):
-        with open(HISTORY_FILE, 'w') as f:
-            json.dump([], f)
-        return []
-    with open(HISTORY_FILE, 'r', encoding='utf-8') as f:
-        return json.load(f)
-
-def save_to_history(car_data):
-    """Додає нове авто в історію та присвоює йому порядковий номер."""
-    history = load_history()
-    
-    # Визначаємо новий ID (номер фантика)
-    new_id = len(history) + 1
-    car_data['id'] = new_id
-    car_data['date'] = datetime.datetime.now().strftime('%Y-%m-%d')
-    
-    history.append(car_data)
-    
-    with open(HISTORY_FILE, 'w', encoding='utf-8') as f:
-        json.dump(history, f, ensure_ascii=False, indent=2)
-    
-    return new_id
-
-def is_duplicate(model_name):
-    """Перевіряє, чи була така машина раніше."""
-    history = load_history()
-    return any(item['model'].lower() == model_name.lower() for item in history)
 ```

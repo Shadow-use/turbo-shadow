@@ -2,8 +2,8 @@ name: Turbo Shadow Production
 
 on:
   schedule:
-    - cron: '50 4 * * *' # Запуск щодня о 07:50 (UTC+2/3)
-  workflow_dispatch:      # Кнопка для ручного запуску
+    - cron: '50 4 * * *' 
+  workflow_dispatch:      
     inputs:
       mode:
         description: 'Режим (test: без запису в базу, prod: основа)'
@@ -27,7 +27,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install requests Pillow
+        run: pip install -r requirements.txt
 
       - name: Run Orchestrator
         env:
@@ -39,8 +39,8 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_CHAT_ID_TEST: ${{ secrets.TELEGRAM_CHAT_ID_TEST }}
-          APP_MODE: ${{ inputs.mode || 'prod' }} # Якщо по крону — буде prod
-        run: pip install google-genai && python main.py
+          APP_MODE: ${{ inputs.mode || 'prod' }}
+        run: python main.py
 
       - name: Commit & Push History
         run: |
