@@ -58,5 +58,18 @@
     "series": "Легенди 90-х",
     "id": 5,
     "date": "2026-05-04"
+  },
+  {
+    "model": "Ram 1500 TRX",
+    "specs": {
+      "hp": "702 к.с.",
+      "engine": "6.2L Supercharged HEMI V8",
+      "0_100": "4.5 секунди",
+      "top_speed": "190 км/год (обмежено електронікою)"
+    },
+    "image_prompt": "action off-road photography of a Ram 1500 TRX, roaring through 'The Petrified Forest of the Serpent's Tooth' – a desolate, alien landscape dominated by razor-sharp, jet-black petrified volcanic rock formations resembling monstrous fangs, coated in a corrosive layer of fine, iron-rich red dust. A violent, orange-tinted sandstorm rages, dramatically reducing visibility and creating a hostile atmosphere. The TRX is captured mid-air, having just crested a treacherous, dust-obscured rise, with all four wheels spewing enormous, billowing clouds of red dust and sharp gravel fragments. Mud and water splashes are replaced by intense dust plumes and flying rock. Wide-angle perspective (16mm) emphasizes the brutal stance of the truck against the overwhelming, jagged terrain. Hyper-detailed, dramatic lighting with the sun struggling to pierce the dust storm, casting sharp, distorted shadows and highlighting every particle of dust and rock. The sky is dark, ominous, and swirling with storm clouds mixed with sand.",
+    "series": "Off-Road Beasts",
+    "id": 6,
+    "date": "2026-05-08"
   }
 ]
