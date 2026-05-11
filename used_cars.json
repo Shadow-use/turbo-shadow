@@ -97,5 +97,18 @@
     "series": "UA Custom Concepts",
     "id": 8,
     "date": "2026-05-10"
+  },
+  {
+    "model": "Toyota Supra MK4 (JDM Twin-Turbo)",
+    "specs": {
+      "hp": "280 PS",
+      "engine": "3.0L Twin-Turbo Inline-6 (2JZ-GTE)",
+      "0_100": "4.6 seconds",
+      "top_speed": "250 km/h (electronically limited)"
+    },
+    "image_prompt": "35mm film photography aesthetic. A desolate, rain-slicked industrial dockyard at the edge of a sprawling metropolis, late at night. Heavy, humid air with a light mist rolling in from the dark sea, making everything feel diffused and mysterious. The ground glistens from a recent downpour, reflecting what little light there is. Dominated by deep, reflective shadows, distant, blurred neon signs from the city cast subtle streaks of electric blue, magenta, and emerald green onto the wet asphalt. Powerful, utilitarian floodlights from towering gantry cranes pierce through the mist, creating dramatic shafts of light and long, distorted shadows. The Toyota Supra MK4 (JDM spec) is parked centrally, its headlights casting a warm, focused beam ahead, contrasting with the cool ambient light. A low, wide-angle shot, slightly from the front-quarter, emphasizing the car's wide stance and aggressive lines. The camera is positioned just above the wet ground, looking up slightly towards the car and the imposing backdrop of stacked, weathered shipping containers (some with faded 90s shipping company logos) and massive cranes that recede into the mist. Water droplets cling to its sleek bodywork. The overall mood is one of raw power, urban solitude, and a hint of illicit adventure, perfectly capturing the gritty, underground spirit of 90s JDM culture.",
+    "series": "Легенди 90-х",
+    "id": 9,
+    "date": "2026-05-11"
   }
 ]
