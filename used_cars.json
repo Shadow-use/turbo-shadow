@@ -123,5 +123,18 @@
     "series": "Midnight Crew",
     "id": 10,
     "date": "2026-05-12"
+  },
+  {
+    "model": "1969 Dodge Charger R/T",
+    "specs": {
+      "hp": "375 к.с.",
+      "engine": "7.2L V8 (440 Magnum)",
+      "0_100": "6.0-6.5 с",
+      "top_speed": "200-210 км/год"
+    },
+    "image_prompt": "cinematic moody realism, a legendary 1969 Dodge Charger R/T, painted in faded, dusty 'General Lee' orange, discovered inside an abandoned, rustic garage of a defunct rural gas station from the late 1960s. The concrete floor is cracked and stained with oil. Peeling, faded pale blue paint covers the walls, with ghost outlines of old, rusted advertising signs barely clinging on. Overgrown ivy and wild vines creep through a broken, grimy window, their tendrils reaching towards the car. Old, rusty tools, oil cans, and a dusty workbench are visible in the background. Strong, golden shafts of sunlight pierce through a gap in the corrugated metal roof and the dusty window, creating dramatic chiaroscuro lighting. Dust motes dance visibly in the air, illuminated by the sunbeams. Extreme focus on the texture of the faded paint, the subtle surface rust on the chrome bumpers and exhaust tips, the worn stitching of the black vinyl interior visible through a slightly ajar window, and the iconic, slightly tarnished Charger grille. Reflections of the sun glint softly on the dusty glass. Shot with a 50mm lens, low angle, with artistic shallow depth of field (bokeh) beautifully blurring the background elements, emphasizing the car's forgotten grandeur.",
+    "series": "Garage Finds",
+    "id": 11,
+    "date": "2026-05-13"
   }
 ]
