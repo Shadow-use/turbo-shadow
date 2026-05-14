@@ -136,5 +136,18 @@
     "series": "Garage Finds",
     "id": 11,
     "date": "2026-05-13"
+  },
+  {
+    "model": "Koenigsegg Jesko Absolut",
+    "specs": {
+      "hp": "1600 к.с. (на паливі E85)",
+      "engine": "5.0L Twin-Turbo V8",
+      "0_100": "2.6s (оцінка)",
+      "top_speed": "531 км/год (модельована)"
+    },
+    "image_prompt": "A Koenigsegg Jesko Absolut, finished in a deep, lustrous midnight blue with prominent exposed carbon fiber accents, captured in an extreme high-speed tracking shot. The setting is the 'Celestial Salt Flats Circuit' – an impossibly vast, perfectly flat, mirror-like crystalline salt flat that reflects a swirling cosmic nebula, distant galaxies, and streaks of meteors from the alien sky above. The hypercar is a blur of intense motion, with aggressive motion blur on the background and its spinning wheels, creating streaks of light. Sharp, futuristic bioluminescent blue and purple light trails from the embedded high-speed circuit illuminate the scene, casting intense, dynamic reflections and razor-sharp highlights across the Jesko Absolut's perfectly glossy body, making the intricate weave of its carbon fiber panels strikingly visible. The massive carbon-ceramic brake discs are glowing fiercely orange-red from extreme heat. Aggressive low-angle shot, 8k resolution, photorealistic.",
+    "series": "Hyper Speed",
+    "id": 12,
+    "date": "2026-05-14"
   }
 ]
