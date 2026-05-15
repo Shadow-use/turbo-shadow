@@ -149,5 +149,18 @@
     "series": "Hyper Speed",
     "id": 12,
     "date": "2026-05-14"
+  },
+  {
+    "model": "Ineos Grenadier Fieldmaster Edition",
+    "specs": {
+      "hp": "282 hp",
+      "engine": "BMW 3.0L Turbo Inline-6 Petrol",
+      "0_100": "8.6 seconds",
+      "top_speed": "160 km/h (electronically limited)"
+    },
+    "image_prompt": "action off-road photography, Ineos Grenadier Fieldmaster Edition battling through 'The Chasm of Whispering Canyons'. The vehicle is powering through a deep, viscous river of chocolate-brown mud and water, its powerful tires churning violently. Enormous, thick plumes of mud and water erupt from all four wheels, showering the vehicle and the towering, slick-rock canyon walls. Small rocks and debris are visibly thrown into the air. The sky is a menacing, bruised purple-grey, with heavy mist hanging low, remnants of a powerful flash flood. A weak shaft of late-afternoon sunlight struggles to break through the storm clouds, casting eerie, high-contrast shadows and highlighting the texture of the mud and wet rocks. The vehicle's LED lights cut through the gloom. Wide-angle shot (16mm), low to the ground, emphasizing the Grenadier's brutal stance and the overwhelming scale of the challenge. Hyper-detailed, dramatic lighting, mud and water splashes, flying dirt, wet surfaces, extreme off-road conditions.",
+    "series": "Off-Road Beasts",
+    "id": 13,
+    "date": "2026-05-15"
   }
 ]
