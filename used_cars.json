@@ -162,5 +162,18 @@
     "series": "Off-Road Beasts",
     "id": 13,
     "date": "2026-05-15"
+  },
+  {
+    "model": "Nebula Drifter",
+    "specs": {
+      "hp": "12,000 Anti-Matter Equivalence",
+      "engine": "Quantum Singularity Core with Graviton Thrusters",
+      "0_100": "0.8 seconds (Anti-Gravity Launch)",
+      "top_speed": "Mach 7.5 (Atmospheric Hyperspeed)"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art of the 'Nebula Drifter' racing through a breathtaking, perpetually twilight megacity. The city floats among colossal, bioluminescent skyscrapers that pierce through dense, rain-slicked clouds. Neon-lit arteries, holographic projections, and multi-level sky-bridges define the urban landscape. The car is sleek, ultra-low profile, forged from 'Chrono-Alloy' liquid metal, shifting iridescent colors from deep violet to electric blue. Its canopy and side panels are 'Spectra-Glass', offering transparent views. Intricate, pulsing glowing LED lines trace its razor-sharp aerodynamic contours, especially around its twin anti-gravity propulsion units. The vehicle floats silently a few feet above the reflective sky-road, propelled by four grav-thrusters emitting a faint blue-white plasma glow, completely devoid of wheels. Impossible aerodynamics with seamless wing-like structures and active surfaces create a visual distortion effect. Cinematic lighting, dramatic volumetric fog and rain, 8k, masterpiece, highly detailed, photorealistic, intricate.",
+    "series": "Shadow Concepts",
+    "id": 14,
+    "date": "2026-05-16"
   }
 ]
