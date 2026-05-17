@@ -175,5 +175,18 @@
     "series": "Shadow Concepts",
     "id": 14,
     "date": "2026-05-16"
+  },
+  {
+    "model": "ВАРТОВИЙ СТЕПУ (VARTUVAI STEPY)",
+    "specs": {
+      "hp": "1800",
+      "engine": "Quad-motor electric drivetrain with adaptive torque vectoring",
+      "0_100": "2.8 seconds",
+      "top_speed": "320 km/h"
+    },
+    "image_prompt": "cinematic automotive photography, masterpiece, A hidden, high-tech research and defense outpost nestled deep within the vast, undulating Ukrainian steppe, bathed in the warm golden hour light. The outpost features sleek, modern architecture made of local stone and dark steel, with advanced energy pylons subtly integrated into the landscape. Distant wind turbines catch the last rays of sun. The 'ВАРТОВИЙ СТЕПУ' cyber-SUV stands prominently on a minimalist, elevated platform. Its body, crafted from aggressive forged carbon fiber panels and armored glass, gleams under the sun. Subtle, razor-sharp aerodynamic elements hint at the silhouette of a trident, integrated into the front grille and rear diffuser. A sophisticated, barely-there blue-yellow LED strip outlines its rugged wheel arches and the sharp lines of its roof, glowing faintly. Piercing LED headlights reminiscent of a predator's gaze. Warm golden hour light cascades over the scene, with long, dramatic shadows stretching across the steppe. Sunlight rays pierce through the distant dust, creating a majestic and powerful atmosphere. The overall mood evokes a sense of indomitable strength, freedom, and the profound resilience of home. 8k, photorealistic.",
+    "series": "UA Custom Concepts",
+    "id": 15,
+    "date": "2026-05-17"
   }
 ]
