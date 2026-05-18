@@ -188,5 +188,18 @@
     "series": "UA Custom Concepts",
     "id": 15,
     "date": "2026-05-17"
+  },
+  {
+    "model": "Mazda RX-7 FD3S (Series 8, 1999)",
+    "specs": {
+      "hp": "276 к.с.",
+      "engine": "1.3L 13B-REW Twin-Turbo Rotary",
+      "0_100": "5.3 с",
+      "top_speed": "250 км/год (обмежено електронікою)"
+    },
+    "image_prompt": "35mm film photography aesthetic, a dark metallic Mazda RX-7 FD3S (Series 8, 1999 model) parked at a low-angle, slightly worm's eye view in a narrow, rain-slicked urban back alley. Heavy, atmospheric mist hangs low, swirling around the car's rear. The only light sources are scattered, flickering neon signs (faded purples, blues, and reds) from old, forgotten establishments casting long, distorted reflections on the wet asphalt and a single, broken overhead fluorescent light buzzing erratically, intermittently illuminating parts of the car. The RX-7's headlights are on, cutting sharp beams through the mist. Grungy brick walls are covered in peeling, faded posters from the late 90s, obscure band flyers, and graffiti tags. Overflowing dumpsters and steam rising from a nearby grate add to the gritty, melancholic atmosphere. The scene captures the raw, untamed spirit of underground 90s JDM culture, with a sense of hidden power and mystery. Cinematic, moody, urban decay meets automotive legend.",
+    "series": "Легенди 90-х",
+    "id": 16,
+    "date": "2026-05-18"
   }
 ]
