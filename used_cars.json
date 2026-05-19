@@ -201,5 +201,18 @@
     "series": "Легенди 90-х",
     "id": 16,
     "date": "2026-05-18"
+  },
+  {
+    "model": "Honda S2000 (AP2)",
+    "specs": {
+      "hp": 237,
+      "engine": "2.2L F22C1 VTEC I4",
+      "0_100": "5.8s",
+      "top_speed": "240 km/h"
+    },
+    "image_prompt": "cinematic night street racing, photorealistic, 8k resolution, ultra-detailed. A heavily customized Honda S2000 AP2 (modified with widebody kit, aggressive spoiler, and aftermarket wheels) in a deep metallic blue, captured mid-drift through a tight, rain-slicked corner within a neon-drenched labyrinth of forgotten back alleys beneath the main thoroughfares of a sprawling metropolis. Heavy, misty rain creates slick, reflective surfaces and swirling fog pockets around the car. Intense, saturated neon signs from hidden ramen shops and illicit clubs cast vibrant blues, purples, and reds onto the wet asphalt and surrounding grimy brick walls. Flickering halogen streetlights and the car's piercing LED headlights cut through the mist. The car's deep metallic paint gleams with distorted reflections of the neon lights and wet asphalt, creating streaks of vivid color across its bodywork. Dynamic low-angle shot from the side, with the rear wheels kicking up a fine spray, significant motion blur on background elements to emphasize speed, volumetric lighting, dramatic shadow play.",
+    "series": "Midnight Crew",
+    "id": 17,
+    "date": "2026-05-19"
   }
 ]
