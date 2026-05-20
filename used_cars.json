@@ -214,5 +214,18 @@
     "series": "Midnight Crew",
     "id": 17,
     "date": "2026-05-19"
+  },
+  {
+    "model": "1971 Lamborghini Miura SV",
+    "specs": {
+      "hp": "385 к.с.",
+      "engine": "3.9L (3929cc) V12",
+      "0_100": "5.5 сек",
+      "top_speed": "290 км/год"
+    },
+    "image_prompt": "cinematic moody realism, a legendary 1971 Lamborghini Miura SV, in its iconic Giallo Fly yellow, discovered in a forgotten, vaulted stone coach house beneath an abandoned aristocratic Italian villa. The car is covered in a delicate, decades-old layer of fine dust, with traces of its vibrant paint and the gleam of its magnesium Campagnolo wheels showing through. Focus meticulously on the iconic, sensuous curves of the Miura, the subtle gleam of its chrome trim around the headlights and exhaust tips, the rich, slightly aged texture of the Giallo Fly paint, and the fine grain of the tan leather interior, visible through the slightly ajar driver's side window. Dramatic chiaroscuro lighting: thick, golden shafts of sunlight pierce through high, grimy arched windows, illuminating dancing dust motes in the heavy air, creating sharp contrasts between brilliant highlights on the car's body and deep, mysterious shadows within the ancient, stone-walled garage. Rustic, forgotten tools hang on the textured stone walls in the blurred background, hinting at past care. Overgrown ivy subtly frames the distant, light-pierced windows. A single, focused ray of light perfectly illuminates the 'Miura SV' badge on the rear. Shot with a 50mm lens, artistic depth of field (bokeh), low angle, emphasizing the car's predatory stance and the profound sense of discovery and timelessness.",
+    "series": "Garage Finds",
+    "id": 18,
+    "date": "2026-05-20"
   }
 ]
