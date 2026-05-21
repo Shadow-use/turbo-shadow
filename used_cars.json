@@ -227,5 +227,18 @@
     "series": "Garage Finds",
     "id": 18,
     "date": "2026-05-20"
+  },
+  {
+    "model": "Hennessey Venom F5",
+    "specs": {
+      "hp": "1817 hp",
+      "engine": "6.6L Twin-Turbo V8 'Fury'",
+      "0_100": "2.6 seconds",
+      "top_speed": "500+ km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of the Hennessey Venom F5 hurtling through a 'Chrono-Tunnel' – a colossal, transparent, and brilliantly illuminated high-tech conduit suspended far above a tumultuous, neon-streaked cityscape at twilight. The background and the tunnel structure are rendered with intense motion blur, emphasizing the incredible velocity. The spinning wheels are a blur of rotational energy. Aggressive low-angle shot, capturing the car's predatory stance. The Venom F5's perfectly glossy, deep metallic paintwork catches sharp, elongated reflections from the internal, dynamic light patterns of the tunnel, creating streaks of vibrant light across its aerodynamic contours. Visible carbon fiber texture is evident on diffusers and aero elements. The glowing brake discs are an intense, fiery orange-red blur, a testament to the immense power and braking force. The overall lighting is dramatic and futuristic, with sharp contrasts and brilliant highlights against the deep shadows of the car's sculpted form. 8k resolution, photorealistic.",
+    "series": "Hyper Speed",
+    "id": 19,
+    "date": "2026-05-21"
   }
 ]
