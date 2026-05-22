@@ -240,5 +240,18 @@
     "series": "Hyper Speed",
     "id": 19,
     "date": "2026-05-21"
+  },
+  {
+    "model": "Porsche 911 Dakar",
+    "specs": {
+      "hp": "480 hp",
+      "engine": "3.0L Twin-Turbo Flat-Six",
+      "0_100": "3.4 seconds",
+      "top_speed": "240 km/h"
+    },
+    "image_prompt": "action off-road photography of a Porsche 911 Dakar, aggressively conquering a treacherous high-altitude volcanic ash desert. The car is captured mid-air, kicking up massive, dark plumes of volcanic ash and fine dust from all four wheels, with small, sharp obsidian fragments flying dynamically. The terrain features razor-sharp obsidian rock formations and sudden, deep, soft ash dunes. A localized, intense ash storm rages in the background, with a dark, stormy sky adding to the drama and obscuring the horizon. Wide-angle shot (around 20mm) captures the brutal pose and raw power of the vehicle. Hyper-detailed, dramatic lighting cuts through the airborne ash, emphasizing the car's rugged design and the hostile environment. Mud and water splashes are replaced by ash and dust eruptions.",
+    "series": "Off-Road Beasts",
+    "id": 20,
+    "date": "2026-05-22"
   }
 ]
