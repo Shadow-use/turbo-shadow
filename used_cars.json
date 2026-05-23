@@ -253,5 +253,18 @@
     "series": "Off-Road Beasts",
     "id": 20,
     "date": "2026-05-22"
+  },
+  {
+    "model": "Astral Sentinel",
+    "specs": {
+      "hp": "25,000 HP (Dark Matter Reactor equivalent)",
+      "engine": "Quantum Singularity Drive with Graviton Thrusters and Inertial Dampeners",
+      "0_100": "0.7 seconds (magnetic acceleration with temporal distortion field)",
+      "top_speed": "4000 km/h (atmospheric limit), Mach 3.2+ (unlimited potential in vacuum)"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art of the 'Astral Sentinel' hovering effortlessly on a polished, obsidian landing platform of a colossal, glowing skyscraper within a 'Hyper-Synchronized Orbital Sky-City'. The vehicle boasts an obsidian liquid metal chassis shimmering with iridescent, shifting hues, integrated transparent graphene panels revealing a pulsating dark matter energy core, and luminous white and electric blue LED lines tracing its impossible aerodynamic contours. It has no visible wheels, only subtle anti-gravity emitters generating a faint, ethereal blue-white glow beneath its sleek form. The backdrop showcases a breathtaking view of a perpetually storm-wracked Earth below, where a chaotic, neon-drenched megacity is partially obscured by swirling electromagnetic storms and torrential rain. Above, glimpses of a distant, twin moon are visible through the atmospheric haze. Cinematic lighting, dramatic volumetric fog, intense neon reflections on wet surfaces, 8k, masterpiece, ultra detailed, photorealistic.",
+    "series": "Shadow Concepts",
+    "id": 21,
+    "date": "2026-05-23"
   }
 ]
