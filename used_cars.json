@@ -266,5 +266,18 @@
     "series": "Shadow Concepts",
     "id": 21,
     "date": "2026-05-23"
+  },
+  {
+    "model": "Козак S-1",
+    "specs": {
+      "hp": "1850",
+      "engine": "V12 Twin-Turbo Hybrid",
+      "0_100": "1.9 seconds",
+      "top_speed": "430 km/h"
+    },
+    "image_prompt": "cinematic automotive photography, masterpiece, an extreme custom hyper-offroader named 'Козак S-1' with an aggressively powerful stance, showcasing intricate forged carbon bodywork. The vehicle features subtle, elegant blue-yellow neon accent lights integrated into its aerodynamic lines and diffuser, with its unique aerodynamic winglets and front splitter subtly echoing the stylized form of the Ukrainian trident. It is captured during warm golden hour, with dramatic sunlight rays piercing through the ancient, misty Carpathian forests, illuminating a high-tech rally stage. The winding asphalt asphalt track is surrounded by majestic peaks, with advanced sensor arrays and holographic guide markers subtly integrated into the environment. The scene exudes a powerful sense of freedom, strength, and the spirit of home, 8k, photorealistic",
+    "series": "UA Custom Concepts",
+    "id": 22,
+    "date": "2026-05-24"
   }
 ]
