@@ -279,5 +279,18 @@
     "series": "UA Custom Concepts",
     "id": 22,
     "date": "2026-05-24"
+  },
+  {
+    "model": "Subaru Impreza WRX STi (GC8) Version V",
+    "specs": {
+      "hp": "280 PS (276 hp)",
+      "engine": "2.0L EJ20 Boxer-4 Turbo",
+      "0_100": "5.0 seconds",
+      "top_speed": "240 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic, a legendary '90s Subaru Impreza WRX STi (GC8) Version V, in its iconic World Rally Blue, parked on a desolate, rain-slicked Japanese touge mountain pass just before dawn. Heavy, swirling mist and low-hanging fog obscure the distant peaks and create an ethereal atmosphere. The only illumination is from a single, flickering, buzzing yellow-white fluorescent street lamp directly overhead, casting stark, elongated shadows and dramatic, streaking reflections on the wet, dark asphalt and the car's aggressive bodywork. Raindrops cling to the car's iconic large rear wing and hood scoop. A low, wide-angle cinematic shot, slightly dynamic, emphasizing the car's raw, ready-to-race stance and the winding, empty road stretching into the thick fog. Faint, moss-covered concrete guardrails line the road, with subtle hints of faded kanji graffiti on them. Ancient, dark Japanese cedar trees loom as blurred silhouettes in the background, adding to the somber, contemplative mood. The scene is saturated with a sense of melancholic nostalgia and the lingering thrill of past midnight touge battles.",
+    "series": "Легенди 90-х",
+    "id": 23,
+    "date": "2026-05-25"
   }
 ]
