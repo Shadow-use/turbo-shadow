@@ -292,5 +292,18 @@
     "series": "Легенди 90-х",
     "id": 23,
     "date": "2026-05-25"
+  },
+  {
+    "model": "Nissan 370Z Nismo (Z34)",
+    "specs": {
+      "hp": "350 к.с.",
+      "engine": "3.7L V6 (VQ37VHR)",
+      "0_100": "5.0 секунд",
+      "top_speed": "250 км/год (обмежено)"
+    },
+    "image_prompt": "cinematic night street racing, photorealistic, 8k resolution. A heavily modified Nissan 370Z Nismo (Z34) with a widebody kit, aggressive stance, and deep metallic black paint, is captured in a dynamic, low-angle shot. The car is mid-drift at high speed on a sprawling, multi-layered elevated highway system that cuts through the heart of a dense cyberpunk metropolis. A torrential, relentless downpour saturates the scene, creating reflective, mirror-like puddles on the partially flooded lower sections of the overpass and thick sheets of water spray from the car's tires. The background features towering, monolithic skyscrapers adorned with flickering neon signs and intricate holographic advertisements, all blurred with intense motion blur to convey extreme velocity. Headlights of the 370Z cut sharp paths through the rain-soaked air. Deep, vibrant reflections of the city's neon glow and cascading raindrops dance across the glossy, wet surface of the car's body, making it appear as if it's forged from liquid metal. The atmosphere is charged with adrenaline, danger, and the raw energy of an illegal night race.",
+    "series": "Midnight Crew",
+    "id": 24,
+    "date": "2026-05-26"
   }
 ]
