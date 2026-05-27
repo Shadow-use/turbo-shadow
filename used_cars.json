@@ -305,5 +305,18 @@
     "series": "Midnight Crew",
     "id": 24,
     "date": "2026-05-26"
+  },
+  {
+    "model": "Aston Martin DB5 (1964)",
+    "specs": {
+      "hp": 282,
+      "engine": "4.0L DOHC Inline-6",
+      "0_100": "8.0s",
+      "top_speed": "230 km/h"
+    },
+    "image_prompt": "cinematic moody realism, a derelict, ivy-covered stone garage within the forgotten grounds of an old English country manor. A classic 1964 Aston Martin DB5, 'Silver Birch' paint dulled by decades of undisturbed dust, sits patiently. Sunlight shafts pierce through a high, broken window and gaps in the collapsing wooden roof, illuminating swirling dust motes in the air and casting dramatic chiaroscuro shadows across the scene. The light catches the faint gleam of dusty chrome on the bumpers and wire wheels. Close focus on the intricate texture of the dust on the car's bodywork, the patina on the chrome, and the glimpse of aged, cracked leather and woodgrain steering wheel through a slightly ajar window. Overgrown ivy and moss creep subtly into the frame from the ancient stone walls. 50mm lens, artistic shallow depth of field (bokeh) to highlight the car against the softly blurred, decaying background. The atmosphere is one of forgotten elegance, mystery, and the silent passage of time.",
+    "series": "Garage Finds",
+    "id": 25,
+    "date": "2026-05-27"
   }
 ]
