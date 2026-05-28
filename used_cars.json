@@ -318,5 +318,18 @@
     "series": "Garage Finds",
     "id": 25,
     "date": "2026-05-27"
+  },
+  {
+    "model": "SSC Tuatara",
+    "specs": {
+      "hp": "1750 (on E85 fuel)",
+      "engine": "5.9L Twin-Turbo V8",
+      "0_100": "2.5 seconds",
+      "top_speed": "532.93 km/h (claimed)"
+    },
+    "image_prompt": "A high-speed tracking shot of the SSC Tuatara, finished in a dark, lustrous carbon fiber with subtle chrome accents, racing through a futuristic, subterranean magma-tube speedway. The car is captured from an aggressive, low-angle front-side perspective, emphasizing its extreme aerodynamics. The background and spinning wheels are intensely motion blurred, conveying blistering speed. Dynamic neon-blue and fiery-orange light strips embedded in the tunnel's walls and ceiling cast sharp, elongated reflections across the car's perfectly glossy, textured carbon fiber body. Through the ultra-transparent sections of the tunnel, pulsating rivers of molten magma are visible, providing a dramatic, hellish glow. The brake discs are visibly glowing red-hot. 8k resolution, photorealistic.",
+    "series": "Hyper Speed",
+    "id": 26,
+    "date": "2026-05-28"
   }
 ]
