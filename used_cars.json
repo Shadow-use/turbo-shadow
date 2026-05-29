@@ -331,5 +331,18 @@
     "series": "Hyper Speed",
     "id": 26,
     "date": "2026-05-28"
+  },
+  {
+    "model": "Mercedes-Benz G 63 AMG 4x4²",
+    "specs": {
+      "hp": "585",
+      "engine": "4.0L Twin-Turbo V8",
+      "0_100": "5.0 seconds",
+      "top_speed": "210 km/h"
+    },
+    "image_prompt": "action off-road photography of a Mercedes-Benz G 63 AMG 4x4² aggressively conquering a treacherous volcanic caldera. The vehicle is caught mid-turn on a narrow, jagged obsidian rock ridge, one wheel hovering precariously over a deep ravine filled with bubbling, corrosive, steaming water. Massive geysers of acidic water and thick, dark volcanic mud erupt violently from beneath its enormous tires. Fine volcanic ash and sharp obsidian fragments are thrown high into the air, creating a dynamic trail behind the beast. The sky is dark and brooding, filled with ominous storm clouds, with light ashfall adding to the apocalyptic atmosphere. Shot with a wide-angle lens (16mm) from a low, ground-level perspective, emphasizing the vehicle's brutal, imposing stance and the raw danger of the environment. Hyper-detailed, dramatic lighting casting harsh shadows and brilliant highlights, showcasing every texture of the volcanic rock, the vehicle's robust construction, and the furious splashes.",
+    "series": "Off-Road Beasts",
+    "id": 27,
+    "date": "2026-05-29"
   }
 ]
