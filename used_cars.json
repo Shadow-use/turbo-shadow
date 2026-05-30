@@ -344,5 +344,18 @@
     "series": "Off-Road Beasts",
     "id": 27,
     "date": "2026-05-29"
+  },
+  {
+    "model": "Specter Chronos",
+    "specs": {
+      "hp": "35,000 equivalent horsepower (sustained output from Quantum Flux Reactor)",
+      "engine": "Quantum Flux Reactor with Antimatter Injection and Graviton Thrusters for atmospheric and low-orbit propulsion",
+      "0_100": "0.008 seconds (to 100 km/h via Graviton Burst)",
+      "top_speed": "Mach 20 (in atmosphere), theoretical top speed approaching light-speed in vacuum via Warp Field engagement"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art of the Specter Chronos, a sleek, impossibly aerodynamic craft. Its body is forged from adaptive liquid metal alloys that shift in reflectivity and color, seamlessly integrating large transparent graphene panels that offer panoramic views. The vehicle hovers silently, propelled by anti-gravity emitters, with no visible wheels, only shimmering energy fields beneath. Its silhouette is accentuated by intricate, glowing cerulean and violet LED lines that pulse with contained energy, hinting at the Quantum Flux Reactor within. The design exhibits impossible curves and angles that defy conventional aerodynamics, appearing to slice through the very fabric of space. The Specter Chronos is positioned in a colossal, multi-tiered sky-city suspended above a perpetual storm system on a terraformed exoplanet, bathed in the ethereal glow of nebulae and distant quasars. The city's towering spires are interwoven with shimmering energy conduits, and holographic advertisements flicker across its crystalline surfaces. cinematic lighting, 8k, masterpiece, hyper-realistic detail, volumetric fog, digital painting.",
+    "series": "Shadow Concepts",
+    "id": 28,
+    "date": "2026-05-30"
   }
 ]
