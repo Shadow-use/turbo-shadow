@@ -357,5 +357,18 @@
     "series": "Shadow Concepts",
     "id": 28,
     "date": "2026-05-30"
+  },
+  {
+    "model": "ПЕРУН (PERUN)",
+    "specs": {
+      "hp": 1800,
+      "engine": "Hybrid V12 Twin-Turbo, 8.0L",
+      "0_100": "2.4 seconds",
+      "top_speed": "360 km/h"
+    },
+    "image_prompt": "cinematic automotive photography, masterpiece. The 'ПЕРУН' (PERUN), a brutal cyber-offroader, stands majestically amidst a futuristic, minimalist high-tech research facility nestled deep within the boundless golden Ukrainian steppe. The facility's sleek, angular architecture of dark polished concrete and glass reflects the warm golden hour sunlight. Sunlight rays pierce through the vast expanse, casting long, dramatic shadows across the ground and the vehicle. The sky is a breathtaking gradient of deep orange, soft purple, and fading blue. The PERUN itself is a monument of aggressive power, its body crafted from raw, textured forged carbon, shimmering with a deep, almost iridescent hue under the sun. Its design features sharp, angular lines and massive, reinforced wheels with aggressive all-terrain tires, hinting at the resilience of a warrior. Subtle aerodynamic elements on the front fascia and rear diffuser elegantly evoke the silhouette of the Ukrainian Tryzub (trident), a barely perceptible nod to its heritage. A delicate, internal blue and yellow neon glow emanates from its vents and undercarriage, visible only in the deepening shadows, a silent tribute to its roots. Dust gently rises from the ground, illuminated by the low sun, creating an ethereal, powerful glow around the vehicle. The rugged, undulating terrain of the steppe stretches endlessly into the background, conveying a profound sense of freedom and home. 8k, photorealistic.",
+    "series": "UA Custom Concepts",
+    "id": 29,
+    "date": "2026-05-31"
   }
 ]
