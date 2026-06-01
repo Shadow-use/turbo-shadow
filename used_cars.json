@@ -370,5 +370,18 @@
     "series": "UA Custom Concepts",
     "id": 29,
     "date": "2026-05-31"
+  },
+  {
+    "model": "Honda NSX (NA1)",
+    "specs": {
+      "hp": "270 hp",
+      "engine": "3.0L C30A V6 VTEC",
+      "0_100": "5.7 seconds",
+      "top_speed": "270 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic. A pristine red Honda NSX (NA1) is parked in a deserted, rain-slicked back alley of a sprawling 90s metropolis, reminiscent of a neo-noir film. A fine, persistent drizzle creates a soft mist that catches the light. The scene is illuminated by the muted, reflected glow of distant, faded neon signs (electric blue, deep pink, and faded yellow) bouncing off the wet, dark asphalt, creating long, shimmering streaks of color. A single, flickering, harsh yellow street lamp overhead casts dramatic, elongated shadows and sharp highlights on the car's sleek, angular lines. Wisps of steam gently rise from a storm drain nearby, adding to the melancholic atmosphere. The surrounding gritty brick walls are adorned with peeling, stylized 90s-era posters (featuring retro tech or abstract designs) and subtle, faded graffiti. Overturned, rusty dumpsters and dripping fire escapes are visible in the deep background, slightly out of focus, enhancing the sense of urban decay. Low-angle shot, slightly Dutch tilted, emphasizing the car's aggressive, timeless stance against the reflective, gritty urban landscape. The mood is mysterious, quiet, and undeniably 90s cyber-noir, with a subtle grain and deep, rich blacks.",
+    "series": "Легенди 90-х",
+    "id": 30,
+    "date": "2026-06-01"
   }
 ]
