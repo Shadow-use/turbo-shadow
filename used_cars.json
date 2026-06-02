@@ -383,5 +383,18 @@
     "series": "Легенди 90-х",
     "id": 30,
     "date": "2026-06-01"
+  },
+  {
+    "model": "BMW M4 (F82)",
+    "specs": {
+      "hp": 450,
+      "engine": "3.0L Twin-Turbo Inline-6",
+      "0_100": 4.0,
+      "top_speed": 280
+    },
+    "image_prompt": "cinematic night street racing, A custom-tuned BMW M4 (F82) in an abandoned industrial port at the edge of a sprawling metropolis. Thick, swirling fog mixed with a light drizzle creates a surreal atmosphere, illuminated by distant city skyline glow and broken industrial lamps casting harsh yellow light. The M4, in a deep, glossy black finish, is captured in a dynamic low-angle shot mid-drift, its aggressive LED headlights cutting through the mist. Subtle, deep red underglow emanating from the vehicle reflects off the wet asphalt and the polished bodywork, creating elongated, distorted streaks of color and light. Motion blur on the background and wheels emphasizes speed and raw power, with the rear wheels kicking up a fine spray of water and mist. 8k resolution, photorealistic.",
+    "series": "Midnight Crew",
+    "id": 31,
+    "date": "2026-06-02"
   }
 ]
