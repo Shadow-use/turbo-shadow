@@ -396,5 +396,18 @@
     "series": "Midnight Crew",
     "id": 31,
     "date": "2026-06-02"
+  },
+  {
+    "model": "1970 Plymouth Barracuda 'Cuda 426 Hemi",
+    "specs": {
+      "hp": "425 hp",
+      "engine": "7.0L (426 cubic inch) Hemi V8",
+      "0_100": "5.6 seconds",
+      "top_speed": "200-210 km/h"
+    },
+    "image_prompt": "A cinematic moody realism photograph of a 1970 Plymouth Barracuda 'Cuda 426 Hemi, discovered in a forgotten, dilapidated carriage house on a sprawling, overgrown estate. The car is coated in a thick layer of dust, hinting at decades of neglect. Dramatic chiaroscuro lighting: sharp, golden shafts of sunlight pierce through broken wooden slats and a gaping hole in the corrugated tin roof, illuminating countless suspended dust motes in the air, creating a ghostly, ethereal atmosphere. The sunbeams highlight the faded, original 'Lemon Twist' yellow paint, revealing its fine texture and subtle imperfections, while casting deep, mysterious shadows across the car's muscular lines. Focus is razor-sharp on the chrome bumpers, which show a dull patina but still reflect the ambient light, and the iconic 'HEMI' badging on the hood. A glimpse into the interior reveals cracked, sun-baked black leather seats and a dusty dashboard. The floor is cracked concrete, littered with rusted tools, cobwebs, and dried leaves. Shot with a 50mm lens, featuring artistic shallow depth of field (bokeh) that gently blurs the cluttered background, drawing the viewer's eye to the car's raw, forgotten beauty. The overall scene evokes a sense of discovery, history, and a sleeping beast awaiting resurrection.",
+    "series": "Garage Finds",
+    "id": 32,
+    "date": "2026-06-03"
   }
 ]
