@@ -409,5 +409,18 @@
     "series": "Garage Finds",
     "id": 32,
     "date": "2026-06-03"
+  },
+  {
+    "model": "Bugatti Chiron Super Sport 300+",
+    "specs": {
+      "hp": "1578 hp",
+      "engine": "8.0L Quad-Turbo W16",
+      "0_100": "2.4 seconds",
+      "top_speed": "490.484 km/h"
+    },
+    "image_prompt": "A photorealistic, 8k resolution high-speed tracking shot of the Bugatti Chiron Super Sport 300+ tearing through a 'Квантовий Швидкісний Кондуїт' (Quantum Speed Conduit). This unique location is a seamless, transparent electromagnetic levitation tunnel system, curving gracefully above the glowing skyscrapers of a futuristic 'Neo-Kyiv' megacity at sunset. The car, with its perfectly glossy carbon fiber body, displays sharp, vibrant reflections from the pulsating neon light strips integrated into the transparent tunnel walls. An aggressive, low-angle perspective emphasizes its aerodynamic longtail design. Intense motion blur streaks the distant urban landscape visible through the conduit and blurs the spinning wheels into ethereal discs. Visible carbon texture is prominent on the body panels, and glowing red brake discs are discernible through the wheels, hinting at extreme performance. The road surface, made of polished black obsidian, mirrors the car and the dynamic light patterns, amplifying the sense of unimaginable speed and advanced engineering.",
+    "series": "Hyper Speed",
+    "id": 33,
+    "date": "2026-06-04"
   }
 ]
