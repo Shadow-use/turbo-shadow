@@ -422,5 +422,18 @@
     "series": "Hyper Speed",
     "id": 33,
     "date": "2026-06-04"
+  },
+  {
+    "model": "Ford Bronco Raptor",
+    "specs": {
+      "hp": "418 к.с.",
+      "engine": "3.0L EcoBoost V6 Twin-Turbo",
+      "0_100": "6.0 секунд",
+      "top_speed": "160 км/год (обмежено)"
+    },
+    "image_prompt": "action off-road photography of a Ford Bronco Raptor, navigating the 'Heart of the Broken Mirrors Canyon'. This is a narrow, winding gorge in a desert mountainous region, just after an anomalous heavy rain. The vehicle is powering through a treacherous mix of deep, viscous red clay mud, sharp gravel, and enormous, slick boulders that obstruct the path. A dramatic, clearing storm sky overhead, with heavy grey clouds still clinging to the canyon walls. Massive mud and water splashes erupt violently from under all four wheels, with chunks of saturated earth and debris flying through the air. Sunbeams dramatically pierce through breaks in the clouds, backlighting the chaotic spray and highlighting the hyper-detailed textures of the mud, wet rocks, and the aggressive stance of the Bronco Raptor. Wide-angle shot (18mm) emphasizing the brutal challenge and the vehicle's dominance. Dramatic lighting, hyper-detailed.",
+    "series": "Off-Road Beasts",
+    "id": 34,
+    "date": "2026-06-05"
   }
 ]
