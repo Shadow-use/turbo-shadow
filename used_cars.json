@@ -435,5 +435,18 @@
     "series": "Off-Road Beasts",
     "id": 34,
     "date": "2026-06-05"
+  },
+  {
+    "model": "Chrono-Flux Anomaly",
+    "specs": {
+      "hp": "12,000 equivalent Tera-Watts",
+      "engine": "Quantum Singularity Graviton Drive",
+      "0_100": "0.5 seconds (to 100 km/h via micro-warp acceleration)",
+      "top_speed": "Unlimited (theoretical light speed, regulated to Mach 10 in atmosphere)"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art of the 'Chrono-Flux Anomaly'. A sprawling, multi-tiered mega-city built inside a vast, rotating orbital ring circling a vibrant gas giant. The city features towering crystalline skyscrapers piercing a perpetual twilight, crisscrossed by glowing energy conduits and ethereal light bridges. The 'Chrono-Flux Anomaly' is seen traversing a zero-gravity urban canyon, where other futuristic transports glide effortlessly, surrounded by holographic advertisements and synthetic flora. The vehicle itself is sleek, impossibly aerodynamic, its chassis crafted from an adaptive liquid metallic alloy shimmering with iridescent hues of obsidian and deep violet. Integrated transparent graphene panels reveal pulsating cerulean energy conduits within. The entire body is outlined by razor-thin, glowing magenta and cyan LED lines that shift and flow, emphasizing its flowing, organic form. It hovers silently, propelled by advanced anti-gravity fields, with no visible wheels, allowing it to navigate complex three-dimensional urban pathways with impossible precision and angles. Its design suggests a seamless integration with the air, almost as if it's carved from solidified light and shadow. Cinematic lighting, casting long, dramatic shadows from the towering structures and the vehicle itself, highlights its futuristic contours. 8k, masterpiece.",
+    "series": "Shadow Concepts",
+    "id": 35,
+    "date": "2026-06-06"
   }
 ]
