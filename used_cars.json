@@ -448,5 +448,18 @@
     "series": "Shadow Concepts",
     "id": 35,
     "date": "2026-06-06"
+  },
+  {
+    "model": "ХОРТ (Khort)",
+    "specs": {
+      "hp": "1900 к.с.",
+      "engine": "Чотиримоторна електрична трансмісія з розширеним векторуванням крутного моменту",
+      "0_100": "3.2 секунди",
+      "top_speed": "280 км/год"
+    },
+    "image_prompt": "cinematic automotive photography, masterpiece of the 'ХОРТ' (Khort), a brutal cyber-offroader, driving on a winding, high-tech rally track carved into the side of a Carpathian mountain peak. The track features transparent energy barriers and subtle holographic markers. The vehicle itself boasts an aggressive, angular design, entirely sculpted from raw, dark forged carbon fiber, reflecting the warm golden hour light. Subtle yet striking Ukrainian motifs are integrated: thin, elegant blue and yellow neon light accents trace the vehicle's sharp lines, and the rear aerodynamic spoilers subtly echo the powerful shape of the Ukrainian trident. The 'ХОРТ' kicks up a fine dust trail as it navigates a challenging turn. In the background, ancient, majestic pine forests are bathed in the warm, golden light of the setting sun, with radiant sunlight rays piercing through the trees, illuminating the misty valleys below. The scene conveys immense power, unyielding freedom, and a profound sense of home amidst the grandeur of the Ukrainian Carpathians. 8k, photorealistic.",
+    "series": "UA Custom Concepts",
+    "id": 36,
+    "date": "2026-06-07"
   }
 ]
