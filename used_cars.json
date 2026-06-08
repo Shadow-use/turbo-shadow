@@ -461,5 +461,18 @@
     "series": "UA Custom Concepts",
     "id": 36,
     "date": "2026-06-07"
+  },
+  {
+    "model": "Nissan Skyline GT-R R34 V-Spec (1999)",
+    "specs": {
+      "hp": "280 hp (stock)",
+      "engine": "2.6L Twin-Turbo I6 (RB26DETT)",
+      "0_100": "4.9 seconds",
+      "top_speed": "250 km/h (electronically limited)"
+    },
+    "image_prompt": "A Nissan Skyline GT-R R34 V-Spec (1999) parked on the rooftop of a multi-story parking garage in a dense, bustling 90s Tokyo district, just after a heavy overnight rain. The scene is enveloped in a thin, ethereal mist slowly dissipating as early dawn breaks. The concrete rooftop is wet, with puddles reflecting the soft, diffused light of the rising sun, which paints the horizon in gradients of deep indigo, soft orange, and pink. Distant 90s city lights and neon signs are still visible, creating a bokeh effect in the background. The car is captured from a low, front-quarter wide-angle perspective, highlighting its aggressive lines and the wet, reflective tarmac. The surrounding details include slightly cracked and stained concrete, faded yellow parking lines, and blurred glimpses of 90s Japanese street architecture and retro billboards in the distance. No people are present. The overall aesthetic is a gritty, atmospheric 35mm film photography style, with noticeable grain, slightly desaturated colors, deep blacks, and subtle light leaks, evoking a nostalgic, cinematic mood.",
+    "series": "Легенди 90-х",
+    "id": 37,
+    "date": "2026-06-08"
   }
 ]
