@@ -474,5 +474,18 @@
     "series": "Легенди 90-х",
     "id": 37,
     "date": "2026-06-08"
+  },
+  {
+    "model": "Nissan Silvia S15 Spec-R (Heavily Tuned)",
+    "specs": {
+      "hp": "550",
+      "engine": "Tuned SR20DET (2.0L Turbo I4)",
+      "0_100": "3.9 seconds",
+      "top_speed": "295 km/h"
+    },
+    "image_prompt": "cinematic night street racing, 8k resolution, photorealistic. A heavily modified Nissan Silvia S15 with a widebody kit and aggressive stance, featuring subtle blue neon underglow, captured mid-drift around a wide, slick corner in a rain-soaked, abandoned industrial district at the city's edge. Dilapidated warehouses with broken windows and graffiti-covered walls loom in the background, with rusty elevated railway tracks overhead. Heavy, consistent rainfall creates a thick mist and steam rising dramatically from the hot asphalt and puddles. Dynamic low-angle shot, slightly behind and to the side of the car, emphasizing speed with intense motion blur on the background and spinning wheels. Water spray erupts violently from the tires. Lighting consists of flickering, warm orange industrial sodium lamps casting long shadows, distant cool blue neon glow from a hidden street racing club entrance, and sharp white/yellow headlights of the Silvia cutting through the rain. Incredible, sharp reflections of all light sources (headlights, neon, industrial lamps, underglow) are visible on the car's wet, glossy black paintwork and the puddles on the asphalt.",
+    "series": "Midnight Crew",
+    "id": 38,
+    "date": "2026-06-09"
   }
 ]
