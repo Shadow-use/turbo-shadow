@@ -487,5 +487,18 @@
     "series": "Midnight Crew",
     "id": 38,
     "date": "2026-06-09"
+  },
+  {
+    "model": "1967 Ford Mustang Shelby GT500",
+    "specs": {
+      "hp": "355 hp",
+      "engine": "7.0L (428 cu in) Ford FE V8",
+      "0_100": "6.5s",
+      "top_speed": "220 km/h"
+    },
+    "image_prompt": "A 1967 Ford Mustang Shelby GT500, covered in a thick layer of fine, ancient dust, sits forgotten in the heart of a vast, dilapidated stone barn on a secluded European estate. The scene is captured in cinematic moody realism, with strong chiaroscuro lighting. Golden hour sunlight slices through cracked wooden roof planks and a grimy, leaded glass window, illuminating dancing dust motes in the heavy air and casting dramatic shadows. Focus is on the car's faded Guardsman Blue paint, the subtle texture of the dust clinging to its iconic lines, and the dull sheen of its chrome details, hinting at its former glory. Through the slightly ajar driver's door, the aged, cracked black leather of the interior and the classic wooden steering wheel are visible. Around the car, antique tools lie scattered on a heavily weathered workbench, adorned with cobwebs and forgotten blueprints. Shot with a 50mm lens, a wide aperture creates a beautiful bokeh, emphasizing the car's presence and its poignant isolation, from a low, slightly front-quarter angle.",
+    "series": "Garage Finds",
+    "id": 39,
+    "date": "2026-06-10"
   }
 ]
