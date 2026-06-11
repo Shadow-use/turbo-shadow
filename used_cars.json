@@ -500,5 +500,18 @@
     "series": "Garage Finds",
     "id": 39,
     "date": "2026-06-10"
+  },
+  {
+    "model": "Koenigsegg Agera RS",
+    "specs": {
+      "hp": "1160 к.с.",
+      "engine": "5.0L Twin-Turbo V8",
+      "0_100": "2.8 с",
+      "top_speed": "447 км/год"
+    },
+    "image_prompt": "A high-speed tracking shot of a Koenigsegg Agera RS, in a deep, glossy metallic blue finish, aggressively cornering on a hyper-futuristic, multi-layered transparent glass sky-highway. The highway winds through a colossal, bioluminescent megacity at dusk, its integrated LED lighting reflecting vividly on the car's aerodynamic bodywork. Intense motion blur streaks across the background and the spinning wheels, conveying extreme velocity. Sharp, brilliant reflections of the city lights and the glowing highway are visible on the Agera RS's perfectly polished surface, highlighting its visible carbon fiber texture. The brake discs are glowing fiercely from the heat. The aggressive, low-angle perspective emphasizes the car's power and speed. 8k resolution, photorealistic.",
+    "series": "Hyper Speed",
+    "id": 40,
+    "date": "2026-06-11"
   }
 ]
