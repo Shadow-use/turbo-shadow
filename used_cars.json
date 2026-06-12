@@ -513,5 +513,18 @@
     "series": "Hyper Speed",
     "id": 40,
     "date": "2026-06-11"
+  },
+  {
+    "model": "Ram 1500 TRX",
+    "specs": {
+      "hp": "702 hp",
+      "engine": "6.2L Supercharged HEMI V8",
+      "0_100": "4.5 seconds",
+      "top_speed": "190 km/h"
+    },
+    "image_prompt": "action off-road photography, Ram 1500 TRX in a treacherous ancient volcanic caldera, navigating through a shallow, boiling mud pit. The sky is dark and stormy, choked with volcanic ash, contrasting with the dramatic, infernal glow of molten rock and steaming vents from below. Intense superheated mud and volcanic ash splashes explosively from all four wheels, showering the air. Jagged obsidian rocks are flung skyward. Thick steam billows around the tires and rises from the ground. Wide-angle lens (20mm), low angle, emphasizing the truck's aggressive, brutal stance. Hyper-detailed, dramatic lighting with stark contrasts between the fiery glow and the dark, ash-filled atmosphere, showcasing every detail of mud, rock, and steam.",
+    "series": "Off-Road Beasts",
+    "id": 41,
+    "date": "2026-06-12"
   }
 ]
