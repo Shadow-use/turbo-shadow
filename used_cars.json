@@ -526,5 +526,18 @@
     "series": "Off-Road Beasts",
     "id": 41,
     "date": "2026-06-12"
+  },
+  {
+    "model": "Quantum Echo R-2077",
+    "specs": {
+      "hp": "5,000,000 equivalent (Anti-Matter Singularity Flux)",
+      "engine": "Quantum-Stabilized Anti-Matter Singularity Core, Graviton Repulsion Drive",
+      "0_100": "0.28 seconds (via instantaneous quantum burst acceleration)",
+      "top_speed": "Atmospheric: 12,500 km/h (Mach 10.2), FTL capable for interstellar travel"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art of the Quantum Echo R-2077. The vehicle is showcased on a gleaming, multi-tiered platform of a colossal orbital ring city, suspended high above a stormy gas giant. The city's immense structures are bathed in the ethereal glow of a binary sunset, casting long, dramatic shadows. Rain of super-conductive plasma streaks across the vast cityscape in the background. The Quantum Echo R-2077 features a chrono-alloy chassis with an adaptive liquid metal skin that shimmers and shifts between deep midnight blue and iridescent violet, punctuated by strategically placed transparent graphene panels offering glimpses into its pulsating anti-matter core. An intricate network of glowing quantum-ether LED lines traces its impossible aerodynamic lines, pulsating with an otherworldly, cyan energy. It hovers silently via an advanced grav-levitation system, leaving subtle distortion trails in the air below its sleek, wheel-less form. Its design defies conventional aerodynamics, appearing as if sculpted by pure energy, with sharp angles and flowing curves that seem to bend light around them. Cinematic lighting, volumetric fog, high detail, 8k, masterpiece.",
+    "series": "Shadow Concepts",
+    "id": 42,
+    "date": "2026-06-13"
   }
 ]
