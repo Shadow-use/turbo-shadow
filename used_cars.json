@@ -539,5 +539,18 @@
     "series": "Shadow Concepts",
     "id": 42,
     "date": "2026-06-13"
+  },
+  {
+    "model": "Булава (Bulava) Sentinel",
+    "specs": {
+      "hp": "1850 к.с.",
+      "engine": "Повнопривідна чотиримоторна електрична силова установка з адаптивним векторизацією крутного моменту",
+      "0_100": "2.7 с",
+      "top_speed": "320 км/год"
+    },
+    "image_prompt": "cinematic automotive photography, masterpiece. The 'Булава Sentinel' cyber-SUV, a brutal and aggressive machine crafted from dark, textured forged carbon, stands prominently on a high-altitude plateau in the heart of the Carpathian mountains. Subtle Ukrainian motifs are integrated into its design: a thin, elegant line of electric blue and golden yellow neon accent lighting traces the vehicle's aerodynamic contours, while the sharp, angular elements of the front grille subtly echo the silhouette of a trident. The scene is bathed in a warm golden hour glow, with soft sunlight rays piercing through dissipating morning mist, illuminating the rugged landscape and the polished surfaces of the vehicle. In the foreground, a section of advanced, almost liquid-looking asphalt leads towards a futuristic, almost hidden research base carved into the rocky mountainside, blending seamlessly with the ancient environment. The overall atmosphere conveys immense power, unwavering freedom, and a profound sense of home. 8k, photorealistic.",
+    "series": "UA Custom Concepts",
+    "id": 43,
+    "date": "2026-06-14"
   }
 ]
