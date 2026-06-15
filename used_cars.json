@@ -552,5 +552,18 @@
     "series": "UA Custom Concepts",
     "id": 43,
     "date": "2026-06-14"
+  },
+  {
+    "model": "Toyota Supra (A80) Twin Turbo",
+    "specs": {
+      "hp": "280 hp",
+      "engine": "3.0L Twin-Turbo I6 (2JZ-GTE)",
+      "0_100": "5.0 seconds",
+      "top_speed": "250 km/h (limited)"
+    },
+    "image_prompt": "35mm film photography aesthetic. A pristine, black Toyota Supra (A80) Twin Turbo is captured on the slick, rain-soaked rooftop of a sprawling, multi-story concrete parking garage in a late 90s Japanese metropolis. It's deep night, just after a torrential downpour, and a thin, atmospheric mist still hangs low, catching the hazy glow of distant city lights. The ground is a mirror of standing water, reflecting blurred urban neon signs and the car's aggressive silhouette. Harsh, yellow-orange sodium vapor lights from a nearby streetlamp cast long, dramatic shadows. The Supra is parked slightly askew, with water rippling around its wide tires, suggesting a recent, spirited drive. A low-angle shot, slightly off-center, emphasizes its powerful stance. Faint, worn graffiti adorns a concrete pillar in the background, adding to the urban grit. The scene is imbued with a sense of melancholic solitude, speed, and the raw, untamed spirit of the 90s JDM street culture.",
+    "series": "Легенди 90-х",
+    "id": 44,
+    "date": "2026-06-15"
   }
 ]
