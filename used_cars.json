@@ -565,5 +565,18 @@
     "series": "Легенди 90-х",
     "id": 44,
     "date": "2026-06-15"
+  },
+  {
+    "model": "Mitsubishi Lancer Evolution IX MR",
+    "specs": {
+      "hp": "470",
+      "engine": "2.0L 4G63 MIVEC Turbocharged I4",
+      "0_100": "3.6s",
+      "top_speed": "280 km/h"
+    },
+    "image_prompt": "cinematic night street racing, Mitsubishi Lancer Evolution IX MR, heavily modified, matte black paint, powering through a wide, rain-slicked turn in an abandoned, multi-level industrial port facility. Heavy, persistent rain creates massive tire spray and deep reflective puddles. Thick, swirling mist drifts through decaying metal structures and beneath a sprawling, dilapidated elevated highway system. Powerful LED headlights and vibrant blue underglow cut through the gloom, intensely reflecting off the wet car body and the expansive puddles on the ground. Distant, blurred neon signs from an unseen city and flickering orange industrial lights provide ambient color. Dynamic low-angle shot from slightly behind and to the side, capturing the car in a controlled drift, motion blur on the background and spinning wheels, gritty atmosphere, 8k resolution, photorealistic.",
+    "series": "Midnight Crew",
+    "id": 45,
+    "date": "2026-06-16"
   }
 ]
