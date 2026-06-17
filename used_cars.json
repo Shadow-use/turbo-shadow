@@ -578,5 +578,18 @@
     "series": "Midnight Crew",
     "id": 45,
     "date": "2026-06-16"
+  },
+  {
+    "model": "1969 Dodge Charger R/T",
+    "specs": {
+      "hp": "375 hp",
+      "engine": "7.2L (440 Magnum) V8",
+      "0_100": "6.0 seconds (0-60 mph)",
+      "top_speed": "205 km/h (127 mph)"
+    },
+    "image_prompt": "A forgotten 1969 Dodge Charger R/T, its iconic 'General Lee' orange paint faded and dust-covered, sits abandoned amidst the ruins of an old drive-in movie theater. The car is parked directly in front of a colossal, peeling movie screen, now a canvas of faded paint and creeping vines. Tall, wild grass and thorny bushes have begun to reclaim the cracked asphalt around it. Rusty, leaning speaker poles emerge from the overgrown ground, silent sentinels of a bygone era. The scene is captured in `cinematic moody realism` with a `50mm lens`, employing dramatic `chiaroscuro` lighting. Late afternoon sun slices through gaps in the overgrown foliage, creating stark contrasts and illuminating countless shimmering dust motes suspended in the air. Golden hour light catches the subtle rust on the chrome bumpers and the texture of the weathered paint, revealing years of neglect. A glimpse inside the slightly ajar window shows the aged black vinyl interior, hints of cracking on the seats, and the classic dashboard, all softened by `artistic bokeh` in the background, emphasizing the car's melancholic beauty.",
+    "series": "Garage Finds",
+    "id": 46,
+    "date": "2026-06-17"
   }
 ]
