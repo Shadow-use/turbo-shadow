@@ -591,5 +591,18 @@
     "series": "Garage Finds",
     "id": 46,
     "date": "2026-06-17"
+  },
+  {
+    "model": "Koenigsegg Jesko Absolut",
+    "specs": {
+      "hp": "1600 hp (on E85 fuel)",
+      "engine": "5.0L Twin-Turbo V8",
+      "0_100": "~2.5s",
+      "top_speed": "531 km/h (projected)"
+    },
+    "image_prompt": "A Koenigsegg Jesko Absolut hurtling through a high-tech gravitational tunnel, built around the shimmering core of a colossal crystalline world. Luminous streams of pure energy pulse and cascade from the tunnel's polished, obsidian-like walls, creating a surreal, otherworldly blur of light and speed. High-speed tracking shot, with intense motion blur on the background and spinning wheels. Dynamic, futuristic lighting creates sharp, vibrant reflections dancing across the car's perfectly glossy, aerodynamic body. Visible intricate carbon fiber weave on the aero elements. Red-hot, glowing brake discs are clearly visible through the aggressive wheel design. Aggressive, low-angle shot, photorealistic, 8k resolution, capturing the extreme velocity and advanced engineering.",
+    "series": "Hyper Speed",
+    "id": 47,
+    "date": "2026-06-18"
   }
 ]
