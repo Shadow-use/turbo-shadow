@@ -604,5 +604,18 @@
     "series": "Hyper Speed",
     "id": 47,
     "date": "2026-06-18"
+  },
+  {
+    "model": "Ford F-150 Raptor R",
+    "specs": {
+      "hp": 700,
+      "engine": "5.2L Supercharged V8",
+      "0_100": "3.8s",
+      "top_speed": "180 km/h"
+    },
+    "image_prompt": "action off-road photography of a Ford F-150 Raptor R, in a brutal low-angle wide-shot (18mm lens), aggressively tearing through a deep, swift-flowing, murky riverbed within a 'Lost Amazonian Plateau of Giants'. The vehicle is half-submerged, its massive tires violently churning through the turbulent water, creating colossal mud and water splashes that erupt explosively high into the air. The surrounding environment features colossal, moss-covered rock formations and ancient, primordial vegetation. Overhead, a dramatically stormy sky looms, with thick, swirling mist clinging to the cliffs and torrential rain lashing down. Hyper-detailed, dramatic lighting accentuates the chaotic scene, highlighting flying debris and the truck's raw power. Cinematic, high contrast, raw, untamed, with dark, desaturated tones and vibrant green moss reflecting in the water.",
+    "series": "Off-Road Beasts",
+    "id": 48,
+    "date": "2026-06-19"
   }
 ]
