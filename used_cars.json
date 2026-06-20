@@ -617,5 +617,18 @@
     "series": "Off-Road Beasts",
     "id": 48,
     "date": "2026-06-19"
+  },
+  {
+    "model": "Aetherius Nova",
+    "specs": {
+      "hp": "15,000 GW (Graviton Thrust Power)",
+      "engine": "Quantum Flux Core with Anti-Graviton Repulsors and Dark Matter Stabilizers",
+      "0_100": "0.8 seconds (to 100 km/h equivalent)",
+      "top_speed": "6,700 km/h (Mach 5.5, atmospheric limit)"
+    },
+    "image_prompt": "An Unreal Engine 5 render, sci-fi vehicle concept art of the 'Aetherius Nova' hovering silently on a sleek, obsidian landing platform within a colossal, crystalline megastructure city. This city perpetually hovers above the turbulent, bioluminescent oceans of a gas giant exoplanet. The city's lower levels are shrouded in a perpetual, thick mist, pierced by upward-reaching, laser-thin light beams, while its upper spires gleam under the multi-colored auroras of the gas giant. The 'Aetherius Nova' itself is forged from adaptive liquid metal that subtly shifts its hue, seamlessly integrated with transparent 'Chrono-Glass' canopy and paneling. Its impossibly sleek, hyper-aerodynamic form seems to defy conventional physics, with razor-thin wings that blend seamlessly into the body. No traditional wheels; instead, four powerful anti-gravity thruster nozzles emit a faint blue corona beneath its chassis. Glowing blue and violet LED lines trace its futuristic contours, pulsing with latent energy. Rain streaks down the vehicle's surfaces and the reflective platform, enhancing the dramatic cinematic lighting. 8k, masterpiece.",
+    "series": "Shadow Concepts",
+    "id": 49,
+    "date": "2026-06-20"
   }
 ]
