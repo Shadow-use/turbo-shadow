@@ -630,5 +630,18 @@
     "series": "Shadow Concepts",
     "id": 49,
     "date": "2026-06-20"
+  },
+  {
+    "model": "Степний Вовк (Steppe Wolf)",
+    "specs": {
+      "hp": "1500 к.с.",
+      "engine": "Чотиримоторна електрична трансмісія з розширеним запасом ходу",
+      "0_100": "2.8 сек",
+      "top_speed": "280 км/год (обмежено електронікою)"
+    },
+    "image_prompt": "cinematic automotive photography, masterpiece, an aggressive, brutal cyber-off-roader named \"Степний Вовк\" (Steppe Wolf) dominating the foreground. Its design features sharp, angular lines, massive flared wheel arches, and a body crafted from raw, textured forged carbon. Subtle, elegant blue-yellow neon light strips trace the contours of its grille and side sills, glowing softly. Aerodynamic elements on the rear, like the diffuser fins and a unique roof spoiler, subtly echo the silhouette of the Ukrainian trident. The vehicle is positioned on an ancient, winding rally track carved into the heart of the Ukrainian Carpathian mountains, surrounded by majestic, ancient pine forests and rugged, mist-shrouded peaks. The scene is bathed in the warm, golden hour sunlight, with dramatic sunlight rays piercing through the forest canopy and highlighting the vehicle's powerful form. A light, ethereal mist rises from the valleys below, adding to the mystical atmosphere. The composition conveys a sense of immense power, untamed freedom, and the deep comfort of home. 8k, photorealistic, ultra-detailed, high dynamic range.",
+    "series": "UA Custom Concepts",
+    "id": 50,
+    "date": "2026-06-21"
   }
 ]
