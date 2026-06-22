@@ -643,5 +643,18 @@
     "series": "UA Custom Concepts",
     "id": 50,
     "date": "2026-06-21"
+  },
+  {
+    "model": "Porsche 911 (993) Carrera S",
+    "specs": {
+      "hp": "285 hp",
+      "engine": "3.6L Air-cooled Flat-6",
+      "0_100": "5.3 s",
+      "top_speed": "270 km/h"
+    },
+    "image_prompt": "A pristine Porsche 911 (993) Carrera S in Midnight Blue, parked on a forgotten, rain-slicked side street in a sprawling, industrial-tinged European city at the very cusp of dawn. The air is thick with a dense, chilling morning mist (almost fog) just beginning to lift, leaving everything slick with moisture, with a very light drizzle still creating tiny ripples in puddles. The weak, diffuse glow of an overcast pre-dawn sky barely pierces the mist, creating soft, ethereal backlighting. The primary light source comes from distant, aged sodium streetlights casting long, amber streaks on the wet asphalt, complemented by the faint, cool blue/green glow from a dilapidated neon sign (perhaps for a long-closed garage or bar) reflecting in a particularly deep puddle near the car. Shot with a 35mm film photography aesthetic, exhibiting grainy texture and slightly desaturated colors with dominant warm tones. A low-angle, slightly wide-shot from the front-quarter of the Porsche, capturing its sleek lines as it appears to emerge from the mist, with the camera just above puddle level to emphasize dramatic reflections. In the background, barely visible through the mist, are the silhouettes of old, brick industrial buildings with rusty fire escapes. A single, faded poster from the early 90s clings to a grimy wall. A discarded, crushed European cigarette pack from the 90s lies near a curb. The scene is devoid of other cars or people, emphasizing the profound solitude and the metallic scent of rain and old machinery hanging heavy in the air.",
+    "series": "Легенди 90-х",
+    "id": 51,
+    "date": "2026-06-22"
   }
 ]
