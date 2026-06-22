@@ -1,3 +1,4 @@
+# Responsibility: Головний модуль генерації концептів авто та промптів через Gemini API
 import os
 import json
 import datetime
@@ -30,9 +31,16 @@ def get_car_brainstorm(theme_data, history):
     holiday_text = f" ОБОВ'ЯЗКОВО додай елементи стилю: {holiday_addon}." if holiday_addon else ""
     
     prompt = (
-        f"Ти — авто-експерт Turbo Shadow. Відповідь строго в JSON.\n"
-        f"Поля: 'model', 'specs' (словник з ключами: 'hp', 'engine', '0_100', 'top_speed'), 'image_prompt'.\n"
-        f"Тема: {theme_data['series']}. {theme_data['ai_instruction']}\n"
+        f"Ти — авто-експерт Turbo Shadow. Відповідь строго в JSON без маркдауну.\n"
+        f"Тема: {theme_data['series']}. {theme_data['ai_instruction']}\n\n"
+        f"СУВОРІ ВИМОГИ ДО ПОЛІВ JSON:\n"
+        f"1. 'model': Повна назва авто (наприклад, 'Toyota Supra (A80)').\n"
+        f"2. 'specs': Словник з ТТХ:\n"
+        f"   - 'hp': ТІЛЬКИ ЦИФРИ (наприклад, '280', '1500'). Жодних букв 'hp', 'к.с.' чи пробілів! Скрипт сам додасть 'HP'.\n"
+        f"   - 'engine': Короткий опис двигуна англійською або українською. МАКСИМУМ 35 символів (наприклад, '3.0L Twin-Turbo I6' або 'Електрична трансмісія').\n"
+        f"   - '0_100': Час розгону, тільки цифри та 's' (наприклад, '3.2s').\n"
+        f"   - 'top_speed': Тільки цифри та одиниці виміру. МАКСИМУМ 12 символів (наприклад, '250 km/h' або '320 км/год'). ЗАБОРОНЕНО писати уточнення в дужках (limited, projected і т.д.).\n"
+        f"3. 'image_prompt': Детальний промпт для генератора зображень англійською мовою. Описуй лише візуал, погоду та освітлення. НЕ ПИШИ сюди характеристики.\n\n"
         f"НЕ ОБИРАЙ: [{excluded}].{holiday_text}"
     )
 
