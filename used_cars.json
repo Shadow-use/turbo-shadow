@@ -656,5 +656,18 @@
     "series": "Легенди 90-х",
     "id": 51,
     "date": "2026-06-22"
+  },
+  {
+    "model": "Mazda RX-7 (FD3S)",
+    "specs": {
+      "hp": "550",
+      "engine": "1.3L Twin-Turbo Rotary",
+      "0_100": "3.8s",
+      "top_speed": "290 km/h"
+    },
+    "image_prompt": "cinematic night street racing, a highly customized Mazda RX-7 (FD3S) with widebody kit and aggressive stance, vibrant metallic paint reflecting the environment. The scene is set in a flooded old quarry, now a makeshift drift arena. Ancient, decaying mining towers loom in the background, their rusty structures partially illuminated by flickering, industrial floodlights casting long, distorted shadows. A thick mist rises from the shallow water covering the quarry floor. Headlights and taillights of the RX-7 glow intensely, with subtle exhaust flames flickering. Aggressive static shot, gritty texture, dramatic lighting, rain or mist on the lens effect.",
+    "series": "Midnight Crew",
+    "id": 52,
+    "date": "2026-06-23"
   }
 ]
