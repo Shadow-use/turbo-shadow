@@ -669,5 +669,18 @@
     "series": "Midnight Crew",
     "id": 52,
     "date": "2026-06-23"
+  },
+  {
+    "model": "1968 Chevrolet Chevelle SS 396",
+    "specs": {
+      "hp": "375",
+      "engine": "396 cu in (6.5L) Big-Block V8",
+      "0_100": "6.5s",
+      "top_speed": "200 km/h"
+    },
+    "image_prompt": "A 1968 Chevrolet Chevelle SS 396, covered in a thin layer of dust and grime, discovered in a hidden underground Cold War-era bunker. The setting is cinematic moody realism, with water dripping from the crumbling concrete ceiling, creating small puddles that reflect the dim, eerie light from a single, broken overhead lamp. Moss and calcification line the rough concrete walls. The air is thick with a sense of damp earth and long abandonment. Extreme focus on the car's faded original paintwork, subtle rust creeping along the wheel arches, and the tarnished chrome bumpers. The texture of the worn tires, the intricate grille, and the tarnished chrome trim are sharply rendered. Dramatic, low-key lighting emphasizes the car's powerful silhouette and the eerie atmosphere of discovery. Dust motes dance in the weak light beams, adding to the feeling of timelessness.",
+    "series": "Garage Finds",
+    "id": 53,
+    "date": "2026-06-24"
   }
 ]
