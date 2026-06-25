@@ -682,5 +682,18 @@
     "series": "Garage Finds",
     "id": 53,
     "date": "2026-06-24"
+  },
+  {
+    "model": "Hennessey Venom F5",
+    "specs": {
+      "hp": "1817",
+      "engine": "6.6L Twin-Turbo V8 \"Fury\"",
+      "0_100": "2.6s",
+      "top_speed": "484 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of a sleek, aggressive Hennessey Venom F5 as it blasts through the 'Velocity Vortex'. The car is perfectly sharp, contrasted by intense motion blur in the background and wheels, emphasizing extreme speed. The Vortex is a colossal, spiraling track carved into the side of an active, dormant volcano. The environment is dramatically lit by glowing molten rock veins and vibrant geothermal vents, casting an eerie, powerful orange and red light onto the slick, obsidian-like track surface. Heat haze shimmers in the air, adding to the dynamic, high-energy atmosphere. Dynamic angle, epic scale.",
+    "series": "Hyper Speed",
+    "id": 54,
+    "date": "2026-06-25"
   }
 ]
