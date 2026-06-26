@@ -695,5 +695,18 @@
     "series": "Hyper Speed",
     "id": 54,
     "date": "2026-06-25"
+  },
+  {
+    "model": "KAMAZ 4326-9 Dakar Rally Truck",
+    "specs": {
+      "hp": "1050",
+      "engine": "16.2L Turbocharged I6 Diesel",
+      "0_100": "9.5s",
+      "top_speed": "140 km/h"
+    },
+    "image_prompt": "action off-road photography, KAMAZ 4326-9 Dakar Rally Truck battling through the treacherous Tar Swamps of the Lost Valley, thick, black, viscous tar splashing high, mixing with murky water, aggressive dark storm clouds overhead, heavy mist clinging to ancient, gnarled swamp trees, deep ruts of black ooze, dynamic shot, low angle, headlights cutting through the gloom, vehicle's tires churning violently, extreme close-up on the splashing, dramatic lighting, epic scale, high detail, hyperrealistic, cinematic.",
+    "series": "Off-Road Beasts",
+    "id": 55,
+    "date": "2026-06-26"
   }
 ]
