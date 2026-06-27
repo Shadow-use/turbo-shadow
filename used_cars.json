@@ -708,5 +708,18 @@
     "series": "Off-Road Beasts",
     "id": 55,
     "date": "2026-06-26"
+  },
+  {
+    "model": "Aetheria Apex",
+    "specs": {
+      "hp": "3500",
+      "engine": "Quantum Flux Drive",
+      "0_100": "0.8s",
+      "top_speed": "1800 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art of the Aetheria Apex, a sleek, ultra-futuristic hypercar. The car features a seamless chassis crafted from self-repairing translucent graphene and polished chrome-titanium alloys, with intricate internal structures visible through the transparent panels. Dynamic, adaptive LED light strips run along its aerodynamic lines, shifting colors from electric blue to emerald green, accentuating its form. The vehicle is positioned on a winding, crystalline path within a vibrant, bio-luminescent forest on a newly terraformed exoplanet. The environment is alive with glowing alien flora and towering crystalline trees that emit soft, ethereal light in hues of violet, cyan, and gold. In the background, distant nebulae cast a gentle, diffused glow across the alien sky. The atmosphere is clear and serene, with a slight, almost imperceptible mist rising from the glowing ground, enhancing the magical, otherworldly ambiance. The lighting is soft and ambient, primarily sourced from the surrounding bio-luminescent elements and distant celestial bodies, creating deep shadows and luminous highlights on the car's reflective surfaces.",
+    "series": "Shadow Concepts",
+    "id": 56,
+    "date": "2026-06-27"
   }
 ]
