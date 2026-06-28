@@ -721,5 +721,18 @@
     "series": "Shadow Concepts",
     "id": 56,
     "date": "2026-06-27"
+  },
+  {
+    "model": "ЯРОВИТ (YAROVIT)",
+    "specs": {
+      "hp": "1800",
+      "engine": "Quad-Motor Electric Drivetrain",
+      "0_100": "2.1s",
+      "top_speed": "380 km/h"
+    },
+    "image_prompt": "cinematic automotive photography of a custom-built Ukrainian hyper-offroader, 'YAROVIT'. The vehicle exudes aggressive power, with its body sculpted from dark, raw forged carbon fiber. Subtle, yet striking, glowing blue and yellow LED accents are meticulously integrated into its headlights, taillights, and underbody, subtly evoking Ukrainian national motifs. The car is static, captured in the 'Підземний Лабіринт Кришталевих Скульптур', a vast, ancient, and technologically enhanced underground network deep beneath the Podolian Upland. It rests on a polished, reflective obsidian-like surface, surrounded by colossal, naturally formed crystal stalactites and stalagmites that pierce the cavernous space. These immense crystal formations are bathed in an ethereal, soft, cool blue and golden ambient light, emanating from hidden, futuristic cybernetic installations embedded within the rock. A delicate, cool mist gently drifts across the floor, catching the luminous glow. The lighting is dramatic and moody, with strong chiaroscuro effects highlighting the car's powerful silhouette against the glowing, otherworldly crystal backdrop. No natural light, only the mesmerizing, high-tech yet organic illumination of the crystal labyrinth.",
+    "series": "UA Custom Concepts",
+    "id": 57,
+    "date": "2026-06-28"
   }
 ]
