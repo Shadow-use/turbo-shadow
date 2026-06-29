@@ -734,5 +734,18 @@
     "series": "UA Custom Concepts",
     "id": 57,
     "date": "2026-06-28"
+  },
+  {
+    "model": "Subaru Impreza WRX STI (GC8)",
+    "specs": {
+      "hp": "280",
+      "engine": "2.0L Turbo Flat-4",
+      "0_100": "4.9s",
+      "top_speed": "250 km/h"
+    },
+    "image_prompt": "A rally blue Subaru Impreza WRX STI (GC8) parked in an overgrown, forgotten industrial dockyard. The scene is set at dusk under a perpetually drizzling rain, with the distant, blurred glow of a city skyline reflecting on the wet, grimy asphalt. The air is thick with moisture and a sense of forgotten history. Low angle shot, capturing the car's aggressive stance and the deep reflections. The overall aesthetic is 35mm film photography, grainy, with deep shadows and muted, desaturated colors, hinting at a raw, unpolished realism.",
+    "series": "Легенди 90-х",
+    "id": 58,
+    "date": "2026-06-29"
   }
 ]
