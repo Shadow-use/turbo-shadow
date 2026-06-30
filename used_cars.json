@@ -747,5 +747,18 @@
     "series": "Легенди 90-х",
     "id": 58,
     "date": "2026-06-29"
+  },
+  {
+    "model": "Nissan 350Z (Z33)",
+    "specs": {
+      "hp": "550",
+      "engine": "3.5L VQ35DE Twin-Turbo V6",
+      "0_100": "3.8s",
+      "top_speed": "300 km/h"
+    },
+    "image_prompt": "cinematic night street racing, a heavily modified Nissan 350Z (Z33) with a widebody kit and glowing undercarriage lights, speeding through a futuristic, abandoned hydro-electric dam complex high in the mountains. The concrete access roads wind dangerously around colossal, decaying structures. Bioluminescent flora emits a soft, otherworldly glow from the overgrown sections. Moonlight pierces through fractured parts of the dam, casting long, eerie shadows on the wet, reflective surfaces. A slight mist hovers over the partially submerged lower levels. Dynamic motion blur on the car and environment, emphasizing extreme velocity. Intense headlights cutting through the darkness, red taillights blurring into streaks.",
+    "series": "Midnight Crew",
+    "id": 59,
+    "date": "2026-06-30"
   }
 ]
