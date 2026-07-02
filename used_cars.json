@@ -773,5 +773,18 @@
     "series": "Hyper Speed",
     "id": 60,
     "date": "2026-07-02"
+  },
+  {
+    "model": "Rimac Nevera",
+    "specs": {
+      "hp": "1914",
+      "engine": "Four electric motors",
+      "0_100": "1.85s",
+      "top_speed": "412 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of a sleek Rimac Nevera hypercar, speeding through an otherworldly underwater volcano lava tunnel. The environment is alive with an intense, fiery orange and red glow emanating from the molten rock walls, casting dramatic reflections on the car's aerodynamic bodywork. Deep blues and blacks of the surrounding subaquatic structure and water provide a stark contrast. The image features an intense motion blur on the background and the car's wheels, emphasizing extreme velocity. Dynamic lighting, dramatic, ethereal atmosphere.",
+    "series": "Hyper Speed",
+    "id": 61,
+    "date": "2026-07-02"
   }
 ]
