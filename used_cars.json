@@ -760,5 +760,18 @@
     "series": "Midnight Crew",
     "id": 59,
     "date": "2026-06-30"
+  },
+  {
+    "model": "SSC Tuatara",
+    "specs": {
+      "hp": "1750",
+      "engine": "5.9L Twin-Turbo V8",
+      "0_100": "2.5s",
+      "top_speed": "475 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of an SSC Tuatara, its aerodynamic form slicing through the air, racing across a sleek, obsidian track within a vast, transparent dome on Mars. The background features reddish Martian dust swirling gently beyond the dome's edge, with distant, angular, futuristic spaceport structures under a faint, alien twilight. The track itself shows faint tire marks, reflecting the crimson glow of the Martian horizon. Intensive motion blur on the background and wheels, emphasizing extreme speed. Dynamic lighting from embedded track lights creates a dramatic, futuristic atmosphere.",
+    "series": "Hyper Speed",
+    "id": 60,
+    "date": "2026-07-02"
   }
 ]
