@@ -786,5 +786,18 @@
     "series": "Hyper Speed",
     "id": 61,
     "date": "2026-07-02"
+  },
+  {
+    "model": "Mercedes-Benz G 63 AMG 6x6",
+    "specs": {
+      "hp": "544",
+      "engine": "5.5L Bi-Turbo V8",
+      "0_100": "7.8s",
+      "top_speed": "160 km/h"
+    },
+    "image_prompt": "action off-road photography, Mercedes-Benz G 63 AMG 6x6 navigating treacherous terrain in the Sulphuric Geothermal Canyons of Io, aggressive alien storm, thick, corrosive steam plumes rising from vibrant yellow and orange ground fissures, vehicle kicking up glowing molten sulfur droplets and mineral dust, dramatic lighting from distant erupting geysers, dynamic composition with extreme tilt, wide-angle lens, low angle shot, vehicle covered in corrosive residue, extreme weather, high octane.",
+    "series": "Off-Road Beasts",
+    "id": 62,
+    "date": "2026-07-03"
   }
 ]
