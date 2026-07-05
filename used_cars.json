@@ -812,5 +812,18 @@
     "series": "Shadow Concepts",
     "id": 63,
     "date": "2026-07-04"
+  },
+  {
+    "model": "ДУХ (DUKH) Карпатський Щит",
+    "specs": {
+      "hp": "1500",
+      "engine": "Electric Torque Vectoring System",
+      "0_100": "2.5s",
+      "top_speed": "260 km/h"
+    },
+    "image_prompt": "cinematic automotive photography, a brutal cyber-off-roader named DUKH Carpathian Shield, featuring an aggressive stance, massive forged carbon body panels, and sharp, angular lines. Subtle blue and yellow LED accents, reminiscent of Ukrainian national colors, discreetly highlight its reinforced chassis, wheel arches, and a stylized trident motif integrated into the grille. The vehicle is positioned on a high-altitude plateau in the Ukrainian Carpathians, where ancient, weathered stone dolmens stand alongside futuristic, glowing energy towers. A mystical aurora borealis paints the night sky with ethereal greens and purples, casting an otherworldly glow on the landscape. Mist and fog swirl around the base of the dolmens and the vehicle, enhancing the dramatic atmosphere. Crisp, cold mountain air is palpable, with a light dusting of frost on the rugged terrain. Shot from a low, wide-angle perspective, emphasizing the vehicle's imposing presence against the grand, illuminated mountain backdrop.",
+    "series": "UA Custom Concepts",
+    "id": 64,
+    "date": "2026-07-05"
   }
 ]
