@@ -825,5 +825,18 @@
     "series": "UA Custom Concepts",
     "id": 64,
     "date": "2026-07-05"
+  },
+  {
+    "model": "Porsche 911 (993) Turbo",
+    "specs": {
+      "hp": "408",
+      "engine": "3.6L Twin-Turbo Flat-6",
+      "0_100": "4.3s",
+      "top_speed": "290 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic. A pristine Porsche 911 (993) Turbo parked on a heavily flooded city street at night, just after a torrential summer downpour. The street is slick with standing water, reflecting the vibrant, blurry neon signs from surrounding buildings in a shimmering kaleidoscope of colors. Dramatic, deep shadows contrast with bright, wet highlights. A low-angle shot, looking up at the car from the wet pavement, capturing the reflection of its iconic silhouette on the water's surface. The air is thick with humidity, creating a soft, diffused glow around distant streetlights. Moody, cinematic atmosphere.",
+    "series": "Легенди 90-х",
+    "id": 65,
+    "date": "2026-07-06"
   }
 ]
