@@ -838,5 +838,18 @@
     "series": "Легенди 90-х",
     "id": 65,
     "date": "2026-07-06"
+  },
+  {
+    "model": "Honda S2000 (AP1)",
+    "specs": {
+      "hp": "450",
+      "engine": "2.0L Turbocharged I4 VTEC",
+      "0_100": "3.9s",
+      "top_speed": "280 km/h"
+    },
+    "image_prompt": "cinematic night street racing, a heavily customized Honda S2000, widebody, low stance, and aggressive aero, its vibrant neon underglow illuminating the cracked asphalt beneath. The car is captured in a high-speed corner, racing across an abandoned, elevated highway system that dramatically weaves through a landscape of decaying, futuristic skyscrapers. The concrete structures are partially overgrown with exotic, glowing bioluminescent flora that emits a soft, otherworldly light. Two distinct, large moons cast an eerie, silvery glow over the scene from a dark, starless sky. Intense motion blur streaks the background and the car's wheels, conveying extreme velocity. Sharp headlights pierce the darkness, highlighting debris and structural damage on the road. Ultra-wide shot, dramatic low-angle perspective, deep shadows, and luminous accents.",
+    "series": "Midnight Crew",
+    "id": 66,
+    "date": "2026-07-07"
   }
 ]
