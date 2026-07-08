@@ -851,5 +851,18 @@
     "series": "Midnight Crew",
     "id": 66,
     "date": "2026-07-07"
+  },
+  {
+    "model": "Ferrari Dino 246 GT (1972)",
+    "specs": {
+      "hp": "195",
+      "engine": "2.4L V6 DOHC",
+      "0_100": "7.8s",
+      "top_speed": "235 km/h"
+    },
+    "image_prompt": "A cinematic moody realism shot of a forgotten 1972 Ferrari Dino 246 GT, parked in a dimly lit, abandoned Cold War era underground bunker. The car is covered in a thick layer of dust, with subtle signs of age: faded, peeling red paint, a delicate patina of rust around the wheel arches and exhaust, and dulled chrome trim. The interior, visible through the slightly ajar window, shows aged, cracked leather. The bunker environment features stacks of rusty steel barrels, wooden crates, and a single, broken neon sign casting a faint, flickering red glow on the car's side. Cobwebs drape from the low, concrete ceiling. Atmospheric lighting comes from a single bare bulb overhead, creating long, dramatic shadows and highlighting the car's iconic curves and the texture of its neglected surface. Dust motes are visible dancing in the sparse light beams. The scene evokes a sense of forgotten history and clandestine storage.",
+    "series": "Garage Finds",
+    "id": 67,
+    "date": "2026-07-08"
   }
 ]
