@@ -864,5 +864,18 @@
     "series": "Garage Finds",
     "id": 67,
     "date": "2026-07-08"
+  },
+  {
+    "model": "Bugatti Chiron Super Sport 300+",
+    "specs": {
+      "hp": "1600",
+      "engine": "8.0L Quad-Turbo W16",
+      "0_100": "2.4s",
+      "top_speed": "490.48 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of a Bugatti Chiron Super Sport 300+ blazing through a colossal, abandoned, multi-level magnetic levitation test track. The track's central lane, a pristine ribbon of asphalt, slices through a dense, bioluminescent jungle at twilight. Overgrown futuristic infrastructure towers above, intertwined with glowing flora. Intense motion blur on the background and wheels conveys extreme velocity. Dynamic low-angle perspective, atmospheric, with a hint of mist from the humid jungle air.",
+    "series": "Hyper Speed",
+    "id": 68,
+    "date": "2026-07-09"
   }
 ]
