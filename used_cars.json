@@ -877,5 +877,18 @@
     "series": "Hyper Speed",
     "id": 68,
     "date": "2026-07-09"
+  },
+  {
+    "model": "Rivian R1T",
+    "specs": {
+      "hp": "835",
+      "engine": "Quad-Motor Electric Powertrain",
+      "0_100": "3.0s",
+      "top_speed": "201 km/h"
+    },
+    "image_prompt": "action off-road photography of a Rivian R1T navigating a treacherous, alien-like landscape. The vehicle is kicking up dense clouds of fine volcanic ash and dust as it powers through sharp obsidian shards and around steaming vents. In the background, an active stratovolcano's peak periodically spews minor ash clouds, adding to the dramatic atmosphere. The sky is a menacing, hazy orange and gray, illuminated by the glow of molten rock beneath the ash and occasional flashes of volcanic lightning. The scene is raw, dynamic, and full of extreme tension, emphasizing the vehicle's ruggedness against the hostile environment.",
+    "series": "Off-Road Beasts",
+    "id": 69,
+    "date": "2026-07-10"
   }
 ]
