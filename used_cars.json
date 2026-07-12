@@ -903,5 +903,18 @@
     "series": "Shadow Concepts",
     "id": 70,
     "date": "2026-07-11"
+  },
+  {
+    "model": "Світозар (Svitlozar) Apex",
+    "specs": {
+      "hp": "1850",
+      "engine": "Electric Quad-Motor Drivetrain",
+      "0_100": "1.8s",
+      "top_speed": "450 km/h"
+    },
+    "image_prompt": "Cinematic automotive photography of the 'Світозар Apex' supercar. The vehicle, aggressive and powerful, is crafted from dark, forged carbon fiber, reflecting the vibrant neon lights of the futuristic Zoryana Haven. Subtle, glowing Ukrainian trident motifs are integrated into the car's rear diffuser and side skirts, emitting a warm, ethereal blue and yellow light. It's parked on a sleek, illuminated platform jutting out into the calm, reflective waters of the Black Sea at night. The background features a sprawling, multi-tiered floating city, adorned with holographic projections and energy conduits, all under a clear, star-dusted sky. Dramatic lighting, high contrast, with deep shadows and brilliant highlights, creating an atmosphere of advanced technology and serene power.",
+    "series": "UA Custom Concepts",
+    "id": 71,
+    "date": "2026-07-12"
   }
 ]
