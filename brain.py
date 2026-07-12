@@ -1,4 +1,4 @@
-# Responsibility: Головний модуль генерації концептів авто та промптів через Gemini API
+# Responsibility: Головний модуль генерації концептів авто та промптів через Gemini API з обробкою блокувань.
 import os
 import json
 import datetime
@@ -58,17 +58,31 @@ def generate_image(image_prompt):
     full_prompt = f"{image_prompt}, photorealistic, 8k, cinematic lighting"
     print("🚀 Генерація картинки через gemini-2.5-flash-image...")
     
-    response = client.models.generate_content(
-        model='gemini-2.5-flash-image',
-        contents=full_prompt,
-        config=types.GenerateContentConfig(
-            response_modalities=["IMAGE"],
-            image_config=types.ImageConfig(aspect_ratio="4:3")
+    try:
+        response = client.models.generate_content(
+            model='gemini-2.5-flash-image',
+            contents=full_prompt,
+            config=types.GenerateContentConfig(
+                response_modalities=["IMAGE"],
+                image_config=types.ImageConfig(aspect_ratio="4:3")
+            )
         )
-    )
-    
-    for part in response.candidates[0].content.parts:
-        if part.inline_data:
-             return part.inline_data.data
-             
-    raise Exception("Google API не повернув зображення у відповіді.")
+        
+        # Перевірка на блокування безпеки
+        if response.candidates and not response.candidates[0].content:
+            finish_reason = getattr(response.candidates[0], 'finish_reason', 'НЕВІДОМО')
+            error_msg = f"БЛОКУВАННЯ БЕЗПЕКИ! Причина: {finish_reason}. Промпт: {full_prompt}"
+            print(error_msg)
+            raise Exception(error_msg)
+            
+        # Нормальна генерація
+        if response.candidates and response.candidates[0].content:
+            for part in response.candidates[0].content.parts:
+                if part.inline_data:
+                     return part.inline_data.data
+                     
+        raise Exception("Google API не повернув зображення у відповіді.")
+        
+    except Exception as e:
+        print(f"Помилка генерації зображення: {e}")
+        raise e
