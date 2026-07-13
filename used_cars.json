@@ -916,5 +916,18 @@
     "series": "UA Custom Concepts",
     "id": 71,
     "date": "2026-07-12"
+  },
+  {
+    "model": "Nissan Skyline GT-R (R33)",
+    "specs": {
+      "hp": "280",
+      "engine": "2.6L Twin-Turbo I6",
+      "0_100": "5.2s",
+      "top_speed": "270 km/h"
+    },
+    "image_prompt": "A Nissan Skyline GT-R (R33) captured in a desolate, multi-story parking garage. The air is thick with a hazy, industrial smog, and the only illumination comes from the distant, pulsating neon glow of a sprawling cyberpunk city, casting a magenta and blue hue onto the damp concrete. A single, weak overhead fluorescent light flickers, creating long, distorted shadows. Shot with a 35mm film photography aesthetic, from a low, slightly wide-angle perspective, emphasizing the car's aggressive stance amidst the urban decay. The atmosphere is melancholic and mysterious.",
+    "series": "Легенди 90-х",
+    "id": 72,
+    "date": "2026-07-13"
   }
 ]
