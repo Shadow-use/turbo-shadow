@@ -929,5 +929,18 @@
     "series": "Легенди 90-х",
     "id": 72,
     "date": "2026-07-13"
+  },
+  {
+    "model": "Nissan Skyline GT-R (R34)",
+    "specs": {
+      "hp": "650",
+      "engine": "2.6L Twin-Turbo I6",
+      "0_100": "3.5s",
+      "top_speed": "300 km/h"
+    },
+    "image_prompt": "cinematic night street racing, A highly modified Nissan Skyline GT-R (R34) drifting through the narrow waterways of a sunken city's floating markets. The scene is illuminated by the ethereal glow of bioluminescent algae in the murky water, casting eerie green and blue hues. Flickering, rusty street lamps on half-submerged ancient structures provide a warm, uneven light. Heavy motion blur on the car and surrounding water, emphasizing extreme speed and a sense of urgency. Reflections of the car's headlights and taillights streak across the water. The atmosphere is dense and mysterious, with faint mist rising from the water's surface. Dark, decaying market stalls and submerged architecture line the path, barely visible in the low light.",
+    "series": "Midnight Crew",
+    "id": 73,
+    "date": "2026-07-14"
   }
 ]
