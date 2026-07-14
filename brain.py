@@ -26,7 +26,7 @@ def get_holiday_addon():
         return ""
 
 def get_car_brainstorm(theme_data, history):
-    excluded = ", ".join([item['model'] for item in history[-30:]]) 
+    excluded = ", ".join([item['model'] for item in history]) 
     holiday_addon = get_holiday_addon()
     holiday_text = f" ОБОВ'ЯЗКОВО додай елементи стилю: {holiday_addon}." if holiday_addon else ""
     
