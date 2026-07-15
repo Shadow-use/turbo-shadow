@@ -942,5 +942,18 @@
     "series": "Midnight Crew",
     "id": 73,
     "date": "2026-07-14"
+  },
+  {
+    "model": "1970 Mercedes-Benz 280SL (W113) \"Pagoda\"",
+    "specs": {
+      "hp": "170",
+      "engine": "2.8L M130 I6",
+      "0_100": "9.5s",
+      "top_speed": "200 km/h"
+    },
+    "image_prompt": "A cinematic moody realism photograph of a 1970 Mercedes-Benz 280SL 'Pagoda' in a derelict Victorian botanical conservatory. The car, a deep metallic blue, is covered in a thick layer of dust, with a subtle patina of age on its original paint. Faint surface rust is visible on the chrome trim and bumpers, hinting at years of neglect. Dramatic shafts of golden sunlight pierce through broken glass panes in the conservatory's domed roof, illuminating dust motes dancing in the air and casting long, sharp shadows. Overgrown, dried, and decaying exotic foliage, creepers, and vines have begun to reclaim the space, weaving around the car and across the moss-covered stone floor. Focus on the intricate details: the iconic 'Pagoda' hardtop, the elegant grille with its tarnished Mercedes star emblem, the textured, aged leather seats and dashboard, and the subtle reflections of the decaying environment in the car's faded paintwork. The atmosphere is one of profound forgotten beauty and melancholic serenity, with a desaturated color palette punctuated by the car's original blue and the warm sunlight.",
+    "series": "Garage Finds",
+    "id": 74,
+    "date": "2026-07-15"
   }
 ]
