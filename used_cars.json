@@ -955,5 +955,18 @@
     "series": "Garage Finds",
     "id": 74,
     "date": "2026-07-15"
+  },
+  {
+    "model": "Czinger 21C",
+    "specs": {
+      "hp": "1250",
+      "engine": "2.88L Twin-Turbo V8 Hybrid",
+      "0_100": "1.9s",
+      "top_speed": "452 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of a sleek Czinger 21C hypercar, its futuristic silver body reflecting the vibrant neon glow. The car is speeding through an ancient, rugged canyon, which is dramatically carved by a high-tech magnetic track. This track glows intensely with electric blue and purple neon lights, twisting and elevating in an endless loop, creating a dynamic, almost sci-fi environment. Futuristic energy cables hang gracefully from the canyon walls, connecting to the track. The scene is set at dusk, with the last rays of sunlight hitting the canyon peaks, contrasting with the artificial glow below. Intense motion blur on the background and wheels emphasizes extreme speed. Dry, clear weather.",
+    "series": "Hyper Speed",
+    "id": 75,
+    "date": "2026-07-16"
   }
 ]
