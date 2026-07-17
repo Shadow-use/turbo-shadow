@@ -968,5 +968,18 @@
     "series": "Hyper Speed",
     "id": 75,
     "date": "2026-07-16"
+  },
+  {
+    "model": "Toyota Land Cruiser 300 Series (Custom Off-Road Build)",
+    "specs": {
+      "hp": "500",
+      "engine": "3.5L Twin-Turbo V6",
+      "0_100": "5.5s",
+      "top_speed": "190 km/h"
+    },
+    "image_prompt": "action off-road photography, a highly modified Toyota Land Cruiser 300 Series, painted in matte olive green, aggressively plowing through a massive, deep mud rut in a dense, dark forest. Heavy rain has just ceased, leaving the environment saturated. Enormous mud and water splashes erupt violently from all four oversized tires, creating a dynamic, chaotic scene. The sky is aggressively overcast, with dramatic, filtered light struggling to penetrate the thick, dripping tree canopy. The forest floor is a treacherous mix of deep, slick mud and exposed roots. The vehicle is angled, showcasing its extreme articulation and raw power. Intense, gritty atmosphere.",
+    "series": "Off-Road Beasts",
+    "id": 76,
+    "date": "2026-07-17"
   }
 ]
