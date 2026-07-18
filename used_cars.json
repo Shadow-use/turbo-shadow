@@ -981,5 +981,18 @@
     "series": "Off-Road Beasts",
     "id": 76,
     "date": "2026-07-17"
+  },
+  {
+    "model": "Aetherion Zenith",
+    "specs": {
+      "hp": "4200",
+      "engine": "Quantum Grav-Flux Drive",
+      "0_100": "0.6s",
+      "top_speed": "1500 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art of the Aetherion Zenith. The vehicle features a sleek, hyper-aerodynamic form with a body made of shimmering, iridescent smart-alloy that subtly shifts colors. Seamless panels are integrated with ultra-thin luminescent strips that trace the vehicle's contours, glowing with an ethereal blue and violet light. It has a transparent canopy made of reinforced, self-repairing crystalline polymer. The car is positioned on a vast, pristine white platform suspended high above a sea of swirling, luminous clouds. The platform edge drops off into the endless cloudscape. In the distance, two majestic moons, one large and silvery, the other smaller and reddish, dominate the twilight sky. Soft, diffused twilight from a distant, unseen sun casts long, gentle shadows. The moons provide a secondary, ethereal glow, and the cloud sea below has a soft, internal luminescence. The car's LED accents are vibrant against this serene, high-altitude backdrop, conveying a sense of immense scale and isolation.",
+    "series": "Shadow Concepts",
+    "id": 77,
+    "date": "2026-07-18"
   }
 ]
