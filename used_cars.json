@@ -994,5 +994,18 @@
     "series": "Shadow Concepts",
     "id": 77,
     "date": "2026-07-18"
+  },
+  {
+    "model": "Скіфський Страж (Scythian Guardian)",
+    "specs": {
+      "hp": "1200",
+      "engine": "Гібридний V12 твін-турбо",
+      "0_100": "2.5s",
+      "top_speed": "380 км/год"
+    },
+    "image_prompt": "cinematic automotive photography of a brutalist cyber-offroader named 'Скіфський Страж' (Scythian Guardian). The vehicle features an incredibly aggressive, angular design, with its body entirely crafted from dark, forged carbon showcasing intricate, layered textures. Sharp, geometric lines dominate its silhouette. The lighting elements feature a subtle, pulsating blue and gold glow, reminiscent of the Ukrainian flag, subtly integrated into the headlights, taillights, and undercarriage, casting ethereal reflections on the wet, ancient stone. Large, aggressive off-road tires with complex tread patterns. The setting is an ancient, sprawling network of catacombs beneath Odesa, repurposed as a clandestine high-tech automotive testing facility. The air is thick with the scent of ozone and ancient earth. Dramatic, high-contrast lighting. Beams of futuristic laser light cut through the gloom, illuminating damp, rough-hewn stone walls. The floor is a polished, dark composite material, reflecting the vehicle's underglow. Subtle hints of advanced machinery and holographic displays are visible in the background, contrasting with the historic surroundings.",
+    "series": "UA Custom Concepts",
+    "id": 78,
+    "date": "2026-07-19"
   }
 ]
