@@ -1007,5 +1007,18 @@
     "series": "UA Custom Concepts",
     "id": 78,
     "date": "2026-07-19"
+  },
+  {
+    "model": "McLaren F1",
+    "specs": {
+      "hp": "627",
+      "engine": "6.1L Naturally Aspirated V12",
+      "0_100": "3.2s",
+      "top_speed": "386.4 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic, McLaren F1 parked on a remote, overgrown concrete landing strip at dawn, thick, swirling fog obscuring the distant tree line. The air is crisp and still. Soft, ethereal pre-sunrise light barely breaks through the mist, creating long, diffused shadows and a sense of profound solitude. Low, wide-angle shot from the front-quarter, emphasizing the car's sleek, almost ghost-like presence in the eerie, silent environment.",
+    "series": "Легенди 90-х",
+    "id": 79,
+    "date": "2026-07-20"
   }
 ]
