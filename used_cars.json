@@ -1020,5 +1020,18 @@
     "series": "Легенди 90-х",
     "id": 79,
     "date": "2026-07-20"
+  },
+  {
+    "model": "BMW E46 M3 GTR (Street Version)",
+    "specs": {
+      "hp": "600",
+      "engine": "4.0L naturally aspirated V8",
+      "0_100": "3.6s",
+      "top_speed": "310 km/h"
+    },
+    "image_prompt": "cinematic night street racing, a heavily customized BMW E46 M3 GTR speeding through a high-tech, semi-ruined bridge-tunnel connecting two metropolitan islands. The tunnel is dimly lit by flickering emergency strobes and faint, shimmering reflections of water from below. Rain-slicked asphalt, dramatic motion blur on the car and surroundings, creating a sense of extreme speed and danger. Gritty atmosphere, with steam rising from drains and deep shadows. The car's headlights cut through the gloom, highlighting its aggressive lines.",
+    "series": "Midnight Crew",
+    "id": 80,
+    "date": "2026-07-21"
   }
 ]
