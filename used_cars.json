@@ -1033,5 +1033,18 @@
     "series": "Midnight Crew",
     "id": 80,
     "date": "2026-07-21"
+  },
+  {
+    "model": "1965 Ford Mustang Fastback 2+2",
+    "specs": {
+      "hp": "271",
+      "engine": "289 cu in (4.7L) K-Code V8",
+      "0_100": "7.3s",
+      "top_speed": "185 km/h"
+    },
+    "image_prompt": "cinematic moody realism, a forgotten 1965 Ford Mustang Fastback 2+2, covered in thick layers of dust and grime, sitting in a partially flooded abandoned underground parking garage from the 1970s. Water drips from rusted pipes in the ceiling, creating shimmering, oil-stained puddles on the concrete floor. Faint, eerie green emergency lights cast long, distorted shadows across the car's faded paintwork and the damp, grimy walls. Focus on the pitted chrome trim, the textured patina of the paint, and subtle hints of surface rust on the wheel arches and exhaust. The atmosphere is claustrophobic and damp, with a sense of forgotten history. Ultra-detailed, volumetric lighting.",
+    "series": "Garage Finds",
+    "id": 81,
+    "date": "2026-07-22"
   }
 ]
