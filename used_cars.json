@@ -1046,5 +1046,18 @@
     "series": "Garage Finds",
     "id": 81,
     "date": "2026-07-22"
+  },
+  {
+    "model": "Bugatti Veyron 16.4 Super Sport",
+    "specs": {
+      "hp": "1200",
+      "engine": "8.0L Quad-Turbo W16",
+      "0_100": "2.5s",
+      "top_speed": "431 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of a Bugatti Veyron 16.4 Super Sport racing through a vast, subterranean geothermal cavern. The car is centered, low to the ground, with intense motion blur on the background and wheels, conveying extreme speed. The environment features shimmering crystalline walls reflecting the deep orange and red glow of visible molten lava flows through fissures. Intermittent plumes of steam erupt from vents, adding an atmospheric haze. The maglev track is barely visible beneath the blur of the car, emphasizing the raw power and otherworldly setting. Dynamic, dramatic lighting.",
+    "series": "Hyper Speed",
+    "id": 82,
+    "date": "2026-07-23"
   }
 ]
