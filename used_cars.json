@@ -1059,5 +1059,18 @@
     "series": "Hyper Speed",
     "id": 82,
     "date": "2026-07-23"
+  },
+  {
+    "model": "Bowler Defender Challenge (2022)",
+    "specs": {
+      "hp": "350",
+      "engine": "3.0L Ingenium I6 Turbo",
+      "0_100": "6.5s",
+      "top_speed": "190 km/h"
+    },
+    "image_prompt": "action off-road photography, a specialized Bowler Defender Challenge (2022) racing through the collapsing, frozen labyrinth of an abandoned Siberian diamond mine. A brutal polar storm rages overhead, with heavy snow falling and blinding whiteout conditions. The vehicle plows through deep, slushy ice water, sending massive splashes of freezing water and shattered ice shards into the air. Dynamic, high-speed shot with dramatic lighting, capturing the extreme cold and the vehicle's relentless forward motion.",
+    "series": "Off-Road Beasts",
+    "id": 83,
+    "date": "2026-07-24"
   }
 ]
