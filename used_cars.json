@@ -1072,5 +1072,18 @@
     "series": "Off-Road Beasts",
     "id": 83,
     "date": "2026-07-24"
+  },
+  {
+    "model": "Celestia Aurora Hyperion",
+    "specs": {
+      "hp": "4500",
+      "engine": "Quantum Plasma Drive",
+      "0_100": "0.8s",
+      "top_speed": "1200 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art. A sleek, ultra-aerodynamic luxury hypercar, Celestia Aurora Hyperion, crafted from advanced transparent graphene panels seamlessly integrated with iridescent chameleonic alloys. The chassis features visible carbon-nanotube structures, subtly glowing. Dynamic, customizable LED light strips trace the vehicle's contours, emitting a soft, pulsating azure and violet glow. The car is parked on an expansive, shimmering crystalline platform suspended high above a dense, swirling sea of luminescent clouds. In the twilight sky, two distinct moons are visible: one a large, silvery orb casting a cool, reflective light, and the other a smaller, reddish satellite emitting a warm, subtle glow. The scene is bathed in an ethereal, high-altitude twilight. Soft, diffuse light from the two moons creates long, dramatic shadows and highlights the car's reflective surfaces. Ambient light emanates from the platform's energy field, casting a subtle, futuristic sheen. The air is clear and crisp, with distant nebulae faintly visible.",
+    "series": "Shadow Concepts",
+    "id": 84,
+    "date": "2026-07-25"
   }
 ]
