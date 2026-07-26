@@ -1085,5 +1085,18 @@
     "series": "Shadow Concepts",
     "id": 84,
     "date": "2026-07-25"
+  },
+  {
+    "model": "ВОЛЯ (Volya) Sentinel",
+    "specs": {
+      "hp": "1200",
+      "engine": "Electric Quad-Motor Power System",
+      "0_100": "3.3s",
+      "top_speed": "290 km/h"
+    },
+    "image_prompt": "cinematic automotive photography of the 'ВОЛЯ (Volya) Sentinel', a brutal cyber-off-roader. The vehicle features an aggressive, angular design with visible forged carbon body panels. Subtle, glowing electric blue LED accents, forming abstract Ukrainian motifs like a stylized trident, are integrated into the front grille and side vents. The car is positioned on a newly paved, slightly damp observation platform directly outside a high-tech, clandestine research facility. This facility is carved into rugged, ancient granite cliffs overlooking the dark, turbulent Black Sea, specifically near Odesa but high above. The massive, almost invisible bay door of the facility entrance, camouflaged by a sophisticated holographic projection of the natural cliff face, is slightly ajar, revealing a glimpse of advanced machinery and glowing lights within. The scene is under an overcast, dramatic sky with hints of a storm brewing over the sea, providing cold, stark light that emphasizes the harsh textures of the cliff and the car's formidable presence. Strategic, almost menacing, internal light from the facility casts long shadows. Wide shot, low angle, emphasizing the car's dominance against the dramatic backdrop of the stormy sea and formidable cliffs, conveying a raw, powerful, secretive, and resilient atmosphere.",
+    "series": "UA Custom Concepts",
+    "id": 85,
+    "date": "2026-07-26"
   }
 ]
