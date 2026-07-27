@@ -1098,5 +1098,18 @@
     "series": "UA Custom Concepts",
     "id": 85,
     "date": "2026-07-26"
+  },
+  {
+    "model": "Porsche 911 (964) Carrera RS",
+    "specs": {
+      "hp": "260",
+      "engine": "3.6L Flat-6 Naturally Aspirated",
+      "0_100": "5.4s",
+      "top_speed": "260 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic, a vibrant Rubystone Red Porsche 911 (964) Carrera RS parked in a dimly lit, damp, cobbled alleyway of a historic European city district, late at night. The ground is wet and highly reflective from a recent light rain, mirroring the faint, flickering glow of distant amber streetlights and subtle, warm light spilling from a hidden, unseen bar window. Deep, atmospheric shadows contrast with the wet reflections. Low angle shot, the car slightly angled, emphasizing its powerful stance amidst the ancient, glistening cobblestones. A sense of quiet solitude and mystery.",
+    "series": "Легенди 90-х",
+    "id": 86,
+    "date": "2026-07-27"
   }
 ]
