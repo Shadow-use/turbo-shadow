@@ -1111,5 +1111,18 @@
     "series": "Легенди 90-х",
     "id": 86,
     "date": "2026-07-27"
+  },
+  {
+    "model": "McLaren 720S",
+    "specs": {
+      "hp": "710",
+      "engine": "4.0L Twin-Turbo V8",
+      "0_100": "2.8s",
+      "top_speed": "341 km/h"
+    },
+    "image_prompt": "cinematic night street racing, a heavily customized McLaren 720S speeding through a colossal, abandoned vertical farm complex. The track winds through decaying glass and steel hydroponic towers, where residual bioluminescent light from forgotten alien crops casts an eerie green and blue glow. Rainwater collects in large puddles on cracked concrete floors, reflecting the sporadic, intense flashes of short-circuiting automated agricultural machinery. Thick, humid air, dynamic motion blur emphasizing extreme speed, bokeh effects on distant lights.",
+    "series": "Midnight Crew",
+    "id": 87,
+    "date": "2026-07-28"
   }
 ]
