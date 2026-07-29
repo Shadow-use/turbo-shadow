@@ -1124,5 +1124,18 @@
     "series": "Midnight Crew",
     "id": 87,
     "date": "2026-07-28"
+  },
+  {
+    "model": "1963 Chevrolet Corvette Sting Ray",
+    "specs": {
+      "hp": "360",
+      "engine": "327ci V8 Fuel Injected",
+      "0_100": "5.9s",
+      "top_speed": "225 km/h"
+    },
+    "image_prompt": "A 1963 Chevrolet Corvette Sting Ray coupe, covered in thick layers of dust and cobwebs, sits in a vast, abandoned subterranean wine cellar beneath an ancient Italian villa. The floor is partially flooded with murky, still water reflecting the car's silhouette. Patches of vibrant green moss creep across the damp stone walls and ceiling, intertwining with rusted metal racks and scattered empty wine bottles. A single, weak bare bulb, hanging precariously from a corroded wire, casts a haunting, golden glow, creating long, dramatic shadows. The car's iconic split rear window is barely visible through the grime. Focus on the subtle texture of the faded, original paint, the dull sheen of tarnished chrome bumpers, and delicate specks of surface rust on metal accents. The atmosphere is one of forgotten grandeur and deep, melancholic silence. Cinematic moody realism, dramatic lighting, extreme detail, 8k.",
+    "series": "Garage Finds",
+    "id": 88,
+    "date": "2026-07-29"
   }
 ]
