@@ -1137,5 +1137,18 @@
     "series": "Garage Finds",
     "id": 88,
     "date": "2026-07-29"
+  },
+  {
+    "model": "Zenvo Aurora Tur",
+    "specs": {
+      "hp": "1850",
+      "engine": "6.6L Quad-Turbo V12 Hybrid",
+      "0_100": "2.3s",
+      "top_speed": "450 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of a Zenvo Aurora Tur, sleek and aggressive, with advanced aerodynamic elements, speeding along a colossal, abandoned high-altitude magnetic levitation test track. The track dynamically spirals through a vast, alien canyon system, its ancient, glowing energy conduits faintly humming. Jagged, crystalline rock formations surround the track, reflecting the peculiar hues of a binary sunset. Dust and ionized particles shimmer in the thin, exotic atmosphere. Two distinct suns, one fiery orange and the other cool violet, cast long, dramatic shadows across the landscape. The sky is a gradient of deep purples, oranges, and reds, with distant, exotic celestial bodies visible. Intense motion blur blurs the background and the car's wheels, emphasizing extreme speed as the car's advanced lighting system cuts through the twilight, leaving a shimmering air distortion trail.",
+    "series": "Hyper Speed",
+    "id": 89,
+    "date": "2026-07-30"
   }
 ]
