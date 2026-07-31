@@ -1150,5 +1150,18 @@
     "series": "Hyper Speed",
     "id": 89,
     "date": "2026-07-30"
+  },
+  {
+    "model": "Prodrive Hunter T1+",
+    "specs": {
+      "hp": "700",
+      "engine": "3.5L Twin-Turbo V6",
+      "0_100": "3.8s",
+      "top_speed": "220 km/h"
+    },
+    "image_prompt": "action off-road photography, a Prodrive Hunter T1+ relentlessly charging through desolate volcanic ash fields. Its powerful tires are violently kicking up massive clouds of fine grey ash and dark dust, creating a chaotic plume behind it. In the background, an active stratovolcano looms, spewing a thick, ominous column of smoke and steam into a heavily overcast, aggressive sky. A faint, fiery orange glow from molten lava is visible in distant fissures or at the volcano's rim. The atmosphere is gritty and intense, with strong winds whipping the ash around the vehicle. The Hunter is captured mid-air over a small ash dune or in a sharp, controlled drift, its bright LED headlamps cutting through the gloomy, almost apocalyptic environment. Dynamic motion blur emphasizes speed and the brutal conditions, with sharp focus on the rugged details of the vehicle.",
+    "series": "Off-Road Beasts",
+    "id": 90,
+    "date": "2026-07-31"
   }
 ]
