@@ -1163,5 +1163,18 @@
     "series": "Off-Road Beasts",
     "id": 90,
     "date": "2026-07-31"
+  },
+  {
+    "model": "Solara Fluxion X-9",
+    "specs": {
+      "hp": "3500",
+      "engine": "Anti-Matter Graviton Drive",
+      "0_100": "0.8s",
+      "top_speed": "1800 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art. A Solara Fluxion X-9, a hyper-futuristic concept car, is showcased within a Quantum Shard Nexus. The car features a sleek, aerodynamic chassis crafted from iridescent, self-repairing nanoceramics, with chameleonic panels that subtly shift hues. Integrated quantum light strips trace its elegant lines, emitting a soft, ethereal glow. Reactive LED accents pulse along its contours, indicating active systems. The vehicle appears to hover effortlessly above a crystalline platform, part of a vast, intricate network of transparent conduits and geometric shards suspended in a swirling cosmic nebula. Rivers of pure, radiant energy flow like luminous veins through the crystalline structures, casting dynamic reflections on the car's surface. In the background, distant gas giants and nebulae create a breathtaking panorama of vibrant, shifting colors. The overall atmosphere is one of advanced technology, zero-gravity elegance, and immense cosmic wonder, with dynamic, ethereal lighting.",
+    "series": "Shadow Concepts",
+    "id": 91,
+    "date": "2026-08-01"
   }
 ]
