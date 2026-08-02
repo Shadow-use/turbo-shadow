@@ -1176,5 +1176,18 @@
     "series": "Shadow Concepts",
     "id": 91,
     "date": "2026-08-01"
+  },
+  {
+    "model": "Січ Атаман",
+    "specs": {
+      "hp": "1200",
+      "engine": "Twin-Turbo V12 Hybrid",
+      "0_100": "2.5s",
+      "top_speed": "400 km/h"
+    },
+    "image_prompt": "Cinematic automotive photography of the 'Sich Ataman' hyper-SUV. The vehicle exhibits an aggressively sculpted body crafted from visible forged carbon fiber, with sharp, angular lines and a commanding stance. Subtle, glowing electric blue and golden yellow light accents subtly trace the car's aerodynamic lines and in the intricate patterns of its DRLs, hinting at Ukrainian motifs. It is positioned on a vast, futuristic floating shipyard in Zaporizhzhia, with colossal, illuminated industrial cranes looming in the background. The air is thick with a light morning mist, catching the warm, dramatic golden hour light of a rising sun. Reflections of the shipyard and the vehicle shimmer on the calm, dark waters of the Dnipro. The scene evokes a powerful blend of cutting-edge technology, raw industrial might, and a hint of ancient heritage.",
+    "series": "UA Custom Concepts",
+    "id": 92,
+    "date": "2026-08-02"
   }
 ]
