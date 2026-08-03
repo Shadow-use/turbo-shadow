@@ -1189,5 +1189,18 @@
     "series": "UA Custom Concepts",
     "id": 92,
     "date": "2026-08-02"
+  },
+  {
+    "model": "Nissan 300ZX (Z32) Twin Turbo",
+    "specs": {
+      "hp": "300",
+      "engine": "3.0L Twin-Turbo V6",
+      "0_100": "5.5s",
+      "top_speed": "250 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic. A sleek, dark Nissan 300ZX (Z32) Twin Turbo sits isolated on an overgrown, forgotten rooftop parking garage. The concrete surface is slick with recent rain, reflecting the vibrant, flickering neon glow from distant skyscrapers and advertising signs. Puddles catch the fragmented light, creating abstract patterns. The sky is a deep, moody twilight, hinting at the lingering humidity. Lush, wild greenery spills over broken barriers and cracks in the asphalt, reclaiming the urban space. Low-angle shot, slightly wide, capturing the car's silhouette against the sprawling, blurred cyberpunk-esque city lights in the background. The air is thick with atmosphere, a blend of urban decay and electric energy.",
+    "series": "Легенди 90-х",
+    "id": 93,
+    "date": "2026-08-03"
   }
 ]
