@@ -1202,5 +1202,18 @@
     "series": "Легенди 90-х",
     "id": 93,
     "date": "2026-08-03"
+  },
+  {
+    "model": "Mazda RX-7 FC3S (Rotary Tuned)",
+    "specs": {
+      "hp": "550",
+      "engine": "Rotary 13B-REW Twin-Turbo",
+      "0_100": "3.8s",
+      "top_speed": "290 km/h"
+    },
+    "image_prompt": "cinematic night street racing, a heavily tuned Mazda RX-7 FC3S, widebody kit, aggressive aero, racing through a labyrinthine network of abandoned underground tunnels. The car's piercing headlights illuminate damp concrete walls and the tunnel's rough texture. Flickering emergency lights and broken overhead fixtures cast eerie, intermittent glows on the wet asphalt and dripping water from the ceiling, creating reflective puddles that mirror the car's vibrant underglow. Occasional bursts of bright orange sparks erupt from exposed, damaged electrical wires overhead, adding to the chaotic scene. Intense motion blur on the background and wheels conveys extreme speed, aggressive dynamic low-angle shot, steam rising from puddles, dark and gritty atmosphere.",
+    "series": "Midnight Crew",
+    "id": 94,
+    "date": "2026-08-04"
   }
 ]
