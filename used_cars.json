@@ -1215,5 +1215,18 @@
     "series": "Midnight Crew",
     "id": 94,
     "date": "2026-08-04"
+  },
+  {
+    "model": "1968 Pontiac GTO",
+    "specs": {
+      "hp": "360",
+      "engine": "6.6L V8 Ram Air",
+      "0_100": "6.5s",
+      "top_speed": "195 km/h"
+    },
+    "image_prompt": "A cinematic moody realism shot of a 1968 Pontiac GTO, deep dark blue, covered in a thick layer of fine dust and grime, parked inside a forgotten, disused railway tunnel converted into a private garage. The tunnel walls are damp and covered in moss and mineral streaks. Subtle, dramatic rays of light pierce through a small, grimy opening high up, illuminating patches of the car's faded chrome trim and the delicate texture of its original, slightly peeling paint. Cobwebs are draped over the side mirrors and wheel wells. Patches of surface rust are visible on the lower body panels and around the wheel arches. Scattered vintage tools and forgotten car parts lie on the cracked concrete floor next to the vehicle. The air is heavy with dust particles dancing in the sparse light beams. Extreme focus on the intricate details of the GTO's iconic front grille, the aged vinyl roof texture, and the patina on its classic wheels. Soft, ambient light casts long shadows, enhancing the sense of abandonment and discovery.",
+    "series": "Garage Finds",
+    "id": 95,
+    "date": "2026-08-05"
   }
 ]
