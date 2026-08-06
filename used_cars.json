@@ -1228,5 +1228,18 @@
     "series": "Garage Finds",
     "id": 95,
     "date": "2026-08-05"
+  },
+  {
+    "model": "McLaren Speedtail",
+    "specs": {
+      "hp": "1070",
+      "engine": "4.0L Twin-Turbo V8 Hybrid",
+      "0_100": "2.9s",
+      "top_speed": "403 km/h"
+    },
+    "image_prompt": "A McLaren Speedtail streaks across a futuristic, translucent maglev track, encased within a magnificent tunnel of shimmering aurora borealis. The setting is a vast, icy Arctic landscape, visible faintly beyond the track's glowing structure. The shot is a high-speed tracking shot, capturing the hypercar in sharp focus while the background and wheels are enveloped in intense motion blur, emphasizing its incredible speed. Dynamic lighting from the aurora casts vibrant, shifting hues of green, blue, and purple onto the car's sleek, elongated body. The atmosphere is cold, crisp, and incredibly ethereal.",
+    "series": "Hyper Speed",
+    "id": 96,
+    "date": "2026-08-06"
   }
 ]
