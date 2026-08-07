@@ -1241,5 +1241,18 @@
     "series": "Hyper Speed",
     "id": 96,
     "date": "2026-08-06"
+  },
+  {
+    "model": "GMC Hummer EV Pickup Edition 1",
+    "specs": {
+      "hp": "1000",
+      "engine": "Tri-motor electric powertrain",
+      "0_100": "3.0s",
+      "top_speed": "170 km/h"
+    },
+    "image_prompt": "action off-road photography, GMC Hummer EV Pickup Edition 1 in an ancient volcanic caldera, navigating through glowing geothermal mud pits and over jagged obsidian rock formations. A thick, sulfurous fog envelops the scene, creating an eerie, dim atmosphere. Aggressive dynamic shot with boiling mud and dark water splashing wildly around the tires, emphasizing the extreme environment. The vehicle's lights cut through the dense fog, adding to the dramatic tension. Heavy, wet, and dangerous conditions.",
+    "series": "Off-Road Beasts",
+    "id": 97,
+    "date": "2026-08-07"
   }
 ]
