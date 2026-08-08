@@ -1254,5 +1254,18 @@
     "series": "Off-Road Beasts",
     "id": 97,
     "date": "2026-08-07"
+  },
+  {
+    "model": "Aetherion Lumina X-2099",
+    "specs": {
+      "hp": "5500",
+      "engine": "Quantum-Flux Graviton Drive",
+      "0_100": "0.8s",
+      "top_speed": "1800 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art. A sleek, low-profile, hyper-aerodynamic concept car, the 'Aetherion Lumina X-2099', sits on a transparent crystalline platform in a Sub-oceanic Bioluminescent Trench City. The car's body features iridescent graphene panels that shift color with the ambient light, complemented by a chrono-weave carbon-nanotube chassis. Dynamic, adaptive LED light strips trace its sharp aerodynamic lines, with a pulsating 'Aetherion' logo on the front and glowing energy vents at the rear. The environment is dominated by colossal, glowing alien flora and shimmering blue-green energy currents flowing around ancient, coral-like skyscraper formations. The deep-sea water is a luminous sapphire blue, with schools of futuristic bioluminescent drones swimming past. Ethereal, diffused light filters from above the trench, creating dramatic shafts of light. The overall lighting is soft, pulsating, and entirely bioluminescent, with no direct sun, emphasizing the car's futuristic materials and LED accents.",
+    "series": "Shadow Concepts",
+    "id": 98,
+    "date": "2026-08-08"
   }
 ]
