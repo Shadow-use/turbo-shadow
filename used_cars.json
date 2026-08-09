@@ -1267,5 +1267,18 @@
     "series": "Shadow Concepts",
     "id": 98,
     "date": "2026-08-08"
+  },
+  {
+    "model": "Sirko \"Лісовий Щит\"",
+    "specs": {
+      "hp": "1200",
+      "engine": "Quad-motor Electric Drive",
+      "0_100": "2.9s",
+      "top_speed": "280 km/h"
+    },
+    "image_prompt": "cinematic automotive photography of the Sirko \"Лісовий Щит\", a brutal cyber-off-roader, parked on the mystical shore of a hidden lake deep within an ancient Ukrainian forest. The vehicle features aggressive lines, prominent forged carbon body panels, and massive off-road tires. Subtle Ukrainian geometric motifs are integrated into the deep blue LED accent lighting. Mist gently rises from the water, illuminated by warm, golden hour sun shafts piercing through the dense, emerald canopy. Moss-covered ancient rocks and lush green foliage surround the scene, creating a natural, yet subtly high-tech environment with soft, diffused shadows.",
+    "series": "UA Custom Concepts",
+    "id": 99,
+    "date": "2026-08-09"
   }
 ]
