@@ -1280,5 +1280,18 @@
     "series": "UA Custom Concepts",
     "id": 99,
     "date": "2026-08-09"
+  },
+  {
+    "model": "Ferrari F50",
+    "specs": {
+      "hp": "505",
+      "engine": "4.7L Naturally Aspirated V12",
+      "0_100": "3.8s",
+      "top_speed": "325 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic. A vibrant red Ferrari F50 sits majestically in a dimly lit, partially flooded underground parking garage. The shallow water on the ground perfectly reflects the flickering, vibrant neon signs from unseen sources above, creating a surreal dance of distorted colors across the wet concrete and the car's sleek bodywork. A low-angle, wide shot emphasizes the F50's imposing silhouette against the shimmering reflections and the damp, grimy concrete pillars. The air is thick with a sense of forgotten history and urban decay, with stray beams of light struggling to penetrate the gloom from distant ventilation shafts. The atmosphere is mysterious and intensely melancholic.",
+    "series": "Легенди 90-х",
+    "id": 100,
+    "date": "2026-08-10"
   }
 ]
