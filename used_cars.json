@@ -1293,5 +1293,18 @@
     "series": "Легенди 90-х",
     "id": 100,
     "date": "2026-08-10"
+  },
+  {
+    "model": "Nissan 240SX (S13) SR20DET Custom",
+    "specs": {
+      "hp": "650",
+      "engine": "Tuned SR20DET 2.0L Turbo I4",
+      "0_100": "3.8s",
+      "top_speed": "300 km/h"
+    },
+    "image_prompt": "cinematic night street racing, a heavily modified Nissan 240SX (S13) with widebody kit and aggressive stance drifting on an abandoned rooftop heliport. Dense urban fog rolls across the helipad, partially obscuring the surrounding towering skyscrapers. Neon signs from distant buildings cast vibrant reflections on the wet, concrete surface. Harsh emergency floodlights illuminate patches of the helipad, contrasting with the car's bright LED headlights and glowing red taillights. Extreme motion blur captures the car in a dynamic corner, with brake rotors glowing intensely. Low angle, wide shot, hyperrealistic.",
+    "series": "Midnight Crew",
+    "id": 101,
+    "date": "2026-08-11"
   }
 ]
