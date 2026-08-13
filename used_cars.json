@@ -1306,5 +1306,18 @@
     "series": "Midnight Crew",
     "id": 101,
     "date": "2026-08-11"
+  },
+  {
+    "model": "Koenigsegg Gemera",
+    "specs": {
+      "hp": "1700",
+      "engine": "2.0L 3-cyl TFG & 3 Electric motors",
+      "0_100": "1.9s",
+      "top_speed": "400 km/h"
+    },
+    "image_prompt": "A Koenigsegg Gemera, with its sleek carbon fiber body, speeding through a 'Transgalactic Tunnel'. The tunnel is an ultra-futuristic, enclosed environment with anti-gravity lanes, illuminated by glowing energy patterns and intricate neon light trails on shimmering metallic walls. The atmosphere is dynamic and high-tech, with a dark, mysterious backdrop accented by vibrant, fast-moving lights. High-speed tracking shot, intense motion blur on the background and wheels, dramatic low-angle perspective, cyberpunk aesthetic.",
+    "series": "Hyper Speed",
+    "id": 102,
+    "date": "2026-08-13"
   }
 ]
