@@ -1319,5 +1319,18 @@
     "series": "Hyper Speed",
     "id": 102,
     "date": "2026-08-13"
+  },
+  {
+    "model": "Jeep Wrangler Rubicon 392",
+    "specs": {
+      "hp": "470",
+      "engine": "6.4L HEMI V8",
+      "0_100": "4.5s",
+      "top_speed": "160 km/h"
+    },
+    "image_prompt": "Action off-road photography of a powerful dark-colored Jeep Wrangler Rubicon 392 fiercely navigating a blizzard-swept glacial fjord in Arctic Alaska. The vehicle is seen plowing through deep, fresh snow, with massive plumes of snow and ice spraying dramatically from its churning tires. Towering, jagged ice walls and frozen, treacherous water define the extreme environment, with hidden ice bridges. Heavy snowfall and strong, whipping winds create near whiteout conditions in the background, adding to the aggressive, cold atmosphere. Overcast, diffused lighting emphasizes the stark, unforgiving landscape. The car is angled dynamically, showcasing its raw power against the elements.",
+    "series": "Off-Road Beasts",
+    "id": 103,
+    "date": "2026-08-14"
   }
 ]
