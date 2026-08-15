@@ -1332,5 +1332,18 @@
     "series": "Off-Road Beasts",
     "id": 103,
     "date": "2026-08-14"
+  },
+  {
+    "model": "Hydro-Spectra Manta X-2077",
+    "specs": {
+      "hp": "4500",
+      "engine": "Quantum Hydro-Fusion Drive",
+      "0_100": "0.8s",
+      "top_speed": "2500 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art. A sleek, multi-mode amphibious vehicle, the Hydro-Spectra Manta X-2077, hovers effortlessly within a breathtaking sub-aquatic bio-luminescent trench city. Its body is crafted from a seamless blend of iridescent graphene-titanium alloys, with intricate patterns of pulsating, ultra-bright LED accents in deep blues and greens tracing its aerodynamic lines and active aerodynamic fins. The vehicle's transparent canopy is made of a reinforced crystalline polymer, offering panoramic views. The trench city is an awe-inspiring spectacle of towering coral-like structures, glowing neon flora, and sophisticated architectural elements built from transparent, luminescent materials. Bioluminescent marine life drifts gracefully, casting ethereal light. The overall lighting is a symphony of deep blues, purples, and vibrant neon accents from the city and natural organisms, creating a dreamlike, otherworldly glow. The water is crystal clear, revealing complex details of the futuristic environment.",
+    "series": "Shadow Concepts",
+    "id": 104,
+    "date": "2026-08-15"
   }
 ]
