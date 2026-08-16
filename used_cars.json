@@ -1345,5 +1345,18 @@
     "series": "Shadow Concepts",
     "id": 104,
     "date": "2026-08-15"
+  },
+  {
+    "model": "Світовид \"Верховина\"",
+    "specs": {
+      "hp": "1200",
+      "engine": "Quad-motor electric powertrain",
+      "0_100": "2.9s",
+      "top_speed": "240 km/h"
+    },
+    "image_prompt": "A brutal, custom-built cyber-offroader, the Svitovyd \"Verkhovyna\", is captured in cinematic automotive photography. Its design exudes aggressive power, with sharp, angular lines crafted from dark, forged carbon panels that absorb and reflect the ambient light. Subtle Ukrainian trident motifs are integrated into the vehicle's dynamic LED lighting, glowing a faint, ethereal blue-and-yellow hue, almost imperceptible but present. The vehicle is positioned on a high-tech rally stage carved into the heart of the Carpathian mountains. The environment is rugged yet infused with futuristic elements – advanced sensor arrays and precision-engineered track barriers line the challenging course. A thick, atmospheric mist hangs low in the valleys, slowly receding as the early morning sun begins to break through the peaks, casting dramatic, long shadows and a soft, golden glow on the carbon fiber body. The air is crisp and cold, hinting at the high altitude. The ground is a mix of wet gravel and advanced composite track surfacing, showing signs of recent high-speed traversal. Focus on the vehicle's robust stance and the dramatic mountain backdrop.",
+    "series": "UA Custom Concepts",
+    "id": 105,
+    "date": "2026-08-16"
   }
 ]
