@@ -1358,5 +1358,18 @@
     "series": "UA Custom Concepts",
     "id": 105,
     "date": "2026-08-16"
+  },
+  {
+    "model": "Nissan 300ZX (Z32) Twin Turbo",
+    "specs": {
+      "hp": 280,
+      "engine": "3.0L Twin-Turbo V6",
+      "0_100": "5.8s",
+      "top_speed": "250 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic. A sleek, black Nissan 300ZX (Z32) Twin Turbo is parked at a desolate, abandoned gas station in a vast desert. The sun is setting, casting a dramatic, warm golden light across the scene, creating long, deep shadows. Dust motes dance in the last rays of light, giving the air a hazy, ethereal quality. The gas station sign is rusted and faded, its canopy collapsing slightly. The sky is a gradient of fiery oranges, purples, and deep blues. Shot from a low, slightly angled perspective, emphasizing the car's wide stance and the lonely grandeur of its surroundings. The overall mood is nostalgic, melancholic, and powerful.",
+    "series": "Легенди 90-х",
+    "id": 106,
+    "date": "2026-08-17"
   }
 ]
