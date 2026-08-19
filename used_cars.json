@@ -1384,5 +1384,18 @@
     "series": "Midnight Crew",
     "id": 107,
     "date": "2026-08-18"
+  },
+  {
+    "model": "1955 Mercedes-Benz 300 SL \"Gullwing\"",
+    "specs": {
+      "hp": "215",
+      "engine": "3.0L Inline-6",
+      "0_100": "8.5s",
+      "top_speed": "260 km/h"
+    },
+    "image_prompt": "A cinematic moody realism shot of a 1955 Mercedes-Benz 300 SL 'Gullwing' discovered in a partially flooded, ancient stone cellar beneath a derelict Tuscan winery. The car is covered in a fine layer of dust and grime, with subtle hints of surface rust on neglected chrome elements. Water, reflecting the faint, diffused light filtering through a high, grimy window, covers the stone floor around the tires. Broken, aged wooden wine barrels and cobweb-laden bottles are scattered nearby. The car's iconic silver paint shows years of neglect, with a dulled finish and water stains. Focus on the intricate details of the 'Gullwing' doors, the texture of the aged paint, the glint of corroded chrome, and the eerie, damp atmosphere. Soft, ethereal light barely illuminates the scene, creating deep shadows and dramatic contrast. The air is heavy with history and moisture.",
+    "series": "Garage Finds",
+    "id": 108,
+    "date": "2026-08-19"
   }
 ]
