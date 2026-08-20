@@ -1397,5 +1397,18 @@
     "series": "Garage Finds",
     "id": 108,
     "date": "2026-08-19"
+  },
+  {
+    "model": "Bugatti Bolide",
+    "specs": {
+      "hp": "1850",
+      "engine": "8.0L Quad-Turbo W16",
+      "0_100": "2.17s",
+      "top_speed": "500+ km/h"
+    },
+    "image_prompt": "A Bugatti Bolide in a high-speed tracking shot, tearing through a vast, illuminated subterranean magma tunnel. The car is centered, its aggressive aerodynamic lines cutting through the air. Intense motion blur blurs the background and the wheels, emphasizing extreme velocity. The tunnel walls are made of dark, volcanic rock with veins of pulsating, glowing orange and red magma flowing beneath the surface, casting an ethereal, fiery light. Steam rises from fissures, adding to the dramatic atmosphere. The ground is a smooth, dark, heat-resistant surface, reflecting the fiery glow. Dynamic, dark, and super fast.",
+    "series": "Hyper Speed",
+    "id": 109,
+    "date": "2026-08-20"
   }
 ]
