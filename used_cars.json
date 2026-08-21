@@ -1410,5 +1410,18 @@
     "series": "Hyper Speed",
     "id": 109,
     "date": "2026-08-20"
+  },
+  {
+    "model": "Audi RS Q e-tron E2",
+    "specs": {
+      "hp": "389",
+      "engine": "Electric drivetrain with energy conv.",
+      "0_100": "4.5s",
+      "top_speed": "170 km/h"
+    },
+    "image_prompt": "Action off-road photography of an Audi RS Q e-tron E2 navigating through the treacherous lava tubes of an active erupting volcano. The vehicle is surrounded by flowing molten rock, spewing volcanic ash, and corrosive steam. Intense fiery glow from the lava illuminates the scene, casting dramatic, long shadows. The ground is a mix of cooled basalt and fresh, glowing magma. The car kicks up red-hot dust and small spatters of cooling rock. Dynamic, low-angle shot, showcasing the vehicle's rugged tires gripping the uneven, dangerous terrain, dramatic lighting, apocalyptic atmosphere, extreme detail.",
+    "series": "Off-Road Beasts",
+    "id": 110,
+    "date": "2026-08-21"
   }
 ]
