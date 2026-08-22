@@ -1423,5 +1423,18 @@
     "series": "Off-Road Beasts",
     "id": 110,
     "date": "2026-08-21"
+  },
+  {
+    "model": "Vanguard Hyperion",
+    "specs": {
+      "hp": 7500,
+      "engine": "Gravitonic Pulse Reactor",
+      "0_100": "0.9s",
+      "top_speed": "1500 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art, a sleek, low-profile hyper-hovercar with adaptive chromo-fluid body panels that subtly shift iridescent colors, set against the backdrop of \"The Shifting Sands of Zephyr-Prime\". The car features sharp, aggressive lines, a carbon-nanotube chassis, and integrated holographic accents. Thin, vibrant blue LED light strips trace the contours of its aerodynamic shell and illuminate its frictionless magnetic levitation system. The environment is dominated by towering, shifting dunes of iridescent crystalline sand, glowing with a soft internal luminescence. In the distance, the swirling edges of a massive, shimmering dust storm are visible. The scene is lit by the dramatic, high-contrast light from a dual-star system, casting long, golden-red shadows across the landscape, complemented by cool, ethereal blue undertones filtering through the crystalline atmosphere. Ancient, partially buried alien ruins, emitting a faint, enigmatic glow, are visible amongst the dunes, adding to the mysterious, otherworldly ambiance.",
+    "series": "Shadow Concepts",
+    "id": 111,
+    "date": "2026-08-22"
   }
 ]
