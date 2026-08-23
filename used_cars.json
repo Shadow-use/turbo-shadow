@@ -1436,5 +1436,18 @@
     "series": "Shadow Concepts",
     "id": 111,
     "date": "2026-08-22"
+  },
+  {
+    "model": "Зоряний Вартовий: Скарб",
+    "specs": {
+      "hp": "1800",
+      "engine": "Quad-Turbo Hybrid V12",
+      "0_100": "2.1s",
+      "top_speed": "450 km/h"
+    },
+    "image_prompt": "Cinematic automotive photography. A futuristic, aggressive supercar, 'Zoryany Vartovy: Skarb', crafted from intricately woven forged carbon fiber, reflecting ambient light. Its sharp, angular lines define a low, wide stance, exuding raw power. Subtle, pulsating blue and yellow LED accents, reminiscent of ancient Ukrainian patterns, glow from vents and underbody, casting an ethereal light. The car is positioned on a sleek, cantilevered platform overlooking 'Skarbova Skelia' – a breathtaking, high-tech city carved into the sheer face of a colossal, ancient rock formation. The city is alive with luminescent bioluminescent flora and advanced holographic projections, casting a vibrant, otherworldly glow. A wide, serene river flows at the base of the rock, reflecting the city's myriad lights. The scene is set at twilight, with the last warm rays of the setting sun touching the highest peaks of the ancient rock, contrasting with the cool, futuristic city lights. Clear, calm air with a slight atmospheric haze softens the distant details.",
+    "series": "UA Custom Concepts",
+    "id": 112,
+    "date": "2026-08-23"
   }
 ]
