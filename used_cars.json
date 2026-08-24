@@ -1449,5 +1449,18 @@
     "series": "UA Custom Concepts",
     "id": 112,
     "date": "2026-08-23"
+  },
+  {
+    "model": "BMW M3 (E36)",
+    "specs": {
+      "hp": "321",
+      "engine": "3.2L I6 naturally aspirated",
+      "0_100": "5.5s",
+      "top_speed": "250 km/h"
+    },
+    "image_prompt": "A classic BMW M3 (E36) captured with a '35mm film photography aesthetic'. The car is parked amidst a gritty industrial port district at twilight. The wet asphalt reflects the warm, flickering light of vintage sodium vapor lamps, casting long, dramatic shadows from colossal cargo cranes and containers. A cool, thin mist gently blankets the scene, adding a mysterious depth. The muted color palette emphasizes the car's iconic silhouette against the melancholic, urban backdrop. A low, wide-angle shot from the front-quarter, capturing the raw atmosphere and the car's understated power.",
+    "series": "Легенди 90-х",
+    "id": 113,
+    "date": "2026-08-24"
   }
 ]
