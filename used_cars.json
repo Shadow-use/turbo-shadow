@@ -1462,5 +1462,18 @@
     "series": "Легенди 90-х",
     "id": 113,
     "date": "2026-08-24"
+  },
+  {
+    "model": "Volkswagen Golf GTI (MK2) - Heavily Tuned",
+    "specs": {
+      "hp": "380",
+      "engine": "2.0L Turbocharged I4",
+      "0_100": "4.8s",
+      "top_speed": "270 km/h"
+    },
+    "image_prompt": "cinematic night street racing, a heavily modified Volkswagen Golf GTI (MK2) with a widebody kit and aggressive stance, parked on a partially submerged, ancient concrete viaduct. The scene is set in a marshy industrial wasteland. Flickering red hazard lights cast eerie glows on the wet concrete and still water. Bioluminescent algae subtly glows emerald in the dark water surrounding the viaduct. A sliver of moonlight pierces through heavy, broken clouds. The car's powerful headlights cut through a thin, damp mist. Aggressive static shot, highly detailed, dramatic shadows and reflections.",
+    "series": "Midnight Crew",
+    "id": 114,
+    "date": "2026-08-25"
   }
 ]
