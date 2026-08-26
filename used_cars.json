@@ -1475,5 +1475,18 @@
     "series": "Midnight Crew",
     "id": 114,
     "date": "2026-08-25"
+  },
+  {
+    "model": "1970 Plymouth Road Runner (440 Six Barrel)",
+    "specs": {
+      "hp": "390",
+      "engine": "7.2L V8 Six-Barrel",
+      "0_100": "6.0s",
+      "top_speed": "200 km/h"
+    },
+    "image_prompt": "cinematic moody realism of a 1970 Plymouth Road Runner, covered in thick layers of dust and grime, with visible rust patches on the chrome bumpers and wheel arches. The paint is faded and dull, showing years of neglect. The car is parked deep inside an abandoned, damp Cold War bunker, with rough concrete walls and a low, arched ceiling. Scattered around are stacks of decaying wooden crates filled with vintage radio equipment, rusty metal military artifacts, and old, torn canvas tarps. A single, dramatic beam of dusty, ethereal light pierces through a high, unseen ventilation shaft, illuminating the car's front fender and grille, highlighting the texture of the rust and the faded paint. The overall atmosphere is eerie, silent, and forgotten. Focus on extreme detail: the fine dust clinging to every surface, the subtle sheen of moisture on the concrete floor, the intricate patterns of rust on the chrome, and the cracked, brittle texture of the car's vinyl interior visible through a dirty window.",
+    "series": "Garage Finds",
+    "id": 115,
+    "date": "2026-08-26"
   }
 ]
