@@ -1488,5 +1488,18 @@
     "series": "Garage Finds",
     "id": 115,
     "date": "2026-08-26"
+  },
+  {
+    "model": "Aston Martin Valkyrie",
+    "specs": {
+      "hp": "1160",
+      "engine": "6.5L NA V12 Hybrid",
+      "0_100": "2.5s",
+      "top_speed": "402 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of an Aston Martin Valkyrie. The car is speeding through a majestic, high-altitude laser-carved ice canyon. The canyon walls gleam with an ethereal blue and purple neon light, casting dynamic reflections on the polished ice surface below. Intense motion blur on the background and wheels emphasizes the extreme velocity. The sky above is a deep twilight, hinting at distant stars, with a crisp, cold atmosphere. Sharp, aerodynamic lines of the car cut through the air, creating subtle vapor trails. Dynamic, futuristic, and cold ambiance.",
+    "series": "Hyper Speed",
+    "id": 116,
+    "date": "2026-08-27"
   }
 ]
