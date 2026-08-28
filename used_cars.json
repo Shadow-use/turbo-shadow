@@ -1501,5 +1501,18 @@
     "series": "Hyper Speed",
     "id": 116,
     "date": "2026-08-27"
+  },
+  {
+    "model": "SCG Boot",
+    "specs": {
+      "hp": "700",
+      "engine": "6.2L Supercharged V8",
+      "0_100": "4.5s",
+      "top_speed": "200 km/h"
+    },
+    "image_prompt": "Action off-road photography of a powerful SCG Boot navigating through a deeply flooded ghost town in a river delta. The vehicle is kicking up massive water and mud splashes as it powers through marshy terrain and around crumbling, waterlogged buildings. Aggressive stormy weather, heavy rain, dark, dramatic clouds overhead. Dynamic lighting with reflections on the water surface. The scene is raw, intense, and full of motion.",
+    "series": "Off-Road Beasts",
+    "id": 117,
+    "date": "2026-08-28"
   }
 ]
