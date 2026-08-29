@@ -1514,5 +1514,18 @@
     "series": "Off-Road Beasts",
     "id": 117,
     "date": "2026-08-28"
+  },
+  {
+    "model": "Zenith Nova Prime",
+    "specs": {
+      "hp": 5200,
+      "engine": "Graviton Flux Core Reactor",
+      "0_100": "0.7s",
+      "top_speed": "2500 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art. A Zenith Nova Prime hypercar is parked on a polished, obsidian-like launch pad within the Aetherial Nexus orbital shipyard. The vehicle is ultra-sleek, with a low-slung profile, finished in a deep, iridescent midnight blue with subtle, interwoven carbon-nanotube patterns visible under direct light. Its body panels are crafted from adaptive shape-memory alloys and transparent electro-chromic polymers. Integrated LED light strips pulsate with a cool, cerulean glow along its aerodynamic fins, wheel arches, and underbody, casting reflections on the reflective surface of the pad. The canopy is a seamless, crystal-clear graphene dome. The background reveals the vastness of space, with swirling, luminous nebulae in shades of violet, emerald, and gold, illuminated by the distant glow of a binary star system. Massive, intricately detailed orbital structures and colossal, partially assembled starships loom in the background, adorned with thousands of tiny, sparkling navigation lights. The lighting is dramatic and high-contrast, emanating from the distant stars and internal shipyard lights. The car is spotlit, emphasizing its futuristic form, with reflections of the nebulae and ship lights dancing across its surface. The overall atmosphere is grand, awe-inspiring, and technologically advanced.",
+    "series": "Shadow Concepts",
+    "id": 118,
+    "date": "2026-08-29"
   }
 ]
