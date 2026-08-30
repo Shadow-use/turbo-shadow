@@ -1527,5 +1527,18 @@
     "series": "Shadow Concepts",
     "id": 118,
     "date": "2026-08-29"
+  },
+  {
+    "model": "Кримський Барс (Krymsky Bars)",
+    "specs": {
+      "hp": "1200",
+      "engine": "5.0L Twin-Turbo V12 Hybrid",
+      "0_100": "2.3s",
+      "top_speed": "380 km/h"
+    },
+    "image_prompt": "Cinematic automotive photography of the 'Кримський Барс' (Krymsky Bars) hyper-offroader. The vehicle features an aggressive, angular design with prominent forged carbon body panels, reflecting the dim light. Subtle, glowing blue and yellow LED accents, reminiscent of Ukrainian folk patterns, are integrated into the headlights, taillights, and side vents, barely visible but impactful. It is positioned amidst a flooded port city in the Danube Delta, where ancient, weathered industrial structures rise like mysterious islands from the misty, dark waters. The scene is illuminated by a cold, ethereal moonlight filtering through the fog, complemented by the scattered, vibrant neon glow from distant, dilapidated warehouses, casting reflections on the water's surface. The atmosphere is mysterious, powerful, and slightly melancholic, with a focus on high contrast and deep shadows, highlighting the car's formidable presence against the decaying, yet beautiful, backdrop. Water splashes gently around the tires.",
+    "series": "UA Custom Concepts",
+    "id": 119,
+    "date": "2026-08-30"
   }
 ]
