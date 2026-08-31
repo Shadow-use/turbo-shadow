@@ -1540,5 +1540,18 @@
     "series": "UA Custom Concepts",
     "id": 119,
     "date": "2026-08-30"
+  },
+  {
+    "model": "Ferrari F355 Berlinetta",
+    "specs": {
+      "hp": "375",
+      "engine": "3.5L Naturally Aspirated V8",
+      "0_100": "4.7s",
+      "top_speed": "295 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic. A radiant red Ferrari F355 Berlinetta, gleaming on a forgotten, overgrown mountain pass road in the Italian Dolomites. The scene is set just after a light summer rain, with ethereal mist gently rising from the deep valleys below. Golden hour sunlight pierces through dramatic, broken clouds, creating a dynamic play of light and shadow on the damp, reflective asphalt and the car's curves. Weathered stone guardrails line the winding road, adorned with vibrant wildflowers. Towering pine trees, their needles glistening with moisture, frame the majestic peaks. Low angle, slightly wide shot, capturing the car's iconic silhouette against the breathtaking, atmospheric landscape.",
+    "series": "Легенди 90-х",
+    "id": 120,
+    "date": "2026-08-31"
   }
 ]
