@@ -1553,5 +1553,18 @@
     "series": "Легенди 90-х",
     "id": 120,
     "date": "2026-08-31"
+  },
+  {
+    "model": "Acura Integra Type R (DC2)",
+    "specs": {
+      "hp": "350",
+      "engine": "Turbocharged B18C5 I4",
+      "0_100": "5.0s",
+      "top_speed": "260 km/h"
+    },
+    "image_prompt": "cinematic night street racing, an aggressively modified Acura Integra Type R (DC2) with widebody kit and vibrant neon underglow, speeding through a flooded abandoned aqueduct. The aqueduct's ancient, moss-covered stone walls are dramatically illuminated by a patchwork of makeshift, pulsating neon strips in electric blues and purples, casting long, distorted reflections onto the shallow, dark water that covers the racing surface. Powerful headlights pierce through a thick, eerie mist rising from the water. Intense motion blur on the wheels and background emphasizes blistering speed, while the car itself remains sharply focused. Glowing red brake discs are momentarily visible. The atmosphere is tense, mysterious, and high-octane, with high contrast, deep shadows, and shimmering wet reflections.",
+    "series": "Midnight Crew",
+    "id": 121,
+    "date": "2026-09-01"
   }
 ]
