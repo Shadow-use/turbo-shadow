@@ -1566,5 +1566,18 @@
     "series": "Midnight Crew",
     "id": 121,
     "date": "2026-09-01"
+  },
+  {
+    "model": "1967 Chevrolet Corvette C2 Sting Ray",
+    "specs": {
+      "hp": "435",
+      "engine": "7.0L V8 Big Block",
+      "0_100": "4.7s",
+      "top_speed": "240 km/h"
+    },
+    "image_prompt": "A 1967 Chevrolet Corvette C2 Sting Ray, covered in a thick layer of fine dust, sits forgotten in a dimly lit, secret underground bunker, cleverly disguised as an old wine cellar. The scene is captured in cinematic moody realism. Overgrown cobwebs drape from the vaulted stone ceiling, adorned with dusty, empty wine racks and barrels in the background. A single, weak beam of light filters through a cleverly disguised ventilation shaft, illuminating part of the car's iconic split-window rear and casting long, dramatic shadows. Focus on the intricate details: the muted gleam of the chrome bumpers and side pipes beneath the dust, the subtle texture of the faded Nassau Blue paint, and a hint of surface rust on the exhaust tips and wheel hubs. The concrete floor is damp in places, with scattered debris and a few fallen, petrified wine corks. The air feels heavy and still, with a palpable sense of time standing still for decades. The overall atmosphere is one of mysterious abandonment and discovery.",
+    "series": "Garage Finds",
+    "id": 122,
+    "date": "2026-09-02"
   }
 ]
