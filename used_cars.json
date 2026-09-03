@@ -1579,5 +1579,18 @@
     "series": "Garage Finds",
     "id": 122,
     "date": "2026-09-02"
+  },
+  {
+    "model": "Koenigsegg CC850",
+    "specs": {
+      "hp": "1385",
+      "engine": "5.0L Twin-Turbo V8",
+      "0_100": "2.8s",
+      "top_speed": "450 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of a Koenigsegg CC850, its sleek carbon fiber body gleaming, racing through an otherworldly landscape of floating crystalline canyons. The car is on a translucent, glowing track, flanked by towering, luminous rock formations that shimmer with internal light. The sky is a vibrant tapestry of alien aurora, casting ethereal greens, blues, and purples across the scene. Intense motion blur streaks the crystalline background and blurs the car's wheels, conveying extreme velocity. Dynamic lighting emphasizes the car's aerodynamic lines and the glowing environment.",
+    "series": "Hyper Speed",
+    "id": 123,
+    "date": "2026-09-03"
   }
 ]
