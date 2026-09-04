@@ -1592,5 +1592,18 @@
     "series": "Hyper Speed",
     "id": 123,
     "date": "2026-09-03"
+  },
+  {
+    "model": "Land Rover Defender 110 V8",
+    "specs": {
+      "hp": "525",
+      "engine": "5.0L Supercharged V8",
+      "0_100": "5.2s",
+      "top_speed": "240 km/h"
+    },
+    "image_prompt": "action off-road photography of a powerful Land Rover Defender 110 V8, aggressively navigating an ancient volcanic caldera. The ground is a treacherous mix of jagged black volcanic rock and steaming, acidic mud pits. Geothermal vents release sulfurous steam into the dark, turbulent sky, which is lit by a dramatic, stormy sunset. The Defender is mid-action, its wheels churning through deep, corrosive mud, sending spectacular brown and yellow splashes high into the air. Water and mud streak across its body, emphasizing its rugged endurance. Dynamic low-angle shot, capturing the raw power and the hostile, alien environment.",
+    "series": "Off-Road Beasts",
+    "id": 124,
+    "date": "2026-09-04"
   }
 ]
