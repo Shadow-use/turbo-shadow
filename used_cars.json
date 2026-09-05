@@ -1605,5 +1605,18 @@
     "series": "Off-Road Beasts",
     "id": 124,
     "date": "2026-09-04"
+  },
+  {
+    "model": "Voidreaver Specter",
+    "specs": {
+      "hp": "3500",
+      "engine": "Anti-matter Flux Drive",
+      "0_100": "0.8s",
+      "top_speed": "1800 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art. A sleek, ultra-aerodynamic dark concept car, featuring a self-repairing graphene-alloy chassis and adaptive photo-chromatic panels, with glowing quantum-fiber LED accents tracing its contours. It is positioned within an oceanic bioluminescent city, submerged beneath a crystal-clear alien sea. The environment is illuminated by ethereal blue and violet glowing flora and fauna, casting dynamic reflections on the vehicle's surfaces. Distant, refracted light from the swirling atmosphere of a gas giant planet filters through the water from above, creating a mesmerizing underwater scene.",
+    "series": "Shadow Concepts",
+    "id": 125,
+    "date": "2026-09-05"
   }
 ]
