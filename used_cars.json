@@ -1618,5 +1618,18 @@
     "series": "Shadow Concepts",
     "id": 125,
     "date": "2026-09-05"
+  },
+  {
+    "model": "Поліська Химера (Polissian Chimera)",
+    "specs": {
+      "hp": "1200",
+      "engine": "Quad-motor Electric Powertrain",
+      "0_100": "3.8s",
+      "top_speed": "220 km/h"
+    },
+    "image_prompt": "cinematic automotive photography, a brutally aggressive custom cyber-offroader, the 'Polissian Chimera', stands imposing on an ancient, moss-covered granite outcrop. The scene is set in the mystical heart of Ukrainian Polissya, with primeval forests and marshlands shrouded in ethereal twilight fog. A soft, ambient light, hinting at the last rays of a hidden sun, casts dramatic shadows. The vehicle's body, crafted from dark, forged carbon fiber, exhibits a rugged, angular design with extreme ground clearance and massive, aggressive off-road tires. Subtle, almost imperceptible Ukrainian trident motifs glow in electric blue and warm gold within its integrated LED light strips, outlining its powerful silhouette. The atmosphere is dense with ancient mystery and untamed power. Dynamic low-angle shot, wide aperture, shallow depth of field, focused on the car with the atmospheric background.",
+    "series": "UA Custom Concepts",
+    "id": 126,
+    "date": "2026-09-06"
   }
 ]
