@@ -1631,5 +1631,18 @@
     "series": "UA Custom Concepts",
     "id": 126,
     "date": "2026-09-06"
+  },
+  {
+    "model": "Lotus Esprit V8",
+    "specs": {
+      "hp": "350",
+      "engine": "3.5L Twin-Turbo V8",
+      "0_100": "4.9s",
+      "top_speed": "280 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic. A sleek, emerald green Lotus Esprit V8 sits on a crumbling, asphalt race track, partially swallowed by an overgrown, humid jungle. The air is thick and heavy, just after a tropical downpour, with water droplets clinging to giant, glossy leaves and the car's pristine surface. Overcast sky provides soft, diffused light, highlighting the car's sharp lines while casting subtle shadows from the dense foliage. Reflections of the dull sky and vibrant greenery ripple in the numerous puddles on the cracked track. A low-angle shot, focusing on the car's front three-quarters, with dense, wild vegetation framing the scene, conveying a sense of rediscovery and forgotten glory. Slight mist rises from the warm, wet ground in the distance.",
+    "series": "Легенди 90-х",
+    "id": 127,
+    "date": "2026-09-07"
   }
 ]
