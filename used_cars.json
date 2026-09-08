@@ -1644,5 +1644,18 @@
     "series": "Легенди 90-х",
     "id": 127,
     "date": "2026-09-07"
+  },
+  {
+    "model": "Dodge Challenger SRT Hellcat Redeye",
+    "specs": {
+      "hp": "797",
+      "engine": "6.2L Supercharged HEMI V8",
+      "0_100": "3.4s",
+      "top_speed": "327 km/h"
+    },
+    "image_prompt": "cinematic night street racing, a menacing Dodge Challenger SRT Hellcat Redeye, low-slung, parked on a vast, damp concrete spillway of an abandoned, overgrown hydroelectric dam complex. The scene is deep in a dark valley. Eerie, pulsating yellow-orange emergency floodlights cast long, distorted shadows across the brutalist architecture and the car. Intense, piercing white headlights of the Challenger cut through the humid night air, which has a slight mist rising from the valley floor. Sparse, flickering industrial lights are barely visible in the distant background. The concrete surfaces are slick and reflective. Aggressive static shot, capturing raw power and readiness, with subtle exhaust haze rising from the rear.",
+    "series": "Midnight Crew",
+    "id": 128,
+    "date": "2026-09-08"
   }
 ]
