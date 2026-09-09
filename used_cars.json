@@ -1657,5 +1657,18 @@
     "series": "Midnight Crew",
     "id": 128,
     "date": "2026-09-08"
+  },
+  {
+    "model": "1961 Jaguar E-Type Series 1 Roadster",
+    "specs": {
+      "hp": "265",
+      "engine": "3.8L DOHC I6",
+      "0_100": "7.1s",
+      "top_speed": "240 km/h"
+    },
+    "image_prompt": "A cinematic moody realism shot of a derelict 1961 Jaguar E-Type Series 1 Roadster, abandoned deep within a forgotten Cold War bunker. The car sits under a single, dim incandescent bulb hanging precariously from the damp, crumbling concrete ceiling. Moisture drips down the textured, moss-covered bunker walls, reflecting the faint light. Dust motes dance in the heavy air, illuminated by the bulb's glow. Focus on the car's faded British Racing Green paint, peeling in places to reveal primer beneath, and the intricate rust patterns forming on its chrome wire wheels and bumpers. The leather interior is cracked and moldy, with cobwebs stretched across the dashboard. The concrete floor is uneven and damp, with puddles reflecting the car's silhouette. The overall atmosphere is one of forgotten history and decay, emphasizing the contrast between the elegant machine and its harsh, enclosed environment. Shot from a low angle, highlighting the car's iconic lines against the oppressive bunker structure.",
+    "series": "Garage Finds",
+    "id": 129,
+    "date": "2026-09-09"
   }
 ]
