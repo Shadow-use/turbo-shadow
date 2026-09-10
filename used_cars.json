@@ -1670,5 +1670,18 @@
     "series": "Garage Finds",
     "id": 129,
     "date": "2026-09-09"
+  },
+  {
+    "model": "Aspark Owl",
+    "specs": {
+      "hp": "1985",
+      "engine": "Quad Electric Motors",
+      "0_100": "1.72s",
+      "top_speed": "400 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of an Aspark Owl hypercar racing through an unimaginably deep subterranean magnetic track, located near the Earth's core. The environment features massive, glowing veins of molten magma snaking through ancient, iridescent crystalline rock formations that line the track. The track itself is a sleek, futuristic conduit, pulsating with electric blue energy, giving off a faint hum. The car is at maximum velocity, with intense motion blur on the background, emphasizing the blurring magma flows and crystalline walls. The wheels are also intensely blurred, appearing as luminous discs of light. Dynamic, intense orange and blue lighting from the magma and track illuminate the scene, creating dramatic shadows and reflections on the car's aerodynamic bodywork. The atmosphere is dense and superheated, causing a subtle, shimmering heat haze around the vehicle.",
+    "series": "Hyper Speed",
+    "id": 130,
+    "date": "2026-09-10"
   }
 ]
