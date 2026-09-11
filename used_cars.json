@@ -1683,5 +1683,18 @@
     "series": "Hyper Speed",
     "id": 130,
     "date": "2026-09-10"
+  },
+  {
+    "model": "Tatra 815-7 DAKAR Rally Truck",
+    "specs": {
+      "hp": "1000",
+      "engine": "16.2L Turbocharged V8 Diesel",
+      "0_100": "12.5s",
+      "top_speed": "160 km/h"
+    },
+    "image_prompt": "action off-road photography, a massive Tatra 815-7 DAKAR Rally Truck, heavily modified, powerfully traversing the desolate, steaming volcanic ash fields of an active stratovolcano. Intense motion, huge plumes of dark grey ash and steam erupting from under its massive wheels. The aggressive environment features turbulent, low-hanging ash clouds and dramatic, diffused lighting filtering through the volcanic haze. Jagged black volcanic rocks are scattered across the treacherous, steaming terrain. Dynamic composition, showcasing extreme power and resilience, with ash and steam splashes adding to the raw energy.",
+    "series": "Off-Road Beasts",
+    "id": 131,
+    "date": "2026-09-11"
   }
 ]
