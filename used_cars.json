@@ -1709,5 +1709,18 @@
     "series": "Shadow Concepts",
     "id": 132,
     "date": "2026-09-12"
+  },
+  {
+    "model": "СИЧ АВАНГАРД (Sych Avangard)",
+    "specs": {
+      "hp": "950",
+      "engine": "Quad-Motor Electric Drive",
+      "0_100": "3.8s",
+      "top_speed": "220 km/h"
+    },
+    "image_prompt": "cinematic automotive photography of the 'Sych Avangard' cyber-offroader. The vehicle features an aggressively powerful design, with a menacing, ultra-wide stance and massive, angular forged carbon body panels. Integrated adaptive LED light bars cut through the air. Subtle electric blue and golden yellow light streaks emanate from the underglow and intricate interior accents, hinting at Ukrainian motifs. It's positioned on a rugged, ancient sandstone plateau overlooking a deep, winding canyon in a reimagined Podillia region. Futuristic, glowing energy pylons and holographic data relays are subtly integrated into the weathered canyon walls, blending primeval power with advanced technology. The scene is bathed in the warm, dramatic light of a low morning sun, casting long, sharp shadows and highlighting the vehicle's intricate details. A thin, ethereal mist rises from the canyon floor, adding to the mysterious and powerful atmosphere. Dynamic composition, wide-angle lens.",
+    "series": "UA Custom Concepts",
+    "id": 133,
+    "date": "2026-09-13"
   }
 ]
