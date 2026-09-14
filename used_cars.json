@@ -1722,5 +1722,18 @@
     "series": "UA Custom Concepts",
     "id": 133,
     "date": "2026-09-13"
+  },
+  {
+    "model": "Jaguar XJ220",
+    "specs": {
+      "hp": "542",
+      "engine": "3.5L Twin-Turbo V6",
+      "0_100": "3.6s",
+      "top_speed": "343 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic. A sleek Jaguar XJ220 is parked under the colossal, decaying glass dome of an abandoned botanical garden at midnight. The air is thick with humidity, and condensation drips from the rusted metal framework and dusty glass panels, creating shimmering streaks. Faint, ethereal glow of distant city lights pierces through the grime, casting long, distorted shadows. The car's powerful headlights cut through the gloom, illuminating vibrant, wild overgrowth that has reclaimed the interior. Shot from a low-angle, looking up at the car, highlighting its wide stance and the haunting scale of the dome around it.",
+    "series": "Легенди 90-х",
+    "id": 134,
+    "date": "2026-09-14"
   }
 ]
