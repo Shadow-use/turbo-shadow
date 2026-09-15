@@ -1735,5 +1735,18 @@
     "series": "Легенди 90-х",
     "id": 134,
     "date": "2026-09-14"
+  },
+  {
+    "model": "Chevrolet Corvette C6 Z06",
+    "specs": {
+      "hp": "600",
+      "engine": "7.0L LS7 V8",
+      "0_100": "3.4s",
+      "top_speed": "330 km/h"
+    },
+    "image_prompt": "Cinematic night street racing. A heavily modified Chevrolet Corvette C6 Z06, low to the ground, aggressively styled with widebody fenders and glowing red brake calipers. The car is speeding through a forgotten industrial shipyard, partially submerged in murky water. Rusted, towering gantry cranes cast long, distorted shadows against a toxic, pulsating green sky under a full, eerie moon. Scattered, flickering yellow industrial lights barely pierce the deep gloom, creating dramatic contrasts. Reflective wet ground and water surfaces mirror the ominous sky and car's powerful headlights. Dynamic motion blur conveys immense speed, with sparks flying from the exhaust, emphasizing the raw power and danger of the environment.",
+    "series": "Midnight Crew",
+    "id": 135,
+    "date": "2026-09-15"
   }
 ]
