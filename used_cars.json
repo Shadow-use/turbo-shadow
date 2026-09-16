@@ -1748,5 +1748,18 @@
     "series": "Midnight Crew",
     "id": 135,
     "date": "2026-09-15"
+  },
+  {
+    "model": "1967 Ferrari 275 GTB/4",
+    "specs": {
+      "hp": "300",
+      "engine": "3.3L Colombo V12",
+      "0_100": "6.5s",
+      "top_speed": "260 km/h"
+    },
+    "image_prompt": "cinematic moody realism photo of a 1967 Ferrari 275 GTB/4 discovered in an abandoned subterranean wine cellar beneath a forgotten medieval monastery. The car sits amidst damp earth and thick, gnarled tree roots snaking across the ancient stone floor and walls. A single, weak, ethereal beam of sunlight struggles through a narrow, broken vent high above, illuminating dust motes dancing in the heavy, humid air. The Ferrari is covered in a thick layer of fine, ancient dust, with subtle patches of surface rust beginning to bloom on its chrome accents and steel components. The original Rosso Corsa paint, though faded and dulled by decades of neglect, retains a ghost of its former luster, reflecting the dim light with a haunting quality. The leather interior is cracked and brittle, but the classic dashboard and wooden steering wheel are still recognizable. Focus on the intricate details of the Ferrari's design, the texture of the faded paint, the subtle glint of corroded chrome, and the delicate patterns of rust. The atmosphere is one of profound abandonment and forgotten grandeur. The air is thick with a sense of history and decay. The overall mood is melancholic and mysterious, emphasizing the passage of time and the hidden beauty of the forgotten machine.",
+    "series": "Garage Finds",
+    "id": 136,
+    "date": "2026-09-16"
   }
 ]
