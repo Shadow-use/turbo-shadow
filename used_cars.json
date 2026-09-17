@@ -1761,5 +1761,18 @@
     "series": "Garage Finds",
     "id": 136,
     "date": "2026-09-16"
+  },
+  {
+    "model": "Koenigsegg Regera",
+    "specs": {
+      "hp": "1500",
+      "engine": "5.0L Twin-Turbo Hybrid V8",
+      "0_100": "2.8s",
+      "top_speed": "410 km/h"
+    },
+    "image_prompt": "A Koenigsegg Regera speeding through an incredibly unique, dynamic underground magnetic-levitation tunnel. The tunnel features vibrant, glowing plasma walls that emanate intense light, and a majestic crystal vault above, refracting the plasma light into dazzling patterns. The car is captured in a high-speed tracking shot, emphasizing its sleek form. Intense motion blur streaks the background, transforming the plasma and crystal into streaks of pure energy, and blurs the wheels into spinning discs of light. The atmosphere is futuristic, surreal, and exhilarating, highlighting extreme velocity. Dramatic, high-contrast lighting.",
+    "series": "Hyper Speed",
+    "id": 137,
+    "date": "2026-09-17"
   }
 ]
