@@ -1774,5 +1774,18 @@
     "series": "Hyper Speed",
     "id": 137,
     "date": "2026-09-17"
+  },
+  {
+    "model": "Arctic Trucks AT44 (Toyota Hilux Base)",
+    "specs": {
+      "hp": "250",
+      "engine": "2.8L Turbo Diesel I4",
+      "0_100": "11.5s",
+      "top_speed": "160 km/h"
+    },
+    "image_prompt": "action off-road photography, an Arctic Trucks AT44 (Toyota Hilux Base) tackling the treacherous, steaming lava fields of an active volcano. The vehicle is navigating a terrain of jagged, dark volcanic rock and glowing fissures. Acidic geysers erupt violently in the background, spewing corrosive mist and liquid. The air is thick with volcanic ash and steam, creating a dramatic, ominous atmosphere. The AT44's massive tires are churning through fine ash and small lava rocks, with dynamic splashes of hot, steaming liquid erupting around its wheels. Intense, hellish orange and red glow from the lava contrasts with the dark, jagged landscape and the vehicle's powerful silhouette. Low-angle shot, extreme close-up on the action, capturing raw power and survival.",
+    "series": "Off-Road Beasts",
+    "id": 138,
+    "date": "2026-09-18"
   }
 ]
