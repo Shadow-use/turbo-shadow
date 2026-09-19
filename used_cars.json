@@ -1787,5 +1787,18 @@
     "series": "Off-Road Beasts",
     "id": 138,
     "date": "2026-09-18"
+  },
+  {
+    "model": "Aetherion Void Weaver",
+    "specs": {
+      "hp": 4500,
+      "engine": "Quantum Flux Drive with Grav-Lev",
+      "0_100": "0.8s",
+      "top_speed": "1800 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art. The Aetherion Void Weaver, a sleek, obsidian-black hypercar, rests on a polished, iridescent landing platform within a Terraformed Venusian Sky-City. Its chassis features dynamic, shape-shifting aerodynamic panels crafted from self-repairing nano-carbon, accented by bright bioluminescent cyan and violet LED strips that trace its contours. Wheels are replaced by glowing anti-gravity repulsors. Visible beneath a translucent outer skin, intricate energy conduits pulse with faint light. The sky-city itself is a marvel of engineering: colossal floating platforms interconnected by shimmering energy bridges, all suspended high above the Venusian clouds. In the background, a distant, artificial sun casts long, dramatic shadows, while swirling magenta and orange atmospheric currents create an ethereal, perpetual twilight. Colossal anti-gravity generators hum with light in the far distance, adding to the epic scale. The lighting is high-contrast and atmospheric, blending the city's neon glow with the alien beauty of the terraformed environment.",
+    "series": "Shadow Concepts",
+    "id": 139,
+    "date": "2026-09-19"
   }
 ]
