@@ -1800,5 +1800,18 @@
     "series": "Shadow Concepts",
     "id": 139,
     "date": "2026-09-19"
+  },
+  {
+    "model": "КОЛОС (KOLOS) \"Степний Грім\"",
+    "specs": {
+      "hp": "1800",
+      "engine": "Quad-motor Electric Drive",
+      "0_100": "3.5s",
+      "top_speed": "280 km/h"
+    },
+    "image_prompt": "cinematic automotive photography of the КОЛОС \"Степний Грім\" brutal cyber-off-roader. The vehicle features an ultra-aggressive, angular design with a body crafted from raw, forged carbon fiber, reflecting immense power. Subtle LED light strips, emitting a deep blue and vibrant yellow glow, trace intricate patterns reminiscent of traditional Ukrainian embroidery (rushnyk motifs) along its robust chassis lines and around the massive, knobby off-road tires. The car has an imposing, wide stance. It is navigating a treacherous, waterlogged extreme testing track within the vast, flooded quarries of Kryvyi Rih, now transformed into a futuristic industrial proving ground. Towering, jagged rock formations of deep red and grey dominate the background, partially obscured by a low-hanging mist over the reflective pools of water. Skeletal, high-tech industrial structures with neon accents pierce the dramatic dusk sky, which transitions from deep orange to purple and steel grey, filled with heavy, ominous clouds. The lighting is moody and atmospheric, highlighting the vehicle's powerful silhouette against the rugged, futuristic landscape.",
+    "series": "UA Custom Concepts",
+    "id": 140,
+    "date": "2026-09-20"
   }
 ]
