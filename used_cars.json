@@ -1813,5 +1813,18 @@
     "series": "UA Custom Concepts",
     "id": 140,
     "date": "2026-09-20"
+  },
+  {
+    "model": "Lamborghini Diablo",
+    "specs": {
+      "hp": "492",
+      "engine": "5.7L V12",
+      "0_100": "4.5s",
+      "top_speed": "325 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic. A menacing Lamborghini Diablo, its iconic sharp lines reflecting the dim, diffused light, parked in a narrow, rain-slicked cobblestone alley in a forgotten, ancient European city district. Wisps of steam gently rise from old metal grates on the ground, adding to the mysterious atmosphere. The air is heavy with moisture, creating a soft glow around distant, grimy streetlights. A low-angle shot, slightly wide, capturing the car's powerful stance amidst the gritty, textured walls and wet ground, emphasizing the contrast between raw urban decay and sleek automotive perfection.",
+    "series": "Легенди 90-х",
+    "id": 141,
+    "date": "2026-09-21"
   }
 ]
