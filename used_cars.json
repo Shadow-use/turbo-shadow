@@ -1826,5 +1826,18 @@
     "series": "Легенди 90-х",
     "id": 141,
     "date": "2026-09-21"
+  },
+  {
+    "model": "Nissan Silvia S14 Kouki (Heavily Tuned)",
+    "specs": {
+      "hp": "650",
+      "engine": "SR20DET Turbocharged I4",
+      "0_100": "3.8s",
+      "top_speed": "300 km/h"
+    },
+    "image_prompt": "cinematic night street racing. A heavily modified Nissan Silvia S14 Kouki, widebody, custom purple-blue underglow, aggressively cornering on a forgotten, winding high-altitude observatory road. Snow-dusted peaks loom in the background under a vibrant, swirling aurora borealis of green and purple. Headlights pierce the icy darkness, reflecting off subtle patches of ice on the asphalt. The air is crisp and cold. Dynamic static shot, capturing the car's intensity against the majestic, otherworldly night sky.",
+    "series": "Midnight Crew",
+    "id": 142,
+    "date": "2026-09-22"
   }
 ]
