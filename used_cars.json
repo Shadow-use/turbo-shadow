@@ -1839,5 +1839,18 @@
     "series": "Midnight Crew",
     "id": 142,
     "date": "2026-09-22"
+  },
+  {
+    "model": "1970 Buick GSX",
+    "specs": {
+      "hp": "360",
+      "engine": "7.5L V8 Stage 1",
+      "0_100": "5.5s",
+      "top_speed": "200 km/h"
+    },
+    "image_prompt": "A cinematic moody realism shot of a forgotten 1970 Buick GSX, sitting in an abandoned underground Cold War bunker. The car is heavily covered in a thick layer of fine dust, revealing only hints of its original Saturn Yellow paint beneath. Patches of surface rust show on the chrome bumpers and around the wheel arches. The concrete walls of the bunker are streaked with dampness and green mold, with rusty, exposed ventilation shafts snaking across the low ceiling. A single, dramatic beam of sunlight pierces through a narrow, high-up hatch, illuminating the dust motes in the air and casting a stark highlight on the car's hood, emphasizing the texture of the grime. Old, forgotten mechanic's tools are scattered on the oil-stained concrete floor around the vehicle. The overall atmosphere is one of profound neglect, mystery, and an eerie sense of time standing still. Focus on the intricate details of the rust patterns, the dull sheen of the dust-covered chrome, and the texture of the peeling paint.",
+    "series": "Garage Finds",
+    "id": 143,
+    "date": "2026-09-23"
   }
 ]
