@@ -1852,5 +1852,18 @@
     "series": "Garage Finds",
     "id": 143,
     "date": "2026-09-23"
+  },
+  {
+    "model": "Devel Sixteen",
+    "specs": {
+      "hp": "5000",
+      "engine": "12.3L Quad-Turbo V16",
+      "0_100": "1.8s",
+      "top_speed": "507 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of a sleek Devel Sixteen hypercar, streaking through a 'Trans-Dimensional Velocity Conduit'. The environment is a futuristic, glowing tunnel of pure energy and light, with a warped, swirling effect suggesting temporal distortion, stretching infinitely into the distance. The car is illuminated by an intense, otherworldly glow from the conduit itself. The background and wheels exhibit intensive motion blur, emphasizing extreme velocity. Low angle, slightly from the front-side.",
+    "series": "Hyper Speed",
+    "id": 144,
+    "date": "2026-09-24"
   }
 ]
