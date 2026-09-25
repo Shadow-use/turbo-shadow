@@ -1865,5 +1865,18 @@
     "series": "Hyper Speed",
     "id": 144,
     "date": "2026-09-24"
+  },
+  {
+    "model": "MAN KAT 1 A1 8x8 (Custom Rally Raid Build)",
+    "specs": {
+      "hp": "1200",
+      "engine": "18.3L V10 Turbo Diesel",
+      "0_100": "8.5s",
+      "top_speed": "180 km/h"
+    },
+    "image_prompt": "An extreme action off-road photography shot of a massive, custom-built MAN KAT 1 A1 8x8 rally raid truck, its huge tires churning through volcanic ash and dark, viscous mud. The scene is set within an ancient, active volcanic caldera, with ominous steam and sulfurous gases spewing from geothermal vents in the background. Vibrant, unnaturally colored acidic pools reflect the brooding, ash-laden sky, illuminated by a faint, eerie volcanic glow. Heavy, aggressive rain mixes with volcanic grit, creating dramatic splashes of dark mud and acidic water as the truck powers through. The atmosphere is intense and hostile, capturing the raw power of the vehicle against the unforgiving, alien landscape.",
+    "series": "Off-Road Beasts",
+    "id": 145,
+    "date": "2026-09-25"
   }
 ]
