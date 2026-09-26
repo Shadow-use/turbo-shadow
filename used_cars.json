@@ -1878,5 +1878,18 @@
     "series": "Off-Road Beasts",
     "id": 145,
     "date": "2026-09-25"
+  },
+  {
+    "model": "Aetherion Leviathan X-2077",
+    "specs": {
+      "hp": "5000",
+      "engine": "Quantum Plasma Drive",
+      "0_100": "0.8s",
+      "top_speed": "1500 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art of the Aetherion Leviathan X-2077. The car is sleek, ultra-aerodynamic, with a body crafted from self-repairing liquid metal alloys in a deep, iridescent dark chrome finish, accented by crystalline graphene panels. Dynamic, glowing blue and violet LED light strips trace its contours and wheel wells, emanating a soft, ethereal glow. The vehicle is situated within a stunning sub-aquatic bioluminescent trench city. Giant, translucent futuristic city domes are visible in the background, surrounded by vibrant, alien bioluminescent flora and fauna that emit soft blues, greens, and purples. Glowing coral structures and shimmering kelp forests line the trench walls. The lighting is dominated by the ethereal blue and green bioluminescent glow from the underwater environment, reflecting dramatically off the car's polished surfaces. Diffused light filters through the deep ocean water, creating soft shadows and shimmering distortions. Gentle underwater currents ripple around the vehicle, enhancing the serene yet futuristic atmosphere.",
+    "series": "Shadow Concepts",
+    "id": 146,
+    "date": "2026-09-26"
   }
 ]
