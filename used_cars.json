@@ -1891,5 +1891,18 @@
     "series": "Shadow Concepts",
     "id": 146,
     "date": "2026-09-26"
+  },
+  {
+    "model": "Гайдамака X-1 (Haidamaka X-1)",
+    "specs": {
+      "hp": "1500",
+      "engine": "Electric Quad-Motor System",
+      "0_100": "3.5s",
+      "top_speed": "240 km/h"
+    },
+    "image_prompt": "cinematic automotive photography of the 'Haidamaka X-1', a brutal cyber-off-roader. The vehicle features an aggressive, angular design with armored panels and a body crafted from dark, matte forged carbon. High ground clearance and massive, knobby all-terrain tires emphasize its rugged capability. Subtle glowing blue and yellow light accents are integrated into the front grille, side vents, and underbody, providing a distinct Ukrainian motif. The vehicle is positioned in front of a modern, sleek, and hidden secret base entrance, seamlessly carved into a low hill within the vast, golden Ukrainian steppe. The scene is set during the golden hour, with warm, strong directional sunlight casting dramatic shadows across the landscape and the vehicle's powerful contours. A slight dust haze hangs in the air, adding to the atmosphere. In the background, the endless steppe stretches under a clear, expansive sky.",
+    "series": "UA Custom Concepts",
+    "id": 147,
+    "date": "2026-09-27"
   }
 ]
