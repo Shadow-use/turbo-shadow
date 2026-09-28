@@ -1904,5 +1904,18 @@
     "series": "UA Custom Concepts",
     "id": 147,
     "date": "2026-09-27"
+  },
+  {
+    "model": "TVR Cerbera",
+    "specs": {
+      "hp": "420",
+      "engine": "4.5L AJP8 V8",
+      "0_100": "4.0s",
+      "top_speed": "300 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic. A menacing TVR Cerbera, deep crimson, is parked in a narrow, ancient cobblestone alleyway of a forgotten European city. The scene is bathed in the faint, flickering light of old gas lamps, casting long, dramatic shadows. A gentle, persistent drizzle wets the cobblestones, reflecting the light and creating shimmering puddles. A subtle, warm amber glow from a distant, hidden jazz club spills into the alley. Low-angle, slightly wide shot, emphasizing the car's aggressive stance and the moody, mysterious atmosphere. Gritty texture, cinematic color grading, shallow depth of field.",
+    "series": "Легенди 90-х",
+    "id": 148,
+    "date": "2026-09-28"
   }
 ]
