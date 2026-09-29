@@ -1917,5 +1917,18 @@
     "series": "Легенди 90-х",
     "id": 148,
     "date": "2026-09-28"
+  },
+  {
+    "model": "Lexus LFA",
+    "specs": {
+      "hp": "700",
+      "engine": "4.8L V10 NA",
+      "0_100": "3.2s",
+      "top_speed": "340 km/h"
+    },
+    "image_prompt": "cinematic night street racing, A heavily modified Lexus LFA, sleek and low, with custom widebody kit, aggressive aerodynamic elements, and glowing red underglow, racing on an abandoned, overgrown monorail track elevated high above a flooded, derelict cityscape. The scene is dramatically lit by the eerie, pulsating glow of distant lightning flashes illuminating the dark clouds, reflecting off the submerged roads below. Sparse, flickering emergency lights from the city's highest points cast long, distorted shadows. The LFA's headlights cut through the gloom, revealing overgrown tracks. Heavy rain streaks across the scene, creating a shimmering, reflective surface on the monorail track. The car is captured in aggressive motion, with subtle motion blur on the wheels and background, conveying immense speed and a raw, untamed power, hyper-realistic.",
+    "series": "Midnight Crew",
+    "id": 149,
+    "date": "2026-09-29"
   }
 ]
