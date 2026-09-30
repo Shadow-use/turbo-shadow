@@ -1930,5 +1930,18 @@
     "series": "Midnight Crew",
     "id": 149,
     "date": "2026-09-29"
+  },
+  {
+    "model": "1969 Chevrolet Camaro Z/28",
+    "specs": {
+      "hp": "290",
+      "engine": "302 cu in (4.9L) V8",
+      "0_100": "7.0s",
+      "top_speed": "200 km/h"
+    },
+    "image_prompt": "cinematic moody realism, a 1969 Chevrolet Camaro Z/28, covered in a fine layer of dust, parked deep within a forgotten Cold War era underground bunker. The concrete walls are visibly weeping with moisture, streaks of dark water stains running down them. A single, bare, flickering incandescent bulb hangs from the low ceiling, casting long, dramatic shadows and illuminating the car with a warm, dim glow. Focus on the intricate details: the subtle patina on the Hugger Orange paint, the slight surface rust on exposed metal components, the dull gleam of the chrome bumpers and trim under the sparse light, and the texture of the aged, cracked tires. The air is thick with a sense of history and forgotten power. The atmosphere is heavy, isolated, and chillingly still.",
+    "series": "Garage Finds",
+    "id": 150,
+    "date": "2026-09-30"
   }
 ]
