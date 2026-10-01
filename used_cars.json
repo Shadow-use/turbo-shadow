@@ -1943,5 +1943,18 @@
     "series": "Garage Finds",
     "id": 150,
     "date": "2026-09-30"
+  },
+  {
+    "model": "Koenigsegg Jesko",
+    "specs": {
+      "hp": "1600",
+      "engine": "5.0L Twin-Turbo V8",
+      "0_100": "2.5s",
+      "top_speed": "440 km/h"
+    },
+    "image_prompt": "A sleek Koenigsegg Jesko in vibrant metallic orange, tearing through a high-tech subterranean magma tube raceway. The track is made of a smooth, reflective, dark composite material, flanked by transparent sections revealing glowing, molten magma flow. Dynamic lighting from integrated LED strips along the tunnel walls casts futuristic reflections. The car is captured in a high-speed tracking shot, with intense motion blur on the background and wheels, emphasizing blistering speed. Volcanic steam plumes lightly from vents in the distance. The atmosphere is hot and electric.",
+    "series": "Hyper Speed",
+    "id": 151,
+    "date": "2026-10-01"
   }
 ]
