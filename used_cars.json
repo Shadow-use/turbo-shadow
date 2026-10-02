@@ -1956,5 +1956,18 @@
     "series": "Hyper Speed",
     "id": 151,
     "date": "2026-10-01"
+  },
+  {
+    "model": "Mercedes-AMG G 63 (W464)",
+    "specs": {
+      "hp": "585",
+      "engine": "4.0L Twin-Turbo V8",
+      "0_100": "4.5s",
+      "top_speed": "240 km/h"
+    },
+    "image_prompt": "action off-road photography, a Mercedes-AMG G 63 (W464) aggressively powers through a desolate, active volcanic ash field. Minor eruption in progress, with thick plumes of dark ash rising into a stormy, fiery sky. Glowing red-orange lava fissures crack across the ground, illuminating the scene with an ominous light. The vehicle is kicking up huge clouds of black volcanic ash and superheated steam, creating dynamic splashes of molten mud and glowing embers. Intense, dramatic lighting. Extreme wide angle, low perspective, high-speed blur for motion.",
+    "series": "Off-Road Beasts",
+    "id": 152,
+    "date": "2026-10-02"
   }
 ]
