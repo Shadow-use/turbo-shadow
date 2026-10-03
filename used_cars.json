@@ -1969,5 +1969,18 @@
     "series": "Off-Road Beasts",
     "id": 152,
     "date": "2026-10-02"
+  },
+  {
+    "model": "Shadow Seraphim Velocity",
+    "specs": {
+      "hp": "5000",
+      "engine": "Quantum-Flux Graviton Drive",
+      "0_100": "0.8s",
+      "top_speed": "1500 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art of the Shadow Seraphim Velocity. The car is a sleek, ultra-aerodynamic hypercar crafted from gleaming graphene composites and adaptive self-healing alloys, with integrated translucent solar panels. Its aggressive lines are highlighted by dynamic, glowing cyan and violet LED light strips. It is positioned on a crystalline sky-bridge in the multi-layered orbital city of Elysium Prime. Below, the city's lower levels are bathed in perpetual twilight, emitting a complex glow of neon and holographic advertisements. Above, the car reflects the shimmering, high-contrast light of a binary star system (one brilliant blue, one intense orange-yellow). Colossal transparent energy conduits crisscross the vast, futuristic sky. The scene is imbued with an ethereal, high-tech ambiance, showcasing extreme depth and futuristic architectural complexity.",
+    "series": "Shadow Concepts",
+    "id": 153,
+    "date": "2026-10-03"
   }
 ]
