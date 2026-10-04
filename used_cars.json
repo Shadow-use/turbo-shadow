@@ -1982,5 +1982,18 @@
     "series": "Shadow Concepts",
     "id": 153,
     "date": "2026-10-03"
+  },
+  {
+    "model": "ГРОМ: СТЕПОВИЙ ФОРТ",
+    "specs": {
+      "hp": "1250",
+      "engine": "Quad-Motor Electric Drivetrain",
+      "0_100": "2.8s",
+      "top_speed": "350 km/h"
+    },
+    "image_prompt": "cinematic automotive photography of the 'HROM: STEPOVYI FORT' cyber-off-roader. Its body is crafted from aggressively styled, dark forged carbon fiber, showcasing sharp, angular lines and a wide, imposing stance. Subtle, glowing electric blue and yellow accents, reminiscent of the Ukrainian flag, are integrated into the headlight signatures, grille lighting, and rear diffuser, barely visible but distinctly present. The vehicle is parked on a polished, dark gray concrete pad, nestled deep within a dense, ancient forest in the Cherkasy region, near the legendary Kholodny Yar. Towering, gnarled oak trees, their branches covered in moss, frame the scene, creating a natural, almost mystical canopy. In the background, glimpses of a sleek, minimalist, almost camouflaged high-tech research facility are visible through the trees – dark, angular structures blending seamlessly with the environment, hints of warm, inviting light emanating from within. The scene is bathed in the ethereal glow of a late afternoon, just as the sun dips below the horizon, casting long, dramatic shadows. A soft, ambient light filters through the ancient tree canopy, highlighting the vehicle's intricate carbon fiber textures and the subtle, internal glowing motifs. A light mist hangs low, adding to the mysterious, sacred atmosphere. The ground is damp with recent rain, reflecting the ambient light and car's underglow.",
+    "series": "UA Custom Concepts",
+    "id": 154,
+    "date": "2026-10-04"
   }
 ]
