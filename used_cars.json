@@ -1995,5 +1995,18 @@
     "series": "UA Custom Concepts",
     "id": 154,
     "date": "2026-10-04"
+  },
+  {
+    "model": "Mercedes-Benz SL 73 AMG (R129)",
+    "specs": {
+      "hp": "525",
+      "engine": "7.3L V12",
+      "0_100": "4.8s",
+      "top_speed": "300 km/h"
+    },
+    "image_prompt": "A Mercedes-Benz SL 73 AMG (R129) captured with a 35mm film photography aesthetic. The car is parked on a forgotten, overgrown section of a racetrack, nestled deep within a dormant volcano crater. A thick, eerie mist perpetually shrouds the scene, creating a sense of profound mystery. A pale, full moon occasionally pierces through heavy, dark clouds overhead, casting long, distorted shadows across the damp, moss-covered asphalt and crumbling grandstands barely visible in the background. The low-angle shot is slightly from the front-side, highlighting the car's classic silhouette against the swirling fog and the subtle moonlight. The atmosphere is cold, damp, and intensely atmospheric, with muted, dark tones and a distinctive vintage grain.",
+    "series": "Легенди 90-х",
+    "id": 155,
+    "date": "2026-10-05"
   }
 ]
