@@ -2008,5 +2008,18 @@
     "series": "Легенди 90-х",
     "id": 155,
     "date": "2026-10-05"
+  },
+  {
+    "model": "Nissan GT-R (R35)",
+    "specs": {
+      "hp": "800",
+      "engine": "3.8L Twin-Turbo V6",
+      "0_100": "2.6s",
+      "top_speed": "340 km/h"
+    },
+    "image_prompt": "cinematic night street racing, a heavily customized Nissan GT-R (R35) speeding through a partially flooded ancient canal within an old city. The canal walls are damp and reflective, catching eerie glows from hidden underwater spotlights that cast strange patterns on the water's surface and the car's body. A faint, misty atmosphere hangs in the air, enhancing the surreal reflections. The scene is dynamic, with strong motion blur emphasizing extreme speed, streaks of light trailing behind the vehicle. High contrast, deep shadows, and vibrant, saturated reflections.",
+    "series": "Midnight Crew",
+    "id": 156,
+    "date": "2026-10-06"
   }
 ]
