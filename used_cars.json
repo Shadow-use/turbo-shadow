@@ -2021,5 +2021,18 @@
     "series": "Midnight Crew",
     "id": 156,
     "date": "2026-10-06"
+  },
+  {
+    "model": "1973 BMW 2002 Turbo",
+    "specs": {
+      "hp": "170",
+      "engine": "2.0L Turbocharged I4",
+      "0_100": "7.0s",
+      "top_speed": "210 km/h"
+    },
+    "image_prompt": "Cinematic moody realism photograph of a 1973 BMW 2002 Turbo, heavily aged and covered in a thick layer of dust, parked deep within an abandoned Cold War-era underground bunker. The bunker is cavernous, with exposed concrete walls showing signs of decay and moisture, rusted metal pipes snaking along the ceiling. A single, weak beam of artificial light from a broken overhead lamp struggles to illuminate the scene, casting long, dramatic shadows. Focus on the car's faded Chamonix white paint, showing fine cracks and accumulated grime, the oxidized chrome trim around the windows and grille, and the subtle texture of surface rust on the steel wheels and exposed undercarriage components. The interior is barely visible through the dusty windows, suggesting a time capsule. Debris like old wooden crates, tattered tarpaulins, and forgotten military equipment are scattered around the car, emphasizing the long abandonment. The air is thick with a sense of forgotten history and decay, cold and damp. Ultra-detailed, sharp focus on textures, deep shadows, subtle color tones, atmospheric.",
+    "series": "Garage Finds",
+    "id": 157,
+    "date": "2026-10-07"
   }
 ]
