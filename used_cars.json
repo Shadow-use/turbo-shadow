@@ -2034,5 +2034,18 @@
     "series": "Garage Finds",
     "id": 157,
     "date": "2026-10-07"
+  },
+  {
+    "model": "W Motors Fenyr SuperSport",
+    "specs": {
+      "hp": "800",
+      "engine": "3.8L Twin-Turbo Flat-6",
+      "0_100": "2.8s",
+      "top_speed": "400 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of a sleek W Motors Fenyr SuperSport, its metallic grey paint shimmering under intense light, hurtling through a vast, futuristic underground magnetic tunnel. The tunnel walls pulse with vibrant, luminescent blue and silver stripes, creating a kaleidoscopic blur of pure speed. Intense motion blur on the background and the car's wheels emphasizes extreme velocity. The car is perfectly centered, a dynamic blur of power and precision, with reflections dancing on the polished, light-infused tunnel floor. Dynamic, high-contrast lighting, ultra-futuristic, clean lines, no visible driver, hyper-realistic.",
+    "series": "Hyper Speed",
+    "id": 158,
+    "date": "2026-10-08"
   }
 ]
