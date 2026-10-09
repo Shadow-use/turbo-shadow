@@ -2047,5 +2047,18 @@
     "series": "Hyper Speed",
     "id": 158,
     "date": "2026-10-08"
+  },
+  {
+    "model": "Toyota Tundra TRD Pro (Custom Overland Build)",
+    "specs": {
+      "hp": "550",
+      "engine": "3.4L Twin-Turbo V6 Hybrid",
+      "0_100": "6.0s",
+      "top_speed": "180 km/h"
+    },
+    "image_prompt": "action off-road photography, a highly customized Toyota Tundra TRD Pro, heavily modified for extreme off-roading, powers through vast volcanic ash fields at the base of an active stratovolcano. The truck is kicking up massive, dark plumes of fine ash, creating a chaotic dust cloud around it. The sky is dark and ominous, with low-hanging, ash-laden clouds, hinting at recent or ongoing eruptions. Steam or light smoke rises from vents in the background, adding to the desolate atmosphere. The vehicle is captured in a dynamic, high-speed moment, with its suspension fully articulated as it navigates the uneven, gritty terrain. Dramatic lighting, casting long shadows and highlighting the texture of the ash and the aggressive stance of the truck.",
+    "series": "Off-Road Beasts",
+    "id": 159,
+    "date": "2026-10-09"
   }
 ]
