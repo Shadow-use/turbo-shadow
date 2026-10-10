@@ -2060,5 +2060,18 @@
     "series": "Off-Road Beasts",
     "id": 159,
     "date": "2026-10-09"
+  },
+  {
+    "model": "Aura Specter XV-9",
+    "specs": {
+      "hp": "4500",
+      "engine": "Graviton Flux Reactor",
+      "0_100": "0.8s",
+      "top_speed": "1500 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art of the Aura Specter XV-9, a sleek, low-slung hypercar with flowing aerodynamic lines, crafted from iridescent chromasteel and transparent graphene panels. The vehicle features pulsing cyan LED light strips tracing its contours and integrated into its multi-layered wheels, emitting a soft glow. It is positioned on a polished metallic sky-bridge within a terraformed Venusian sky-city. The environment is perpetually bathed in a shimmering, artificial twilight, with colossal, silently spinning wind turbines in the distance. Bioluminescent, crystalline flora glows with soft pink and violet hues along the edges of the platform, casting intricate reflections on the vehicle's futuristic materials. The atmosphere is dense and slightly hazy, creating a sense of depth and mystery. Highly detailed, volumetric lighting, atmospheric perspective.",
+    "series": "Shadow Concepts",
+    "id": 160,
+    "date": "2026-10-10"
   }
 ]
