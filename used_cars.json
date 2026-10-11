@@ -2073,5 +2073,18 @@
     "series": "Shadow Concepts",
     "id": 160,
     "date": "2026-10-10"
+  },
+  {
+    "model": "КРИВОРІЗЬКИЙ ЛЕВІАФАН",
+    "specs": {
+      "hp": "1200",
+      "engine": "Електричний агрегат",
+      "0_100": "3.8s",
+      "top_speed": "220 km/h"
+    },
+    "image_prompt": "Cinematic automotive photography of the 'KRYVYI RIH LEVIATHAN' brutal cyber-offroader. The vehicle features an aggressively sculpted body made of dark, matte forged carbon, with sharp, angular lines and massive, reinforced wheels. Subtle, glowing blue and yellow LED light accents are integrated into the grille, side vents, and underbody, hinting at Ukrainian motifs. It is captured in a high-action shot, navigating a treacherous, futuristic race track built within a vast, flooded quarry in Kryvyi Rih. The environment is dark and industrial, with water reflecting dynamic spotlights and neon track markers. Mist rises from the water, and the vehicle kicks up a dramatic spray of water and mud. The lighting is high-contrast and dramatic, emphasizing the vehicle's powerful stance against the gritty, waterlogged backdrop, under an overcast, moody sky.",
+    "series": "UA Custom Concepts",
+    "id": 161,
+    "date": "2026-10-11"
   }
 ]
