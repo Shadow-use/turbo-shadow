@@ -2086,5 +2086,18 @@
     "series": "UA Custom Concepts",
     "id": 161,
     "date": "2026-10-11"
+  },
+  {
+    "model": "Mitsubishi 3000GT VR-4",
+    "specs": {
+      "hp": "320",
+      "engine": "3.0L Twin-Turbo V6",
+      "0_100": "4.8s",
+      "top_speed": "250 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic. A Mitsubishi 3000GT VR-4 is parked in an abandoned, rain-slicked industrial dockyard in a forgotten coastal city. Heavy, persistent drizzle creates shimmering reflections on the asphalt and corroded metal surfaces. The sky above is a bruised twilight, a dramatic blend of deep purples and greys. In the far distance, faint, flickering yellow lights from an offshore oil rig cast a subtle, ethereal glow on the murky horizon. The shot is a low-angle perspective from slightly behind and to the side of the car, emphasizing its wide, aggressive stance and the mesmerizing, wet reflections under the dim, atmospheric lighting, evoking a sense of desolate beauty and raw power.",
+    "series": "Легенди 90-х",
+    "id": 162,
+    "date": "2026-10-12"
   }
 ]
