@@ -2099,5 +2099,18 @@
     "series": "Легенди 90-х",
     "id": 162,
     "date": "2026-10-12"
+  },
+  {
+    "model": "Ford Mustang GT (S550) - Heavily Tuned",
+    "specs": {
+      "hp": "850",
+      "engine": "5.0L Supercharged Coyote V8",
+      "0_100": "3.0s",
+      "top_speed": "330 km/h"
+    },
+    "image_prompt": "cinematic night street racing. A heavily modified Ford Mustang GT (S550) is aggressively static on an abandoned, overgrown monorail track, elevated above a sprawling, dimly lit cyberpunk slum. Flickering holographic advertisements from the slum below cast strange neon colors onto the car and the wet concrete. Intense glow from the car's headlights and custom taillights. Sparse, broken streetlights illuminate the track. Recent rain has left reflective puddles on the track and surrounding structures, enhancing the gritty atmosphere. Subtle steam rises from the hot engine. Low angle, wide shot, emphasizing the scale of the elevated track and the desolate, futuristic slum beneath.",
+    "series": "Midnight Crew",
+    "id": 163,
+    "date": "2026-10-13"
   }
 ]
