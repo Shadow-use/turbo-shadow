@@ -2112,5 +2112,18 @@
     "series": "Midnight Crew",
     "id": 163,
     "date": "2026-10-13"
+  },
+  {
+    "model": "1969 Ford Mustang Boss 429",
+    "specs": {
+      "hp": "375",
+      "engine": "7.0L (429 cu in) V8 HEMI",
+      "0_100": "6.8s",
+      "top_speed": "200 km/h"
+    },
+    "image_prompt": "cinematic moody realism photo of a long-forgotten 1969 Ford Mustang Boss 429, deep inside a decaying Cold War-era underground bunker. The car sits partially submerged in a pool of murky, still water, reflecting the ethereal glow of bioluminescent moss that clings to the damp, crumbling concrete walls. A single, narrow beam of dust-filled light pierces through a rusted vent high above, illuminating the car's faded Candyapple Red paint, which shows heavy surface rust on the lower panels and wheel arches. The chrome bumpers are dull, pitted, and oxidized, but their original form is still visible. Intricate cobwebs drape across the windshield and side mirrors. The scene is heavy with an atmosphere of profound abandonment and forgotten power, emphasizing the textures of decay, the metallic sheen of the car's remaining good surfaces, and the eerie, damp silence of the bunker. Focus on the intricate details of rust patterns, the texture of the aged paint, and the subtle reflections in the stagnant water.",
+    "series": "Garage Finds",
+    "id": 164,
+    "date": "2026-10-14"
   }
 ]
