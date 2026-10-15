@@ -2125,5 +2125,18 @@
     "series": "Garage Finds",
     "id": 164,
     "date": "2026-10-14"
+  },
+  {
+    "model": "Koenigsegg One:1",
+    "specs": {
+      "hp": "1360",
+      "engine": "5.0L Twin-Turbo V8",
+      "0_100": "2.8s",
+      "top_speed": "440 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of a Koenigsegg One:1, racing through a futuristic subterranean magma-tube highway. The car is centered, with intense motion blur on the background and wheels, conveying extreme velocity. The highway is a sleek, transparent tunnel, reinforced with glowing energy lines, offering a direct view of swirling, molten magma just beyond its walls. The environment is bathed in a dramatic interplay of fiery orange, deep red, and dark, polished metal reflections. The tunnel's surface is highly reflective, mirroring the car's silhouette and the fiery surroundings. Dynamic, powerful, futuristic atmosphere.",
+    "series": "Hyper Speed",
+    "id": 165,
+    "date": "2026-10-15"
   }
 ]
