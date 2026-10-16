@@ -2138,5 +2138,18 @@
     "series": "Hyper Speed",
     "id": 165,
     "date": "2026-10-15"
+  },
+  {
+    "model": "Toyota Land Cruiser 70 Series (Extreme Overland Build)",
+    "specs": {
+      "hp": "350",
+      "engine": "4.5L Turbo Diesel V8",
+      "0_100": "9.5s",
+      "top_speed": "170 km/h"
+    },
+    "image_prompt": "action off-road photography of a heavily modified Toyota Land Cruiser 70 Series, painted in matte military green, aggressively conquering volcanic ash fields on a dormant stratovolcano. The vehicle is kicking up thick plumes of dark volcanic ash and abrasive dust, with water and mud splashes from small, steaming geothermal puddles. Jagged obsidian rock formations and distant, active hydrothermal vents emit sulfurous steam into the stormy, dramatic sky. Dark, heavy clouds loom overhead, with flashes of lightning illuminating the scene. Dynamic low-angle shot, wide lens, capturing the raw power and extreme environment.",
+    "series": "Off-Road Beasts",
+    "id": 166,
+    "date": "2026-10-16"
   }
 ]
