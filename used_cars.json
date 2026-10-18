@@ -2164,5 +2164,18 @@
     "series": "Shadow Concepts",
     "id": 167,
     "date": "2026-10-17"
+  },
+  {
+    "model": "Верховинський Страж",
+    "specs": {
+      "hp": "1200",
+      "engine": "Quad-Motor Electric Drive",
+      "0_100": "3.5s",
+      "top_speed": "220 km/h"
+    },
+    "image_prompt": "cinematic automotive photography of the 'Verkhovynskyi Strazh' cyber-off-roader, a brutal, angular machine crafted from dark, forged carbon fiber, its aggressive lines accentuated by massive all-terrain tires and high ground clearance. Subtle, glowing electric blue and gold patterns are integrated into its unique LED light signatures, faintly visible against the twilight. The vehicle is positioned on a rugged, ancient stone platform of a dilapidated, yet majestic, astronomical observatory, perched high in the remote Ukrainian Carpathian mountains. Ethereal mist swirls around the observatory's weathered structures, which are faintly illuminated by shimmering digital projections of ancient celestial maps and constellations. The sky is a deep indigo just after sunset, with the first stars emerging. Dramatic, soft backlighting emphasizes the vehicle's formidable silhouette, while its integrated lights cast a gentle, patriotic glow. A low-angle, wide shot captures the immense scale and mystique of the scene.",
+    "series": "UA Custom Concepts",
+    "id": 168,
+    "date": "2026-10-18"
   }
 ]
