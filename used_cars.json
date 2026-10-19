@@ -2177,5 +2177,18 @@
     "series": "UA Custom Concepts",
     "id": 168,
     "date": "2026-10-18"
+  },
+  {
+    "model": "Mercedes-Benz CLK GTR",
+    "specs": {
+      "hp": "612",
+      "engine": "6.9L V12",
+      "0_100": "3.8s",
+      "top_speed": "320 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic, a Mercedes-Benz CLK GTR parked inside a colossal, abandoned botanical garden dome at midnight. The car's sleek lines are dramatically highlighted by its powerful headlights cutting through the dense, humid air. A single, flickering emergency light high above casts long, dancing shadows of overgrown tropical foliage and decaying steel structures. Heavy rain streaks endlessly down the vast, curved glass panels of the dome, creating a blurred, distorted backdrop of the dark night. The atmosphere is eerie and forgotten, a forgotten relic in a forgotten sanctuary. Shot from a low, slightly upward angle, emphasizing the car's presence amidst the decaying grandeur.",
+    "series": "Легенди 90-х",
+    "id": 169,
+    "date": "2026-10-19"
   }
 ]
