@@ -2190,5 +2190,18 @@
     "series": "Легенди 90-х",
     "id": 169,
     "date": "2026-10-19"
+  },
+  {
+    "model": "Ford Focus RS Mk3 (Heavily Tuned)",
+    "specs": {
+      "hp": "450",
+      "engine": "2.3L Turbocharged I4",
+      "0_100": "4.0s",
+      "top_speed": "280 km/h"
+    },
+    "image_prompt": "cinematic night street racing, a heavily modified Ford Focus RS Mk3 with a widebody kit, aggressive aero, and lowered suspension, speeding through a flooded canal under an old, weathered concrete bridge. Vibrant neon graffiti murals are painted on the canal walls, their intense glow reflecting sharply on the dark, still water, creating a mesmerizing light play. The primary light sources are the car's piercing LED headlights and glowing taillights, combined with faint, flickering streetlights from the bridge above, casting long shadows and streaks of light through the concrete gaps. A light drizzle of rain adds subtle ripples to the water's surface and reflections. Dynamic motion blur emphasizes speed and urgency. Dark, moody, and mysterious atmosphere.",
+    "series": "Midnight Crew",
+    "id": 170,
+    "date": "2026-10-20"
   }
 ]
