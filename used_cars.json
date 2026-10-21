@@ -2203,5 +2203,18 @@
     "series": "Midnight Crew",
     "id": 170,
     "date": "2026-10-20"
+  },
+  {
+    "model": "1969 Ferrari 365 GTB/4 Daytona",
+    "specs": {
+      "hp": "352",
+      "engine": "4.4L Colombo V12",
+      "0_100": "5.4s",
+      "top_speed": "280 km/h"
+    },
+    "image_prompt": "A cinematic moody realism photograph of a long-forgotten 1969 Ferrari 365 GTB/4 Daytona, discovered in a cavernous, dusty underground wine cellar of an ancient Italian estate. The car is covered in a thick layer of fine dust and delicate cobwebs, with subtle hints of its original Rosso Corsa paint peeking through. Shafts of dim, golden light filter in from a hidden opening, dramatically illuminating the car's iconic lines, the intricate chrome details, and the texture of the aged paint. A few patches of superficial rust are visible on the steel components and wheel hubs. Surrounding the car are rows of antique, wooden wine barrels, some overturned and empty, others covered in dust. The air is thick with history and the faint scent of old wood and earth. Focus on the worn leather interior visible through dusty windows, the iconic pop-up headlights slightly ajar, and the Ferrari badge covered in grime. Extreme detail, hyperrealistic.",
+    "series": "Garage Finds",
+    "id": 171,
+    "date": "2026-10-21"
   }
 ]
