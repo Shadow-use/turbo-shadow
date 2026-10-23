@@ -2229,5 +2229,18 @@
     "series": "Hyper Speed",
     "id": 172,
     "date": "2026-10-22"
+  },
+  {
+    "model": "Toyota Hilux Dakar Rally Spec (Custom Build)",
+    "specs": {
+      "hp": "450",
+      "engine": "5.0L V8 Naturally Aspirated",
+      "0_100": "5.5s",
+      "top_speed": "190 km/h"
+    },
+    "image_prompt": "action off-road photography, a highly customized Toyota Hilux Dakar Rally Spec. The vehicle is aggressively navigating a narrow, treacherous dirt track on a high-altitude Andean plateau. Heavy volcanic ash is actively falling, coating the landscape in a fine grey layer, and strong winds are whipping it around. The sky is dramatic and heavily overcast, with distant lightning hinting at an approaching storm. Dynamic scene with clouds of volcanic ash and small rocks violently spraying from the tires as the vehicle drifts through a turn, perilously close to a sheer cliff edge. Harsh, diffused light.",
+    "series": "Off-Road Beasts",
+    "id": 173,
+    "date": "2026-10-23"
   }
 ]
