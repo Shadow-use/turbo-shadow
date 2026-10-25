@@ -2255,5 +2255,18 @@
     "series": "Shadow Concepts",
     "id": 174,
     "date": "2026-10-24"
+  },
+  {
+    "model": "КРИМСЬКИЙ БУРЕВІЙ (Crimean Storm)",
+    "specs": {
+      "hp": "1200",
+      "engine": "Quad-motor Electric Powertrain",
+      "0_100": "3.8s",
+      "top_speed": "200 km/h"
+    },
+    "image_prompt": "cinematic automotive photography of the 'КРИМСЬКИЙ БУРЕВІЙ', a brutal cyber-offroader, parked at a futuristic research outpost, an ancient observatory complex reimagined, nestled on the highest peak of the Crimean Mountains. The car features an aggressive stance, angular lines, and a body crafted from forged carbon panels, with integrated LED light bars subtly glowing with blue and yellow Ukrainian gradient accents. Massive off-road tires and robust brush guards emphasize its rugged capability. The surrounding environment showcases jagged, dark rock formations, sparse, resilient mountain flora, and advanced energy conduits crisscrossing the terrain under a clear, star-filled night sky. Moonlight casts sharp, dramatic shadows, complemented by the ambient glow emanating from the observatory complex and the powerful beams from the car's LED lights, piercing the darkness. The scene evokes an epic, mysterious, and untamed atmosphere.",
+    "series": "UA Custom Concepts",
+    "id": 175,
+    "date": "2026-10-25"
   }
 ]
