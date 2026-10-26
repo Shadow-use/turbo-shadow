@@ -2268,5 +2268,18 @@
     "series": "UA Custom Concepts",
     "id": 175,
     "date": "2026-10-25"
+  },
+  {
+    "model": "Porsche 911 (996) GT3 (1999)",
+    "specs": {
+      "hp": "360",
+      "engine": "3.6L Flat-6 Naturally Aspirated",
+      "0_100": "4.8s",
+      "top_speed": "302 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic of a black Porsche 911 (996) GT3 (1999) parked in a narrow, rain-drenched cobblestone alleyway in an old European city, late at night. The air is thick with humidity after a recent downpour, creating a misty atmosphere. Deep, dark shadows cling to the ancient brick walls, contrasting with the vibrant, distorted reflections of distant neon signs and warm, yellowish light from ornate streetlamps shimmering on the wet ground. The car is viewed from a low, slightly wide-angle perspective, emphasizing its powerful stance amidst the slick, reflective surfaces and the atmospheric glow. The scene evokes a sense of quiet mystery and timeless urban beauty.",
+    "series": "Легенди 90-х",
+    "id": 176,
+    "date": "2026-10-26"
   }
 ]
