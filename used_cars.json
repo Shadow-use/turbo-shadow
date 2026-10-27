@@ -2281,5 +2281,18 @@
     "series": "Легенди 90-х",
     "id": 176,
     "date": "2026-10-26"
+  },
+  {
+    "model": "Dodge Viper ACR (Gen V)",
+    "specs": {
+      "hp": "850",
+      "engine": "8.4L V10 Naturally Aspirated",
+      "0_100": "3.0s",
+      "top_speed": "300 km/h"
+    },
+    "image_prompt": "cinematic night street racing, a heavily customized Dodge Viper ACR (Gen V), aggressive widebody, low stance, dark matte finish with subtle gloss accents, glowing red brake calipers. The car is speeding on an abandoned high-speed magnet train test track, which is weathered metallic and partially overgrown with lush, phosphorescent moss emitting an ethereal green glow. Dense, dark forest encroaches from both sides, trees silhouetted against a sky illuminated by a faint, shimmering aurora borealis in deep green and purple hues. Ultra-bright LED headlights cut through the darkness, highlighting the glowing moss and damp track surface. Red taillights create a streak of light. Aggressive motion blur on the background and wheels, car sharp and slightly angled, conveying extreme speed and isolation.",
+    "series": "Midnight Crew",
+    "id": 177,
+    "date": "2026-10-27"
   }
 ]
