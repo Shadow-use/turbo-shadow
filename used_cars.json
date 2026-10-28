@@ -2294,5 +2294,18 @@
     "series": "Midnight Crew",
     "id": 177,
     "date": "2026-10-27"
+  },
+  {
+    "model": "1969 Maserati Ghibli SS",
+    "specs": {
+      "hp": "335",
+      "engine": "4.9L V8",
+      "0_100": "6.8s",
+      "top_speed": "270 km/h"
+    },
+    "image_prompt": "cinematic moody realism, a 1969 Maserati Ghibli SS, forgotten and weathered, partially consumed by creeping ivy and moss, nestled in the overgrown garden of a crumbling Italian villa. Focus on the sleek, dusty body lines, the texture of the faded red paint with subtle rust blooms, dull chrome accents, and cracked leather interior visible through a slightly ajar window. Fallen autumn leaves scatter around the tires. In the background, a decaying stone fountain with dry basin and broken cherub statues. Overcast sky, diffused natural light filtering through dense foliage, creating a somber, melancholic atmosphere.",
+    "series": "Garage Finds",
+    "id": 178,
+    "date": "2026-10-28"
   }
 ]
