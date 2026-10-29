@@ -2307,5 +2307,18 @@
     "series": "Garage Finds",
     "id": 178,
     "date": "2026-10-28"
+  },
+  {
+    "model": "Arash AF10 Hybrid",
+    "specs": {
+      "hp": 2080,
+      "engine": "6.2L Supercharged V8 + 4 Elec Motors",
+      "0_100": "2.8s",
+      "top_speed": "407 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of an Arash AF10 Hybrid. The hypercar races through a hyper-futuristic tunnel, its sleek body reflecting the intense, cold blue and white neon lights that streak along the tunnel's walls and ceiling, creating a vortex of light. Occasional transparent sections of the tunnel reveal a vast, desolate icy desert landscape under a twilight sky, illuminated by a vibrant aurora borealis with hints of purple and green. The car is captured in dynamic motion, slightly angled, with intensive motion blur on the background and wheels, emphasizing extreme velocity. The atmosphere is high-tech, cold, and exhilarating.",
+    "series": "Hyper Speed",
+    "id": 179,
+    "date": "2026-10-29"
   }
 ]
