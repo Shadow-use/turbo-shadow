@@ -2320,5 +2320,18 @@
     "series": "Hyper Speed",
     "id": 179,
     "date": "2026-10-29"
+  },
+  {
+    "model": "Praga V4S DKR",
+    "specs": {
+      "hp": "1000",
+      "engine": "12.5L Iveco Turbo Diesel I6",
+      "0_100": "7.0s",
+      "top_speed": "140 km/h"
+    },
+    "image_prompt": "action off-road photography, a Praga V4S DKR rally truck hurtling through a desolate, frozen volcanic crater. The ground is a treacherous mix of icy rocks and boiling geothermal mud, with thick, noxious yellow-green fumes rising from deep cracks in the earth. Aggressive, stormy sky with dark, heavy clouds and streaks of lightning in the distance. The truck is caught mid-action, its massive tires churning through the viscous mud, sending huge, dynamic splashes of scalding mud and icy water high into the air. Harsh, dramatic lighting accentuates the texture of the mud and the vehicle's rugged design. The atmosphere is tense and otherworldly, emphasizing extreme conditions and the raw power of the vehicle.",
+    "series": "Off-Road Beasts",
+    "id": 180,
+    "date": "2026-10-30"
   }
 ]
