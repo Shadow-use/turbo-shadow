@@ -2333,5 +2333,18 @@
     "series": "Off-Road Beasts",
     "id": 180,
     "date": "2026-10-30"
+  },
+  {
+    "model": "Aetherion NovaFlux X-2099",
+    "specs": {
+      "hp": "3500",
+      "engine": "Quantum Entanglement Drive",
+      "0_100": "0.8s",
+      "top_speed": "1800 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art. The Aetherion NovaFlux X-2099, a sleek, angular, and ultra-aerodynamic hypercar, is showcased in a derelict orbital graveyard. Its body is constructed from polychromatic graphene panels that shimmer with iridescent hues, reinforced with transparent vibranium-alloy chassis elements visible through crystalline sections. Dynamic, pulsating neon-blue and emerald-green LED light strips trace the vehicle's contours, while subtle holographic projectors emit energy fields. Ancient space stations and starship husks drift silently in zero gravity around the car, their metallic skeletons reflecting faint starlight. Swirling distant nebulae and the faint, eerie glow of defunct alien technology illuminate the cosmic backdrop. The scene is bathed in the cold, stark light of distant stars and the ghostly luminescence from the nebulae, creating long, sharp shadows. Floating spectral glowing pumpkins drift amidst the cosmic debris, their eerie light casting unsettling patterns on the NovaFlux's surface. The overall atmosphere is intensely spooky and macabre, set against the backdrop of a profound, dark cosmic night. Halloween style, spooky atmosphere, dark night.",
+    "series": "Shadow Concepts",
+    "id": 181,
+    "date": "2026-10-31"
   }
 ]
