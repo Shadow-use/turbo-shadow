@@ -2346,5 +2346,18 @@
     "series": "Shadow Concepts",
     "id": 181,
     "date": "2026-10-31"
+  },
+  {
+    "model": "Чорноморський Титан",
+    "specs": {
+      "hp": "1800",
+      "engine": "Електрична трансмісія з 4 двигунами",
+      "0_100": "1.8s",
+      "top_speed": "450 km/h"
+    },
+    "image_prompt": "cinematic automotive photography. The 'Chornomorskyi Tytan' hypercar is positioned on a wide, gleaming platform within the 'Azovska Perlyna' floating city. This futuristic metropolis hovers gracefully above the calm waters of the Azov Sea. High-rise structures, seamlessly blending modern glass and steel with intricate, ancient Scythian architectural motifs and robust, organic forms, rise majestically in the background. The scene is bathed in the warm, soft glow of early morning golden hour, with a hint of gentle mist creating an ethereal atmosphere. The sky is a gradient of soft oranges, pinks, and light blues. The hypercar itself is a vision of aggressive power: its entire body is crafted from raw, textured forged carbon fiber, showcasing its intricate weave and dark, menacing aesthetic. The design features sharp, angular lines juxtaposed with fluid, aerodynamic curves, emphasizing its extreme performance capabilities. Subtle, almost subliminal Ukrainian motifs, inspired by ancient Trypillian patterns and Cossack artistry, are intricately integrated into the car's thin, dynamic LED light strips, emitting a faint, deep sapphire blue and a warm amber glow that highlights its contours. Massive, functional aerodynamic elements, including prominent front splitter, side skirts, and a multi-level rear diffuser, are visible. The wheels are dark, complex multi-spoke forged alloys, wrapped in ultra-performance tires, giving the vehicle a grounded yet aggressive stance. The platform reflects the car's powerful silhouette and the city's gentle morning light.",
+    "series": "UA Custom Concepts",
+    "id": 182,
+    "date": "2026-11-01"
   }
 ]
