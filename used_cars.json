@@ -2359,5 +2359,18 @@
     "series": "UA Custom Concepts",
     "id": 182,
     "date": "2026-11-01"
+  },
+  {
+    "model": "Lamborghini Diablo",
+    "specs": {
+      "hp": "492",
+      "engine": "5.7L V12",
+      "0_100": "4.5s",
+      "top_speed": "325 km/h"
+    },
+    "image_prompt": "A Lamborghini Diablo, captured from a dramatic low-angle perspective, sits on a heavily flooded, cobblestone street in an old, forgotten coastal town. The scene is engulfed in the throes of a furious thunderstorm, with torrential rain blurring the ancient architectural details in the background. Intense flashes of lightning periodically illuminate the entire environment, casting stark, brilliant reflections on the deep puddles and the car's sleek, wet body. Distorted, eerie glows emanate from broken streetlights, adding an unsettling atmosphere to the saturated asphalt. The mood is raw, powerful, and isolated, emphasizing the car's presence against the chaotic natural elements. 35mm film photography aesthetic, characterized by dark, moody tones and high contrast between the vibrant car and its tumultuous surroundings.",
+    "series": "Легенди 90-х",
+    "id": 183,
+    "date": "2026-11-02"
   }
 ]
