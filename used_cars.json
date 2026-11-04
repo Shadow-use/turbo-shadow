@@ -2385,5 +2385,18 @@
     "series": "Midnight Crew",
     "id": 184,
     "date": "2026-11-03"
+  },
+  {
+    "model": "De Tomaso Pantera (1973)",
+    "specs": {
+      "hp": "330",
+      "engine": "5.8L Ford Cleveland V8",
+      "0_100": "5.8s",
+      "top_speed": "260 km/h"
+    },
+    "image_prompt": "cinematic moody realism, a 1973 De Tomaso Pantera, heavily covered in a thick layer of fine dust, parked within an expansive, abandoned Cold War bunker, once a private museum. The dim, flickering glow of old emergency lights barely illuminates its form, complemented by dramatic, narrow shafts of light cutting through small, irregular openings in the robust concrete ceiling. Extreme focus on the grimy chrome accents, the subtle texture of the paint dulled by years of dust, and delicate signs of surface rust on specific metal components. The scene evokes profound desolation and forgotten glory, with faint dampness in the air and delicate cobwebs. Low-angle perspective, emphasizing intricate details and the heavy, mysterious atmosphere.",
+    "series": "Garage Finds",
+    "id": 185,
+    "date": "2026-11-04"
   }
 ]
