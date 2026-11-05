@@ -2398,5 +2398,18 @@
     "series": "Garage Finds",
     "id": 185,
     "date": "2026-11-04"
+  },
+  {
+    "model": "Mazzanti Evantra Millecavalli",
+    "specs": {
+      "hp": "1000",
+      "engine": "7.2L Twin-Turbo V8",
+      "0_100": "2.7s",
+      "top_speed": "402 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of a Mazzanti Evantra Millecavalli, sleek and aggressive, painted in deep metallic crimson, racing through an ancient, magically-charged desert canyon. The car is on a perfectly smooth, almost invisible energy track, suspended slightly above the glowing sand. Intense motion blur on the background and wheels emphasizes extreme speed. Glowing, intricate glyphs flash past on the canyon walls, pulsating with ethereal energy. The air shimmers with intense heat and residual magical aura. Early twilight, with a dramatic, otherworldly sky above, hinting at mystical phenomena. Dust and energy particles are kicked up in a surreal vortex behind the car. Low angle, dynamic perspective, capturing the extreme velocity and futuristic environment.",
+    "series": "Hyper Speed",
+    "id": 186,
+    "date": "2026-11-05"
   }
 ]
