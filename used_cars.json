@@ -2411,5 +2411,18 @@
     "series": "Hyper Speed",
     "id": 186,
     "date": "2026-11-05"
+  },
+  {
+    "model": "Mercedes-Benz Unimog U 5000 (Custom Off-Road Expedition Build)",
+    "specs": {
+      "hp": "300",
+      "engine": "4.8L I4 Turbo Diesel",
+      "0_100": "18.0s",
+      "top_speed": "110 km/h"
+    },
+    "image_prompt": "action off-road photography, a heavily customized Mercedes-Benz Unimog U 5000, equipped for extreme expeditions, battling through a desolate, mist-shrouded, sunken city within the caldera of an extinct volcano. Acidic geysers erupt violently around the vehicle, sending plumes of corrosive steam and vibrant, unnatural colors into the air. The Unimog is navigating treacherous terrain, a mix of crumbling ancient stone, thick, viscous volcanic mud, and sharp, obsidian-like ash. Dynamic mud and water splashes erupt around the massive wheels, capturing the raw power and struggle. Aggressive, stormy sky with dark, heavy clouds, casting an eerie, dramatic light. Volcanic dust and ash swirl in the turbulent air, adding to the extreme environment.",
+    "series": "Off-Road Beasts",
+    "id": 187,
+    "date": "2026-11-06"
   }
 ]
