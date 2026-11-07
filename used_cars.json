@@ -2424,5 +2424,18 @@
     "series": "Off-Road Beasts",
     "id": 187,
     "date": "2026-11-06"
+  },
+  {
+    "model": "Quantum Seraphim Exos",
+    "specs": {
+      "hp": "3500",
+      "engine": "Quantum-Entangled Drive",
+      "0_100": "0.8s",
+      "top_speed": "1500 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art. A Quantum Seraphim Exos, a sleek, aerodynamic hypercar with a low-slung silhouette and seamless body panels. The chassis is crafted from a reflective, iridescent chameleonic alloy that subtly shifts color from deep violet to emerald green. Integrated dynamic LED light strips trace the vehicle's contours, glowing with an ethereal cyan energy. The wheels are hubless, with magnetic levitation visible, emitting a soft, pulsating amber glow. Its transparent canopy blends seamlessly with the car's flowing lines. The vehicle is situated on a crystalline viewing platform within a vast city suspended in Jupiter's thermosphere. Towering, transparent, self-repairing graphene structures rise majestically, piercing through swirling, iridescent aurora borealis. Anti-gravity traffic lanes glow faintly, weaving between the monumental buildings. Two of Jupiter's distant moons are visible on the horizon, bathed in the soft, multicolored glow. The atmosphere is thick with vibrant, shifting light from the aurora, casting dynamic reflections on the car's surface and the city below. The scene is majestic and awe-inspiring, showcasing immense scale and advanced civilization. Lighting is dominated by the ethereal glow of the Jovian aurora, with soft ambient light from the city structures. Dynamic interplay of cyan, magenta, and deep blue hues.",
+    "series": "Shadow Concepts",
+    "id": 188,
+    "date": "2026-11-07"
   }
 ]
