@@ -2450,5 +2450,18 @@
     "series": "UA Custom Concepts",
     "id": 189,
     "date": "2026-11-08"
+  },
+  {
+    "model": "Dodge Viper GTS (1996)",
+    "specs": {
+      "hp": "450",
+      "engine": "8.0L Naturally Aspirated V10",
+      "0_100": "4.0s",
+      "top_speed": "290 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic, a sleek 1996 Dodge Viper GTS in its iconic blue with white stripes, parked in a futuristic urban canyon. Towering glass skyscrapers reflect the pouring rain and vibrant, blurred neon lights from the city below. The asphalt is slick and glistening, creating deep, shimmering reflections of the car and the towering architecture. Heavy rain streaks across the frame, adding a dynamic, dramatic texture. Low angle shot, capturing the powerful silhouette of the car against the illuminated, wet cityscape, with a sense of isolation and raw power in the torrential downpour. Soft, diffused ambient light from unseen sources subtly illuminates the car's curves, contrasting with the sharp reflections.",
+    "series": "Легенди 90-х",
+    "id": 190,
+    "date": "2026-11-09"
   }
 ]
