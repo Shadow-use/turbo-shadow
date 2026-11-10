@@ -2463,5 +2463,18 @@
     "series": "Легенди 90-х",
     "id": 190,
     "date": "2026-11-09"
+  },
+  {
+    "model": "Acura Integra Type R (DC5)",
+    "specs": {
+      "hp": "300",
+      "engine": "2.0L K20A VTEC I4",
+      "0_100": "5.5s",
+      "top_speed": "250 km/h"
+    },
+    "image_prompt": "cinematic night street racing, a highly tuned Acura Integra Type R (DC5) hurtling through a mysteriously lit, flooded abandoned railway tunnel. The vehicle's powerful headlights pierce the dense, humid air, creating sharp, elongated reflections on the shallow water that covers the tunnel floor. Bioluminescent mushrooms adorn the damp, rough-hewn stone walls and vaulted ceiling, emitting an ethereal blue-green glow that casts an otherworldly, surreal ambiance. Patches of mist rise from the water, swirling around the car. Intense motion blur on the car's wheels and the tunnel environment conveys blistering speed. Dramatic lighting from headlamps and bioluminescence, deep shadows, high contrast, atmospheric, eerie.",
+    "series": "Midnight Crew",
+    "id": 191,
+    "date": "2026-11-10"
   }
 ]
