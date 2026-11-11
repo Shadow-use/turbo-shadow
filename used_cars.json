@@ -2476,5 +2476,18 @@
     "series": "Midnight Crew",
     "id": 191,
     "date": "2026-11-10"
+  },
+  {
+    "model": "1965 Shelby GT350",
+    "specs": {
+      "hp": "306",
+      "engine": "4.7L Hi-Po V8",
+      "0_100": "6.6s",
+      "top_speed": "200 km/h"
+    },
+    "image_prompt": "cinematic moody realism, a legendary 1965 Shelby GT350 abandoned in a dramatically lit, partially submerged cellar of an old, forgotten winery. The car is coated in a fine layer of dust, with a subtle patina on its iconic Wimbledon White paint and Guardsman Blue racing stripes. Water, reaching just above the tires, creates a mirror-like reflection of the car and the damp, arched stone ceiling. Large, weathered oak wine barrels are scattered around, some partially submerged, others tipped on their sides, covered in dust and cobwebs. Rusting, archaic winemaking machinery, like an old grape press or copper pipes, stands forlornly in the background, hinting at a past era. A solitary, piercing shaft of sunlight breaks through a high, small window or a crack in the ceiling, casting a dramatic spotlight on the front fender and the water's surface, illuminating dancing dust particles. The atmosphere is dark, damp, and mysterious. Extreme focus on the chrome trim details, the subtle texture of the aged paint, and minute specks of rust on exposed metal, all reflected in the still, murky water.",
+    "series": "Garage Finds",
+    "id": 192,
+    "date": "2026-11-11"
   }
 ]
