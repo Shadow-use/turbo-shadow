@@ -2489,5 +2489,18 @@
     "series": "Garage Finds",
     "id": 192,
     "date": "2026-11-11"
+  },
+  {
+    "model": "Hennessey Venom GT",
+    "specs": {
+      "hp": "1244",
+      "engine": "7.0L Twin-Turbo V8",
+      "0_100": "2.8s",
+      "top_speed": "435 km/h"
+    },
+    "image_prompt": "A Hennessey Venom GT, sleek black with vibrant red racing stripes, captured in a high-speed tracking shot. The car is hurtling through a colossal, illuminated hypersonic tunnel carved within a glacial ice cave. The tunnel walls are lined with dynamic, pulsing holographic neon lights in electric blue and vibrant purple, casting a futuristic glow. Intense motion blur streaks the icy, crystalline background and the spinning wheels, emphasizing extreme velocity. The air is crisp and cold, with subtle vapor trails behind the car. The perspective is low and dynamic, showcasing the raw power and speed.",
+    "series": "Hyper Speed",
+    "id": 193,
+    "date": "2026-11-12"
   }
 ]
