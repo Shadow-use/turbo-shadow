@@ -2502,5 +2502,18 @@
     "series": "Hyper Speed",
     "id": 193,
     "date": "2026-11-12"
+  },
+  {
+    "model": "Ford Ranger Raptor (Next-Gen)",
+    "specs": {
+      "hp": "288",
+      "engine": "3.0L Twin-Turbo V6",
+      "0_100": "7.5s",
+      "top_speed": "180 km/h"
+    },
+    "image_prompt": "action off-road photography, a customized Ford Ranger Raptor (Next-Gen) aggressively tearing through a perilous ancient volcanic caldera. The vehicle navigates around glowing acidic geothermal pools, kicking up iridescent, sulfurous liquid splashes and fine volcanic ash. Sharp, jagged basalt rock formations surround the scene. The sky is dominated by a perpetual, heavy ash cloud, casting a dramatic, eerie light with hints of fiery orange and deep red emanating from the volcanic activity below. Extreme dynamism, intense motion blur on the wheels, powerful composition, cinematic lighting, gritty texture.",
+    "series": "Off-Road Beasts",
+    "id": 194,
+    "date": "2026-11-13"
   }
 ]
