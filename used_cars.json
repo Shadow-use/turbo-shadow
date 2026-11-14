@@ -2515,5 +2515,18 @@
     "series": "Off-Road Beasts",
     "id": 194,
     "date": "2026-11-13"
+  },
+  {
+    "model": "Celestial Driftweaver",
+    "specs": {
+      "hp": "3500",
+      "engine": "Graviton-Pulse Drive",
+      "0_100": "0.8s",
+      "top_speed": "1800 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art. A sleek, obsidian-black Celestial Driftweaver, its aerodynamic form highlighted by shimmering iridescent chrome accents and bioluminescent blue and violet LED strips tracing its lines, sits on a vast, gleaming white futuristic platform. The platform is suspended high above a dense, luminous sea of swirling clouds. In the deep indigo twilight sky, two large moons are visible: one a pale silver, the other a faint reddish-orange, casting ethereal light. The car's undercarriage emits intricate LED patterns onto the reflective platform. Crisp, otherworldly atmosphere, soft ambient glow.",
+    "series": "Shadow Concepts",
+    "id": 195,
+    "date": "2026-11-14"
   }
 ]
