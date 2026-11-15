@@ -2528,5 +2528,18 @@
     "series": "Shadow Concepts",
     "id": 195,
     "date": "2026-11-14"
+  },
+  {
+    "model": "Вирій Атлас (Vyriy Atlas)",
+    "specs": {
+      "hp": "1800",
+      "engine": "Quad-motor Electric Powertrain",
+      "0_100": "2.9s",
+      "top_speed": "280 km/h"
+    },
+    "image_prompt": "cinematic automotive photography, a brutal custom cyber-offroader named 'Vyriy Atlas' with an aggressive, angular design and a wide, imposing stance. Its body panels are crafted from dark, textured forged carbon fiber, showcasing raw strength. Integrated LED lighting subtly glows with abstract, stylized Ukrainian patterns, reminiscent of modern vyshyvanka motifs, especially visible in the front grille, side accents, and rear light bar. Large, chunky off-road tires with advanced suspension. The vehicle is positioned on a slightly elevated, dry salt crystalline platform within the surreal, partially flooded depths of a futuristic 'Artsil' salt mine in Bakhmut. Vast, echoing underground caverns extend into the distance. The lower sections of the mine are submerged in glowing, emerald-green saline water, reflecting the crystalline walls and the vehicle's undercarriage. Above, advanced mining infrastructure with soft, diffused holographic projections casts ethereal light onto the shimmering salt formations. Ancient, colossal salt pillars rise majestically, some sparkling with embedded light sources, blending geological grandeur with futuristic technology. The air is thick with a fine, sparkling salt mist, catching the dramatic, moody lighting. Bioluminescent elements illuminate the water and cavern walls with soft blue and green hues. A powerful, singular spotlight from above cuts through the mist, emphasizing the vehicle's imposing silhouette. Low-angle shot, wide perspective, capturing the vehicle's scale against the immense, otherworldly environment.",
+    "series": "UA Custom Concepts",
+    "id": 196,
+    "date": "2026-11-15"
   }
 ]
