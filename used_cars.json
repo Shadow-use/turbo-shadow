@@ -2541,5 +2541,18 @@
     "series": "UA Custom Concepts",
     "id": 196,
     "date": "2026-11-15"
+  },
+  {
+    "model": "Mercedes-Benz C36 AMG (W202)",
+    "specs": {
+      "hp": 280,
+      "engine": "3.6L I6 24-valve",
+      "0_100": "6.7s",
+      "top_speed": "250 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic. A sleek dark metallic Mercedes-Benz C36 AMG (W202) parked on the rain-slicked rooftop of an abandoned multi-story parking garage. The sky is a deep twilight blue with lingering hints of orange from a recent sunset, casting dramatic shadows. Fresh rain has left puddles and glistening reflections across the rough concrete surface. Distant, blurry city lights twinkle on the horizon, hinting at a bustling but forgotten urban sprawl. A low-angle shot, emphasizing the car's powerful stance against the gritty, wet environment. The air is cool and still, with a faint mist rising from the damp ground.",
+    "series": "Легенди 90-х",
+    "id": 197,
+    "date": "2026-11-16"
   }
 ]
