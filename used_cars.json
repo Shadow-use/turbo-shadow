@@ -2554,5 +2554,18 @@
     "series": "Легенди 90-х",
     "id": 197,
     "date": "2026-11-16"
+  },
+  {
+    "model": "BMW M3 (E92)",
+    "specs": {
+      "hp": "550",
+      "engine": "4.0L Supercharged V8",
+      "0_100": "3.9s",
+      "top_speed": "310 km/h"
+    },
+    "image_prompt": "cinematic night street racing, a heavily modified BMW M3 (E92) with a widebody kit and aggressive aero, intensely focused in an abandoned underground research complex. The vast, labyrinthine environment is illuminated by dynamic neon light installations and shifting projections that dance across rusted metal walls, intricate pipework, and forgotten machinery. Flickering emergency lights cast long shadows in the distance. Subtle dust motes catch the light, adding to the eerie atmosphere. The car is captured in aggressive static, its custom wheels and taut lines sharply defined, with slight motion blur on the background elements to convey speed and movement through the confined, complex space. Sparks occasionally fly from the undercarriage. Dominant colors are dark industrial grays and browns contrasted with vibrant, glowing blues, purples, and greens from the neon projections.",
+    "series": "Midnight Crew",
+    "id": 198,
+    "date": "2026-11-17"
   }
 ]
