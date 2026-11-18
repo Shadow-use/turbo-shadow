@@ -2567,5 +2567,18 @@
     "series": "Midnight Crew",
     "id": 198,
     "date": "2026-11-17"
+  },
+  {
+    "model": "1967 Pontiac Firebird 400",
+    "specs": {
+      "hp": "325",
+      "engine": "6.6L V8 Pontiac",
+      "0_100": "6.2s",
+      "top_speed": "200 km/h"
+    },
+    "image_prompt": "A cinematic moody realism shot of a 1967 Pontiac Firebird 400, covered in a fine layer of dust and spiderwebs. The original metallic blue paint is faded and peeling in places, revealing subtle patches of surface rust. The car is parked amidst the decaying remnants of an abandoned 1970s drive-in movie theater. A massive, weathered screen stands in the background, its faded white surface showing ghostly, indistinguishable images from a bygone era. Rusted, bent speaker poles emerge from the overgrown, cracked asphalt. The car is positioned where a projector booth once stood, partially enveloped by creeping ivy and thorny bushes, with a broken, dusty window nearby. Overcast, late afternoon light filters through thick clouds, casting a soft, diffused glow that emphasizes the car's iconic chrome bumper, pitted and slightly rusted, and the distinct grille. Close-up details on the intricate Firebird badge, the texture of the aged paint, the subtle glint of chrome through layers of grime, and small patches of rust on the lower body panels.",
+    "series": "Garage Finds",
+    "id": 199,
+    "date": "2026-11-18"
   }
 ]
