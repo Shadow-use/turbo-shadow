@@ -2580,5 +2580,18 @@
     "series": "Garage Finds",
     "id": 199,
     "date": "2026-11-18"
+  },
+  {
+    "model": "Bugatti Veyron 16.4",
+    "specs": {
+      "hp": "1001",
+      "engine": "8.0L Quad-Turbo W16",
+      "0_100": "2.5s",
+      "top_speed": "407 km/h"
+    },
+    "image_prompt": "high-speed tracking shot of a Bugatti Veyron 16.4, deep blue metallic paint with silver accents, hurtling through a glowing, translucent hyperspace tunnel. Intense motion blur on the background and wheels emphasizes extreme speed. Outside the tunnel walls, a swirling, vibrant nebula of cosmic dust and starlight creates a surreal, otherworldly backdrop. Sparkling, crystalline asteroids drift by, illuminated by the tunnel's ethereal light, some appearing as elongated streaks due to extreme velocity. Ethereal, dynamic glowing light emanates from the tunnel itself, casting brilliant reflections on the car's aerodynamic surface. The tunnel interior features subtle, shimmering energy patterns.",
+    "series": "Hyper Speed",
+    "id": 200,
+    "date": "2026-11-19"
   }
 ]
