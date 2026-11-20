@@ -2593,5 +2593,18 @@
     "series": "Hyper Speed",
     "id": 200,
     "date": "2026-11-19"
+  },
+  {
+    "model": "Can-Am Maverick R (Rally Raid Spec)",
+    "specs": {
+      "hp": "300",
+      "engine": "1.0L Rotax ACE Turbo RR I3",
+      "0_100": "3.8s",
+      "top_speed": "155 km/h"
+    },
+    "image_prompt": "Action off-road photography of a highly customized Can-Am Maverick R (Rally Raid Spec) aggressively traversing a treacherous, volcanic Martian canyon. The vehicle is kicking up clouds of red dust, glowing embers, and small molten rock splashes as it navigates jagged, dark basalt formations and fissures with visible, flowing orange-red lava in the background. The sky is dark and stormy with hints of distant lightning and a reddish hue, casting dramatic, high-contrast shadows. Extreme dynamic shot, showcasing raw power and speed in an alien, hostile environment.",
+    "series": "Off-Road Beasts",
+    "id": 201,
+    "date": "2026-11-20"
   }
 ]
