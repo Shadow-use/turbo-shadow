@@ -2606,5 +2606,18 @@
     "series": "Off-Road Beasts",
     "id": 201,
     "date": "2026-11-20"
+  },
+  {
+    "model": "Aethelion Stardust Weaver",
+    "specs": {
+      "hp": "4500",
+      "engine": "Quantum Singularity Drive",
+      "0_100": "0.8s",
+      "top_speed": "1200 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art. Aethelion Stardust Weaver, a sleek, hyper-aerodynamic concept car, hovers on a crystalline road within a colossal geode cavern. The vehicle's body is crafted from a seamless blend of transparent graphene-titanium alloys, subtly shifting colors with a chameleon nanocoating. Intricate, glowing cyan and violet LED accents trace its contours, highlighting active energy channels. The cavern itself is illuminated by a breathtaking array of massive bioluminescent crystals embedded in the rock formations, casting ethereal, otherworldly light. Shafts of highly focused, artificial sunlight pierce through gigantic, shimmering energy shields high above, creating dramatic light and shadow play on the polished surfaces of the suspended futuristic city structures in the background. The atmosphere is pristine and calm, with a sense of profound, futuristic serenity.",
+    "series": "Shadow Concepts",
+    "id": 202,
+    "date": "2026-11-21"
   }
 ]
