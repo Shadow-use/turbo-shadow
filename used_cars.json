@@ -2619,5 +2619,18 @@
     "series": "Shadow Concepts",
     "id": 202,
     "date": "2026-11-21"
+  },
+  {
+    "model": "Карпатський Буревій X-77",
+    "specs": {
+      "hp": "1200",
+      "engine": "Quad-Motor Electric Drivetrain",
+      "0_100": "3.5s",
+      "top_speed": "220 km/h"
+    },
+    "image_prompt": "cinematic automotive photography, brutal cyber-offroader, aggressive stance, raw forged carbon body panels with sharp, angular lines, massive integrated LED light bars on the front fascia glowing in subtle blue and yellow hues, hinting at ancient Slavic patterns. Large beadlock wheels with aggressive off-road tires. Visible, highly articulated suspension. The vehicle is navigating a high-tech rally stage in the heart of the Carpathian Mountains. The winding gravel path cuts through dense, ancient pine forests. The track is intensely illuminated by futuristic light pylons, casting stark, dramatic shadows. Mist clings to the distant mountaintops. Pre-dawn light filters through the trees, creating an ethereal, moody atmosphere. Low angle, dynamic shot, gravel kicking up.",
+    "series": "UA Custom Concepts",
+    "id": 203,
+    "date": "2026-11-22"
   }
 ]
