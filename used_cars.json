@@ -2632,5 +2632,18 @@
     "series": "UA Custom Concepts",
     "id": 203,
     "date": "2026-11-22"
+  },
+  {
+    "model": "TVR Griffith 500",
+    "specs": {
+      "hp": 340,
+      "engine": "5.0L Rover V8",
+      "0_100": "4.1s",
+      "top_speed": "272 km/h"
+    },
+    "image_prompt": "35mm film photography aesthetic. A menacing, dark green TVR Griffith 500, parked in a secluded, rain-slicked cobblestone alley in a forgotten district of old London. The car's sleek, aggressive lines reflect the dim, flickering light of a single, ancient gas lamp hanging above. Deep, inky shadows cling to the corners of the alley, contrasted by shimmering reflections on the wet stones and the car's paintwork. A faint, misty vapor hangs in the cool night air, hinting at recent rain. The scene is shot from a low, slightly canted angle, looking down the narrow passage, emphasizing the car's powerful presence amidst the historic, damp architecture. Grainy texture, subtle vignetting.",
+    "series": "Легенди 90-х",
+    "id": 204,
+    "date": "2026-11-23"
   }
 ]
