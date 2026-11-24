@@ -2645,5 +2645,18 @@
     "series": "Легенди 90-х",
     "id": 204,
     "date": "2026-11-23"
+  },
+  {
+    "model": "Ford Sierra RS Cosworth",
+    "specs": {
+      "hp": "400",
+      "engine": "2.0L Turbo I4 Cosworth",
+      "0_100": "4.5s",
+      "top_speed": "280 km/h"
+    },
+    "image_prompt": "cinematic night street racing, Ford Sierra RS Cosworth, custom widebody kit, aggressive stance, racing through an abandoned, overgrown botanical garden conservatory. Moonlight streams through shattered glass ceiling and walls, creating stark shadows and highlights. Bioluminescent fungi glow softly on decaying concrete and intertwined vines. The car's headlights cut through the gloom, reflecting off puddles on the cracked concrete floor. Heavy motion blur on the background and wheels, conveying extreme speed. Rain streaks across the frame, adding to the atmosphere. Steam rises from the hot asphalt. Moody, dark, and thrilling.",
+    "series": "Midnight Crew",
+    "id": 205,
+    "date": "2026-11-24"
   }
 ]
