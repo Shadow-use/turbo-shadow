@@ -2658,5 +2658,18 @@
     "series": "Midnight Crew",
     "id": 205,
     "date": "2026-11-24"
+  },
+  {
+    "model": "1966 Alfa Romeo Giulia Sprint GT Veloce",
+    "specs": {
+      "hp": "109",
+      "engine": "1.6L DOHC I4",
+      "0_100": "10.5s",
+      "top_speed": "185 km/h"
+    },
+    "image_prompt": "Cinematic moody realism. A 1966 Alfa Romeo Giulia Sprint GT Veloce, classic Rosso Alfa paint slightly faded and dusty, with subtle chips and imperfections. It sits forgotten in an ancient, abandoned underground wine cellar. Massive, gnarled tree roots have burst through the stone ceiling and walls, snaking around vintage wooden wine barrels covered in cobwebs. A dramatic, ethereal shaft of sunlight pierces a high crack, illuminating dust motes dancing in the air and casting a spotlight on the car's hood. Focus on the tarnished chrome trim, the textured patina of the paint, faint rust specks on the wheel arches, and the intricate Alfa Romeo grille. The damp, earthy atmosphere is palpable, with soft, diffused ambient light highlighting the contrast between the elegant machine and its decaying, nature-reclaimed environment.",
+    "series": "Garage Finds",
+    "id": 206,
+    "date": "2026-11-25"
   }
 ]
