@@ -2671,5 +2671,18 @@
     "series": "Garage Finds",
     "id": 206,
     "date": "2026-11-25"
+  },
+  {
+    "model": "Ultima RS",
+    "specs": {
+      "hp": "1200",
+      "engine": "Supercharged 6.2L LT5 V8",
+      "0_100": "2.3s",
+      "top_speed": "402 km/h"
+    },
+    "image_prompt": "A high-speed tracking shot of an Ultima RS, sleek and aggressive, speeding through a giant gravitational tunnel. The tunnel is illuminated by shimmering neon stripes, creating a dynamic light trail. The car is emerging from the heart of an extinct volcano, exiting into a vast, alien red canyon bathed in the light of a double sun. The scene is futuristic and dramatic, with the distant horizon hinting at otherworldly landscapes. Intensive motion blur on the background and wheels emphasizes extreme speed. The atmosphere is charged with a sense of immense power and velocity.",
+    "series": "Hyper Speed",
+    "id": 207,
+    "date": "2026-11-26"
   }
 ]
