@@ -2684,5 +2684,18 @@
     "series": "Hyper Speed",
     "id": 207,
     "date": "2026-11-26"
+  },
+  {
+    "model": "GMC Sierra 1500 AT4X AEV Edition",
+    "specs": {
+      "hp": "420",
+      "engine": "6.2L V8 EcoTec3",
+      "0_100": "6.0s",
+      "top_speed": "170 km/h"
+    },
+    "image_prompt": "action off-road photography, GMC Sierra 1500 AT4X AEV Edition aggressively navigating a treacherous path within an active ancient volcanic caldera. Dark, stormy skies with distant lightning. Heavy, sulphuric mist and rain combine, obscuring parts of the rugged, jagged black volcanic rock and dark ash terrain. Streaks of glowing orange from cooling lava are visible. The truck kicks up plumes of dark volcanic dust, mud, and steam, with water splashes from steaming puddles. Headlights pierce through the gloom, reflecting off wet surfaces.",
+    "series": "Off-Road Beasts",
+    "id": 208,
+    "date": "2026-11-27"
   }
 ]
