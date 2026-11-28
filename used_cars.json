@@ -2697,5 +2697,18 @@
     "series": "Off-Road Beasts",
     "id": 208,
     "date": "2026-11-27"
+  },
+  {
+    "model": "Chrono-Glide Specter",
+    "specs": {
+      "hp": "5000",
+      "engine": "Graviton Drive System",
+      "0_100": "0.8s",
+      "top_speed": "1200 km/h"
+    },
+    "image_prompt": "Unreal Engine 5 render, sci-fi vehicle concept art, a sleek Chrono-Glide Specter hovering effortlessly within a vast, subaquatic bio-luminescent ocean canopy city. The vehicle features an iridescent chromesteel chassis, transparent graphene panels, and dynamic reactive LED accents that subtly shift color, outlining its ultra-aerodynamic form. Pulsating energy conduits are visible beneath its surface. Giant, glowing flora and exotic deep-sea fauna surround the car. The scene is viewed through a massive, transparent, spherical dome, offering a breathtaking panoramic view of the alien underwater world. Shafts of ethereal, filtered sunlight penetrate from the surface far above, mixing with the soft, pulsating glow of the bio-luminescent environment. The crystal-clear water reveals intricate structures of an advanced civilization. Ethereal, deep-sea lighting, soft glowing bioluminescence, diffused light shafts from above, creating a mysterious and otherworldly atmosphere.",
+    "series": "Shadow Concepts",
+    "id": 209,
+    "date": "2026-11-28"
   }
 ]
